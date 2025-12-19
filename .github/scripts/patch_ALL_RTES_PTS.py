@@ -1,7 +1,7 @@
 import os
 import re
 
-TARGET_FILE = os.path.join("maps", "ALL_RTES_PTS.xml")
+TARGET_FILE = os.path.join("Maps", "ALL_RTES_PTS.xml")
 
 # Define multiple target names and their corresponding colours
 TARGETS = {
