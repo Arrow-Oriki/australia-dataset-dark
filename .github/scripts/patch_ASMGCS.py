@@ -1,7 +1,7 @@
 import os
 import re
 
-TARGET_FILE = os.path.join("maps", "ASMGCS.xml")
+TARGET_FILE = os.path.join("Maps", "ASMGCS.xml")
 
 # Map Name -> Desired CustomColourName
 PATCHES = {
