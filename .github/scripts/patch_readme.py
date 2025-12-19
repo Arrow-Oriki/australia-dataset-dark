@@ -4,8 +4,12 @@ from datetime import datetime
 from pathlib import Path
 import os
 
-# Try to get the upstream tag from GitHub Actions, fall back safely
+# Get upstream tag from GitHub Actions
 UPSTREAM_TAG = os.getenv("UPSTREAM_TAG", "Unknown")
+
+# Derived values
+GENERATED_DATE = datetime.utcnow().strftime("%Y-%m-%d")
+DARK_VERSION = f"{UPSTREAM_TAG}-dark" if UPSTREAM_TAG != "Unknown" else "YYMMx-dark"
 
 README_CONTENT = f"""# vatSys Australia Dataset — Dark Theme
 
@@ -19,12 +23,12 @@ This repository contains an **automatically generated dark theme variant** of th
 ## 🎨 Theme
 
 - **Theme:** Dark
-- **Generated:** 2025-12-18
-- **Upstream Release:** 2512b
-- **Version Format:** `YYMMx-dark` (e.g. `2512b-dark`)
+- **Generated:** {GENERATED_DATE}
+- **Upstream Release:** {UPSTREAM_TAG}
+- **Version Format:** `YYMMx-dark` (e.g. `{DARK_VERSION}`)
 
-![ASD Dark Theme Preview](.github/images/ASD_Scope.png)
-![GND Dark Theme Preview](.github/images/GND_Scope.png)
+![ASD Dark Theme Preview](.github/images/ASD_Scope.jpg)
+![GND Dark Theme Preview](.github/images/GND_Scope.jpg)
 ---
 
 ## 📥 Installation
