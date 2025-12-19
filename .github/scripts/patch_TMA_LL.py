@@ -1,7 +1,7 @@
 import os
 import re
 
-TARGET_FILE = os.path.join("maps", "TMA LL Labels.xml")
+TARGET_FILE = os.path.join("Maps", "TMA LL Labels.xml")
 
 TARGET_NAME = "TMA_LL_LABELS"
 TARGET_COLOUR = "TMA_LL_Colour"

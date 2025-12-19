@@ -1,7 +1,7 @@
 import os
 import re
 
-TARGET_FILE = os.path.join("maps", "ALL_CTA.xml")
+TARGET_FILE = os.path.join("Maps", "ALL_CTA.xml")
 
 TARGET_MAP_NAME = "ALL_CTA"
 TARGET_MAP_COLOUR = "CTA_Colour"

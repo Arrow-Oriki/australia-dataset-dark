@@ -1,7 +1,7 @@
 import os
 import re
 
-MAPS_ROOT = "maps"
+MAPS_ROOT = "Maps"
 
 RUNWAY_RE = re.compile(r'<Runway\b.*?</Runway>', re.DOTALL | re.IGNORECASE)
 LINE_RE = re.compile(r'<Line\b.*?</Line>', re.DOTALL | re.IGNORECASE)

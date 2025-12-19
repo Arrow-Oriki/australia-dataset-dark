@@ -1,7 +1,7 @@
 import os
 import re
 
-MAPS_DIR = "maps"
+MAPS_DIR = "Maps"
 
 # Regex to match the <Map ...> opening tag
 MAP_TAG_REGEX = re.compile(r'<Map\s+([^>]+)>', re.IGNORECASE)
