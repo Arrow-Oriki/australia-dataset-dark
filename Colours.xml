@@ -17,9 +17,9 @@
   <Colour id="StripText">
 		<Use>Strip Text</Use>
 		<Name>LightGrey</Name>
-		<R>220</R>
-		<G>220</G>
-		<B>220</B>
+		<R>170</R>
+		<G>170</G>
+		<B>170</B>
 	</Colour>
 	<Colour id="PopupASDWindowBorderFocused">
 		<Use>Popup ASD Window borders when focused</Use>
@@ -31,9 +31,9 @@
   <Colour id="StripBackground">
 		<Use>Strip Backgrounds</Use>
 		<Name>VeryDarkGrey</Name>
-		<R>22</R>
-		<G>22</G>
-		<B>22</B>
+		<R>15</R>
+		<G>15</G>
+		<B>15</B>
 	</Colour>
 	<Colour id="ListSeparator">
 		<Use>List Separator Bar</Use>
@@ -52,9 +52,9 @@
   <Colour id="WindowBackground">
 		<Use>Window Backgrounds</Use>
 		<Name>VeryDarkGrey</Name>
-		<R>30</R>
-		<G>30</G>
-		<B>30</B>
+		<R>15</R>
+		<G>15</G>
+		<B>15</B>
 	</Colour>
 	<Colour id="WindowButtonDepressed">
     <Use>Depressed Window Button Background</Use>
@@ -93,24 +93,24 @@
   </Colour>
   <Colour id="Custom">
     <Use>Runway Numbers</Use>
-    <Name>White</Name>
+    <Name>RWY</Name>
     <R>255</R>
     <G>255</G>
-    <B>255</B>
+    <B>0</B>
   </Colour>
   <Colour id="Custom">
     <Use>RRSM Markers</Use>
-    <Name>OffWhite</Name>
-    <R>240</R>
-    <G>240</G>
-    <B>240</B>
+    <Name>RWY_RSM</Name>
+    <R>255</R>
+    <G>255</G>
+    <B>0</B>
   </Colour>
   <Colour id="Preactive">
 		<Use>Preactive Tracks and Strips</Use>
 		<Name>White</Name>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
+		<R>202</R>
+		<G>205</G>
+		<B>169</B>
 	</Colour>
   <Colour id="HighlightedText">
 		<Use>Highlighted Text</Use>
@@ -242,9 +242,9 @@
   <Colour id="ASDBackground">
 		<Use>ASD Backgrounds</Use>
 		<Name>VeryDarkGrey</Name>
-		<R>25</R>
-		<G>25</G>
-		<B>25</B>
+		<R>15</R>
+		<G>15</G>
+		<B>15</B>
 	</Colour>
   <Colour id="CPDLCSendButton">
 		<Use>CPDLC Hot-Send Button</Use>
@@ -256,16 +256,16 @@
   <Colour id="GroundBackground">
     <Use>A-SMGCS Background</Use>
     <Name>Black</Name>
-    <R>0</R>
-    <G>0</G>
-    <B>0</B>
+    <R>15</R>
+    <G>15</G>
+    <B>15</B>
   </Colour>
 	<Colour id="Jurisdiction">
 		<Use>Jurisdiction</Use>
 		<Name>MediumGreen</Name>
-		<R>89</R>
-		<G>209</G>
-		<B>65</B>
+		<R>90</R>
+		<G>190</G>
+		<B>150</B>
 	</Colour>
   <Colour id="GhostJurisdiction">
     <Use>GhostJurisdiction</Use>
@@ -277,9 +277,9 @@
   <Colour id="PostJurisdiction">
 		<Use>PostJurisdiction</Use>
 		<Name>White</Name>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
+		<R>202</R>
+		<G>205</G>
+		<B>169</B>
 	</Colour>
   <Colour id="JurisdictionIQL">
 		<Use>JurisdictionIQL</Use>
@@ -291,9 +291,9 @@
   <Colour id="Handover">
 		<Use>HandOver</Use>
 		<Name>MediumGreen</Name>
-		<R>89</R>
-		<G>209</G>
-		<B>65</B>
+		<R>190</R>
+		<G>100</G>
+		<B>95</B>
 	</Colour>
   <Colour id="Announced">
 		<Use>Announced</Use>
@@ -305,23 +305,23 @@
   <Colour id="NonJurisdictionIQL">
 		<Use>NonJurisdictionIQL</Use>
 		<Name>White</Name>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
+		<R>202</R>
+		<G>205</G>
+		<B>169</B>
 	</Colour>
   <Colour id="NonJurisdiction">
 		<Use>Non Jurisdiction Tracks and Strips</Use>
 		<Name>White</Name>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
+		<R>202</R>
+		<G>205</G>
+		<B>169</B>
 	</Colour>
   <Colour id="NonJurisdictionLabel">
 		<Use>Non Jurisdiction Labels</Use>
 		<Name>White</Name>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
+		<R>202</R>
+		<G>205</G>
+		<B>169</B>
 	</Colour>
   <Colour id="CFLHighlight">
 		<Use>New CFL Selection</Use>
@@ -355,8 +355,8 @@
 		<Use>Post Jurisdiction Transfer Flashing</Use>
 		<Name>White</Name>
 		<R>255</R>
-		<G>255</G>
-		<B>255</B>
+		<G>200</G>
+		<B>150</B>
 	</Colour>
   <Colour id="GroundArrival">
     <Use>A-SMGCS Arrival</Use>
@@ -389,9 +389,9 @@
 	<Colour id="PRDArea">
 		<Use>Restricted/Danger Areas</Use>
 		<Name>Red</Name>
-		<R>255</R>
-		<G>59</G>
-		<B>20</B>
+		<R>53</R>
+		<G>4</G>
+		<B>4</B>
 	</Colour>
   <Colour id="UserMap">
     <Use>Custom Maps and Text</Use>
@@ -424,30 +424,30 @@
   <Colour id="GroundRunway">
     <Use>A-SMGCS Runway</Use>
     <Name>DarkSlateGrey</Name>
-    <R>33</R>
-    <G>60</G>
-    <B>63</B>
+    <R>115</R>
+    <G>115</G>
+    <B>115</B>
   </Colour>
   <Colour id="GroundTaxiway">
     <Use>A-SMGCS Taxiway</Use>
     <Name>DarkGrey</Name>
-    <R>28</R>
-    <G>30</G>
-    <B>34</B>
+    <R>50</R>
+    <G>50</G>
+    <B>50</B>
   </Colour>
   <Colour id="GroundApron">
     <Use>A-SMGCS Apron</Use>
     <Name>DarkGreen</Name>
-    <R>0</R>
-    <G>40</G>
-    <B>0</B>
+    <R>75</R>
+    <G>75</G>
+    <B>75</B>
   </Colour>
   <Colour id="GroundBuilding">
     <Use>A-SMGCS Building</Use>
     <Name>MediumGrey</Name>
-    <R>90</R>
-    <G>90</G>
-    <B>90</B>
+    <R>0</R>
+    <G>64</G>
+    <B>64</B>
   </Colour>
   <Colour id="GroundOther">
     <Use>A-SMGCS Information / Other</Use>
@@ -505,4 +505,4 @@
     <G>235</G>
     <B>0</B>
   </Colour>
-<Colour id="WindowBorder"><Use>All Window Borders</Use><Name>MediumGrey</Name><R>110</R><G>110</G><B>110</B></Colour></Colours>
+<Colour id="WindowBorder"><Use>All Window Borders</Use><Name>MediumGrey</Name><R>110</R><G>110</G><B>110</B></Colour><Colour id="Custom"><Use>Coast</Use><Name>Coast</Name><R>60</R><G>78</G><B>99</B></Colour><Colour id="Custom"><Use>CTA_Colour</Use><Name>CTA_Colour</Name><R>15</R><G>45</G><B>35</B></Colour><Colour id="Custom"><Use>TMA_LL_Colour</Use><Name>TMA_LL_Colour</Name><R>15</R><G>45</G><B>35</B></Colour><Colour id="Custom"><Use>Centreline</Use><Name>Centreline</Name><R>48</R><G>48</G><B>48</B></Colour><Colour id="Custom"><Use>SIDs</Use><Name>SIDs</Name><R>55</R><G>55</G><B>0</B></Colour><Colour id="Custom"><Use>STARs</Use><Name>STARs</Name><R>0</R><G>70</G><B>70</B></Colour><Colour id="Custom"><Use>Ariways_Symbols</Use><Name>Ariways_Symbols</Name><R>43</R><G>136</G><B>97</B></Colour><Colour id="Custom"><Use>Airspace</Use><Name>Airspace</Name><R>15</R><G>45</G><B>35</B></Colour><Colour id="Custom"><Use>Names</Use><Name>Names</Name><R>85</R><G>85</G><B>85</B></Colour><Colour id="Custom"><Use>ALL_ROUTES_HIGH_COLOUR</Use><Name>ALL_ROUTES_HIGH_COLOUR</Name><R>85</R><G>85</G><B>85</B></Colour><Colour id="Custom"><Use>ALL_ROUTES_LOW_COLOUR</Use><Name>ALL_ROUTES_LOW_COLOUR</Name><R>85</R><G>85</G><B>85</B></Colour><Colour id="Custom"><Use>ALL_POINTS_HIGH_COLOUR</Use><Name>ALL_POINTS_HIGH_COLOUR</Name><R>85</R><G>85</G><B>85</B></Colour><Colour id="Custom"><Use>ALL_POINTS_LOW_COLOUR</Use><Name>ALL_POINTS_LOW_COLOUR</Name><R>85</R><G>85</G><B>85</B></Colour></Colours>

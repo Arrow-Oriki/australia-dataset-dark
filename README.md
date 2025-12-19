@@ -1,7 +1,6 @@
 # vatSys Australia Dataset — Dark Theme
 
-This repository contains an **automatically generated dark theme variant**
-of the official **vatSys Australia dataset**.
+This repository contains an **automatically generated dark theme variant** of the official **vatSys Australia dataset**.
 
 > ⚠️ This is **not** the upstream repository.  
 > It exists solely to provide a themed alternative.
@@ -15,6 +14,8 @@ of the official **vatSys Australia dataset**.
 - **Upstream Release:** 2512b
 - **Version Format:** `YYMMx-dark` (e.g. `2512b-dark`)
 
+![ASD Dark Theme Preview](.github/images/ASD_Scope.png)
+![GND Dark Theme Preview](.github/images/GND_Scope.png)
 ---
 
 ## 📥 Installation
@@ -41,9 +42,33 @@ There are **no manual edits** to data files in this repository.
 
 ---
 
+## 🛠 Patch Scripts
+
+The repository includes Python patch scripts for automated modifications to XML map files in the `maps/` folder.
+
+### Patch Scripts Included
+
+1. **`patch_coast.py`** – Adds `CustomColourName="Coast"` to `<Map>` tags in files containing `coast` in their names.
+2. **`patch_asmgcs.py`** – Updates `ASMGCS.xml` map names with correct `CustomColourName` values, handling changes to existing values.
+3. **`patch_all_cta.py`** – Adds `CustomColourName="ALL_CTA"` and converts line patterns from `Dashed` to `Dotted` in `ALL_CTA.xml`.
+4. **`split_rwy_maps.py`** – Splits runway XML files (any file with `RWY` in the name) into separate map sections (`_Centreline`, `_SIDs`, `_STARs`, `_Symbols`, `_Airspace`, `_Names`) and overwrites the originals. Sections are only written if content exists; unlabelled lines are skipped.
+
+### Usage
+
+Run any script with:
+
+```bash
+python <script_name>.py
+```
+
+> ⚠️ Backup XML files before running patches as they overwrite originals in-place.
+
+---
+
 ## ⬇️ Downloads
 
 ### GitHub Releases (Recommended)
+
 Download the latest themed dataset from the **Releases** page:
 
 - Each release corresponds to an upstream version
@@ -58,13 +83,14 @@ The dataset includes:
 - Profile configuration
 - Colour definitions adjusted for dark theme usage
 - Supporting metadata required by vatSys automated updates
+- Patch scripts for automated XML modifications
 
 ---
 
 ## ⚖️ Attribution & Disclaimer
 
 - Original dataset © vatSys Australia contributors
-- Theme modifications are provided independently
+- Theme modifications and patch scripts are provided independently
 - This project is **not affiliated with or endorsed by vatSys, VATSIM or VATPAC**
 
 All credit for data accuracy and structure belongs to the upstream authors.
@@ -73,7 +99,7 @@ All credit for data accuracy and structure belongs to the upstream authors.
 
 ## ⚠️ Disclaimer & Limitation of Liability
 
-This dataset is provided **as-is**, without warranty of any kind, express or implied.
+This dataset and patch scripts are provided **as-is**, without warranty of any kind, express or implied.
 
 By using this dataset, you acknowledge and agree that:
 
@@ -82,7 +108,7 @@ By using this dataset, you acknowledge and agree that:
 - No liability is accepted for any loss, damage, or disruption arising from its use
 - It is your responsibility to verify suitability for your intended purpose
 
-This applies to both the dataset itself, any automated processes used to generate it and/or automatic updates to the profile
+This applies to both the dataset itself, any automated processes used to generate it, patch scripts, and/or automatic updates to the profile.
 
 ---
 
@@ -92,7 +118,8 @@ This repository is maintained via GitHub Actions:
 - Scheduled sync every few hours
 - Tag-based release detection
 - Idempotent patching to prevent duplicate releases
+- Patch scripts are executed automatically to ensure consistency
 
 ---
 
-If you encounter issues specific to the **dark theme**, please open an issue in **this repository**.
+If you encounter issues specific to the **dark theme** or the patch scripts, please open an issue in **this repository**.
