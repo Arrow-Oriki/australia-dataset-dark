@@ -154,7 +154,7 @@ COLOUR_UPDATES = {
     ("Custom", "CTA_Colour"): {"Name": "CTA_Colour", "R": "15", "G": "45", "B": "35"},
     ("Custom", "TMA_LL_Colour"): {"Name": "TMA_LL_Colour", "R": "15", "G": "45", "B": "35"},
 
-    ("Custom", "Centreline"): {"Name": "Centreline", "R": "48", "G": "48", "B": "48"},
+    ("Custom", "Centreline"): {"Name": "Centreline", "R": "70", "G": "70", "B": "70"},
     ("Custom", "SIDs"): {"Name": "SIDs", "R": "55", "G": "55", "B": "0"},
     ("Custom", "STARs"): {"Name": "STARs", "R": "0", "G": "70", "B": "70"},
     ("Custom", "Ariways_Symbols"): {"Name": "Ariways_Symbols", "R": "43", "G": "136", "B": "97"},
