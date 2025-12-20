@@ -86,37 +86,24 @@ COLOUR_UPDATES = {
     ("GhostJurisdiction", "GhostJurisdiction"): {"Name": "LightGreen", "R": "89", "G": "209", "B": "65"},
     # Handover Out accepted
     ("PostJurisdiction", "PostJurisdiction"): {"Name": "White", "R": "202", "G": "205", "B": "169"},
-
     ("JurisdictionIQL", "JurisdictionIQL"): {"Name": "BrightGreen", "R": "0", "G": "255", "B": "0"},
     # Handoff proposed to you
     ("Handover", "HandOver"): {"Name": "MediumGreen", "R": "190", "G": "100", "B": "95"},
     # Soon to affect your sectors 
     ("Announced", "Announced"): {"Name": "BrightCyan", "R": "70", "G": "255", "B": "255"},
-
     ("NonJurisdictionIQL", "NonJurisdictionIQL"): {"Name": "White", "R": "202", "G": "205", "B": "169"},
     # All other tracks
     ("NonJurisdiction", "Non Jurisdiction Tracks and Strips"): {"Name": "White", "R": "202", "G": "205", "B": "169"},
-
     ("NonJurisdictionLabel", "Non Jurisdiction Labels"): {"Name": "White", "R": "202", "G": "205", "B": "169"},
-
     ("CFLHighlight", "New CFL Selection"): {"Name": "White", "R": "255", "G": "255", "B": "255"},
-
     ("IdentFlash", "SPI"): {"Name": "Cyan", "R": "0", "G": "255", "B": "255"},
-    
     ("Route", "Graphic Route"): {"Name": "Lavender", "R": "196", "G": "171", "B": "196"},
-
     ("PostJurisdictionFlash", "Post Jurisdiction Transfer Flashing"): {"Name": "White", "R": "255", "G": "200", "B": "150"},
-
     ("GroundUnknown", "A-SMGCS Aircraft"): {"Name": "Orange", "R": "255", "G": "156", "B": "55"},
-
     ("GroundArrival", "A-SMGCS Arrival"): {"Name": "LightBuff", "R": "255", "G": "255", "B": "160"},
-
     ("GroundDeparture", "A-SGCMS Departure"): {"Name": "LightBlue", "R": "139", "G": "220", "B": "243"},
-
     ("GroundLocal", "A-SGCMS Local"): {"Name": "BrightPink", "R": "255", "G": "100", "B": "255"},
-
     ("Emergency", "Emergency Indications"): {"Name": "StrongRed", "R": "209", "G": "46", "B": "46"},
-
     ("Warning", "Warning Indications"): {"Name": "BrightYellow", "R": "255", "G": "255", "B": "0"},
 
 
@@ -165,6 +152,9 @@ COLOUR_UPDATES = {
     ("Custom", "ALL_ROUTES_LOW_COLOUR"): {"Name": "ALL_ROUTES_LOW_COLOUR", "R": "85", "G": "85", "B": "85"},
     ("Custom", "ALL_POINTS_HIGH_COLOUR"): {"Name": "ALL_POINTS_HIGH_COLOUR", "R": "85", "G": "85", "B": "85"},
     ("Custom", "ALL_POINTS_LOW_COLOUR"): {"Name": "ALL_POINTS_LOW_COLOUR", "R": "85", "G": "85", "B": "85"},
+
+    ("Custom", "Runway Release"): {"Name": "Release", "R": "52", "G": "59", "B": "198"},
+    ("Custom", "Runway Crossing"): {"Name": "Crossing", "R": "255", "G": "0", "B": "0"},   
 }
 
 # Register the xsi namespace so it is preserved
