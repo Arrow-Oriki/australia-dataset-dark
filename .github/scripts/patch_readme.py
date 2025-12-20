@@ -31,7 +31,7 @@ This repository contains an **automatically generated dark theme variant** of th
 
 1. Download the latest **Dark Theme** release ZIP from the **Releases** page.
 2. Extract the ZIP archive.
-3. Copy the extracted contents of **profile folder** into: Documents\vatSys Files\Profiles\Australia - Dark
+3. Copy the extracted contents of **profile folder** into: Documents\\vatSys Files\\Profiles\\Australia - Dark
 4. Launch **vatSys**.
 5. Select the newly installed profile from the profile selection menu.
 
