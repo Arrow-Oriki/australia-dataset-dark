@@ -61,7 +61,7 @@ COLOUR_UPDATES = {
     # System2 maps
     ("SecondaryMap", "Alternative System Map"): {"Name": "BlueGrey", "R": "42", "G": "50", "B": "52"},
     # REST_NTZ_DAIW, TDA and Supervisor maps
-    ("PRDArea", "Restricted/Danger Areas"): {"Name": "Red", "R": "53", "G": "4", "B": "4"},
+    ("PRDArea", "Restricted/Danger Areas"): {"Name": "Red", "R": "99", "G": "7", "B": "7"},
     #  Local_Private and Global_Private maps (not currently used)
     ("UserMap", "Custom Maps and Text"): {"Name": "BrightYellow", "R": "235", "G": "235", "B": "0"},
     # Filled maps
@@ -141,7 +141,7 @@ COLOUR_UPDATES = {
     ("Custom", "CTA_Colour"): {"Name": "CTA_Colour", "R": "15", "G": "45", "B": "35"},
     ("Custom", "TMA_LL_Colour"): {"Name": "TMA_LL_Colour", "R": "15", "G": "45", "B": "35"},
 
-    ("Custom", "Centreline"): {"Name": "Centreline", "R": "48", "G": "48", "B": "48"},
+    ("Custom", "Centreline"): {"Name": "Centreline", "R": "70", "G": "70", "B": "70"},
     ("Custom", "SIDs"): {"Name": "SIDs", "R": "55", "G": "55", "B": "0"},
     ("Custom", "STARs"): {"Name": "STARs", "R": "0", "G": "70", "B": "70"},
     ("Custom", "Ariways_Symbols"): {"Name": "Ariways_Symbols", "R": "43", "G": "136", "B": "97"},
