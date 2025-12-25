@@ -47,7 +47,7 @@ jobs:
 
     - name: Merge upstream
       if: steps.themed.outputs.exists == 'false'
-      run: git merge "${{ steps.release.outputs.tag }}" --no-edit
+      run: git merge "${{ steps.release.outputs.tag }}"  --no-edit -X theirs
 
     - name: Patch README
       if: steps.themed.outputs.exists == 'false'
