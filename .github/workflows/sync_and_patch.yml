@@ -79,11 +79,15 @@ jobs:
 
         git reset --hard "${{ steps.release.outputs.tag }}"
 
-    - name: Pull .github folder from dev branch
-      if: steps.themed.outputs.exists == 'false'
+    - name: Restore .github folder from local dev branch
       run: |
-        git fetch origin dev
-        git checkout origin/dev -- .github
+        git show-ref --verify --quiet refs/heads/dev || {
+          echo "Local dev branch does not exist"
+          git branch
+          exit 1
+        }
+
+        git checkout dev -- .github
 
     - name: Patch README
       if: steps.themed.outputs.exists == 'false'
