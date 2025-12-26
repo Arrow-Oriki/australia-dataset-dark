@@ -79,6 +79,14 @@ jobs:
 
         git reset --hard "${{ steps.release.outputs.tag }}"
 
+    - name: Debug branches
+      run: |
+        echo "Local branches:"
+        git branch
+        echo
+        echo "Remote branches:"
+        git branch -r
+
     - name: Restore .github folder from local dev branch
       run: |
         git show-ref --verify --quiet refs/heads/dev || {
