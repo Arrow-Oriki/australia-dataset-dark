@@ -1,12 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Maps>
-  <Map Type="System" Name="LT_RWY32L" Priority="1" Center="-41.545278+147.214167">
-    <!--YMLT-->
-    <Runway Name="14R/32L">
+
+  <Map Type="System" Name="LT_RWY32L_Centreline" Priority="1" Center="-41.545278+147.214167" CustomColourName="Centreline">
+<Runway Name="14R/32L">
       <Threshold Name="14R" Position="-41.537067+147.204097" />
       <Threshold Name="32L" Position="-41.552075+147.216933" ExtendedCentrelineTrack="147.28" ExtendedCentrelineLength="10" ExtendedCentrelineTickInterval="1" />
     </Runway>
-    <!--SIDs-->
+  </Map>
+  <Map Type="System" Name="LT_RWY32L_SIDs" Priority="1" Center="-41.545278+147.214167" CustomColourName="SIDs">
     <Line>
       <!--Rwy32L FLIK2A-->
       -413213.440+1471214.750/
@@ -76,11 +77,12 @@
       -412448.000+1471311.000/
       VIMAP
     </Line>
-    <!--STARs-->
-    <Symbol Type="HollowTriangle">
+  </Map>
+  <Map Type="System" Name="LT_RWY32L_Symbols" Priority="1" Center="-41.545278+147.214167" CustomColourName="Airways_Symbols">
+<Symbol Type="HollowTriangle">
       <Point>ISMIR</Point>
     </Symbol>
-    <Symbol Type="HollowStar">
+<Symbol Type="HollowStar">
       <Point>FLIKI</Point>
       <Point>IRSOM</Point>
       <Point>MIKIS</Point>
@@ -92,8 +94,8 @@
       <Point>VIMAP</Point>
     </Symbol>
   </Map>
-  <Map Type="System" Name="LT_RWY32L_NAMES" Priority="2" Center="-41.545278+147.214167">
-    <Label>
+  <Map Type="System" Name="LT_RWY32L_Names" Priority="2" Center="-41.545278+147.214167" CustomColourName="Names">
+<Label>
       <Point>FLIKI</Point>
       <Point>IRSOM</Point>
       <Point>MIKIS</Point>

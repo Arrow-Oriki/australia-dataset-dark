@@ -1,12 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Maps>
-  <Map Type="System" Name="TL_RWY19" Priority="1" Center="-19.252500+146.765278">
-    <!--YBTL-->
-    <Runway Name="01/19">
+
+  <Map Type="System" Name="TL_RWY19_Centreline" Priority="1" Center="-19.252500+146.765278" CustomColourName="Centreline">
+<Runway Name="01/19">
       <Threshold Name="01" Position="-19.258306+146.764722" />
       <Threshold Name="19" Position="-19.238203+146.774217" ExtendedCentrelineTrack="24.16" ExtendedCentrelineLength="15" ExtendedCentrelineTickInterval="1" />
     </Runway>
-    <!--SIDs-->
+  </Map>
+  <Map Type="System" Name="TL_RWY19_SIDs" Priority="1" Center="-19.252500+146.765278" CustomColourName="SIDs">
     <Line>
       <!--Rwy19 ADNOD1-->
       -191529.900+1464553.000/
@@ -73,7 +74,8 @@
       ORORO/
       WALTA
     </Line>
-    <!--STARs-->
+  </Map>
+  <Map Type="System" Name="TL_RWY19_STARs" Priority="1" Center="-19.252500+146.765278" CustomColourName="STARs">
     <Line>
       <!--Rwy19 IBUX2Z-->
       IBUXI/
@@ -113,18 +115,20 @@
     <Line>
       <!--Rwy19 VOMP2Z-->
     </Line>
-    <Symbol Type="HollowTriangle">
+  </Map>
+  <Map Type="System" Name="TL_RWY19_Symbols" Priority="1" Center="-19.252500+146.765278" CustomColourName="Airways_Symbols">
+<Symbol Type="HollowTriangle">
       <Point>ADNOD</Point>
       <Point>TODOX</Point>
       <Point>VILUN</Point>
       <Point>LEBOT</Point>
     </Symbol>
-    <Symbol Type="SolidStar">
+<Symbol Type="SolidStar">
       <Point>VARBI</Point>
       <Point>IGBIK</Point>
       <Point>RURTO</Point>
     </Symbol>
-    <Symbol Type="HollowStar">
+<Symbol Type="HollowStar">
       <Point>LEDOG</Point>
       <Point>AVMAT</Point>
       <Point>AKROM</Point>
@@ -158,8 +162,8 @@
       <Point>LAPES</Point>
     </Symbol>
   </Map>
-  <Map Type="System" Name="TL_RWY19_NAMES" Priority="2" Center="-19.252500+146.765278">
-    <Label>
+  <Map Type="System" Name="TL_RWY19_Names" Priority="2" Center="-19.252500+146.765278" CustomColourName="Names">
+<Label>
       <Point>VARBI</Point>
       <Point>IGBIK</Point>
       <Point>LEDOG</Point>
