@@ -122,7 +122,7 @@ jobs:
       if: steps.themed.outputs.exists == 'false'
       id: tag
       run: |
-        TAG="${{ steps.release.outputs.tag }}-dark"
+        TAG="${{ steps.release.outputs.tag }}-dark-tag"
     
         if git rev-parse "refs/tags/$TAG" >/dev/null 2>&1; then
           echo "Tag $TAG already exists"
@@ -131,7 +131,7 @@ jobs:
         fi
     
         git tag "$TAG"
-        git push origin "refs/tags/$TAG"
+        git push origin "refs/tags/$TAG"`
     
         echo "created=true" >> $GITHUB_OUTPUT
 
@@ -147,7 +147,7 @@ jobs:
     - name: Push working branch to remote
       if: steps.themed.outputs.exists == 'false'
       run: |
-            DARK_TAG="${{ steps.release.outputs.tag }}-dark"
+            DARK_TAG="${{ steps.release.outputs.tag }}"
             git push --set-upstream origin "$DARK_TAG"
     
     - name: Create GitHub release
