@@ -110,7 +110,7 @@ jobs:
         fi
     
         git tag "$TAG"
-        git push origin master
+        git push --force-with-lease origin master
         git push origin "refs/tags/$TAG"
     
         echo "created=true" >> $GITHUB_OUTPUT
