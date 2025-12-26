@@ -87,15 +87,15 @@ jobs:
         echo "Remote branches:"
         git branch -r
 
-    - name: Restore .github folder from local dev branch
+    - name: Restore .github folder from local Dev branch
       run: |
-        git show-ref --verify --quiet refs/heads/dev || {
-          echo "Local dev branch does not exist"
+        git show-ref --verify --quiet refs/heads/Dev || {
+          echo "Local Dev branch does not exist"
           git branch
           exit 1
         }
 
-        git checkout dev -- .github
+        git checkout Dev -- .github
 
     - name: Patch README
       if: steps.themed.outputs.exists == 'false'
