@@ -1,4 +1,4 @@
-name: Sync on upstream release
+name: Sync and patch
 
 on:
   schedule:
@@ -50,6 +50,7 @@ jobs:
       run: |
         git reset --hard "${{ steps.release.outputs.tag }}"
         git checkout HEAD@{1} -- .github
+
 
     - name: Patch README
       if: steps.themed.outputs.exists == 'false'
