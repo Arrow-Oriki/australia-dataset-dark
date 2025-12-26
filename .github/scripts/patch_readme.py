@@ -13,68 +13,112 @@ DARK_VERSION = f"{UPSTREAM_TAG}-dark" if UPSTREAM_TAG != "Unknown" else "YYMMx-d
 
 README_CONTENT = f"""# vatSys Australia Dataset — Dark Theme
 
-This repository contains an **automatically generated dark theme variant** of the official **vatSys Australia dataset**.
+This repository contains an **automatically generated dark theme variant**
+of the official **vatSys Australia dataset**.
 
 > ⚠️ This is **not** the upstream repository.  
-> It exists solely to provide a themed alternative.
+> It exists solely to provide a themed derivative with automated releases.
 
 ---
 
-## 🎨 Theme
+## 🎨 Theme Overview
 
 - **Theme:** Dark
 - **Generated:** {GENERATED_DATE}
 - **Upstream Release:** {UPSTREAM_TAG}
-- **Version Format:** `YYMMx-dark` (e.g. `{DARK_VERSION}`)
+- **Dark Version Format:** `YYMMx-dark` (e.g. `{DARK_VERSION}`)
 
 ![ASD Dark Theme Preview](.github/images/ASD_Scope.jpg)
 ![GND Dark Theme Preview](.github/images/GND_Scope.jpg)
+
 ---
 
 ## 📥 Installation
 
-1. Download the latest **Dark Theme** release ZIP from the **Releases** page.
-2. Extract the ZIP archive.
-3. Copy the extracted contents of **profile folder** into: Documents\\vatSys Files\\Profiles\\Australia - Dark
-4. Launch **vatSys**.
-5. Select the newly installed profile from the profile selection menu.
+1. Download the latest **Dark Theme** ZIP from the **Releases** page.
+2. Extract the archive.
+3. Copy the extracted profile contents into: Documents\ vatSys Files\ Profiles\ Australia - Dark
+4. Launch **vatSys**
+5. Select **Australia – Dark** from the profile list
 
-> ℹ️ If vatSys was running during installation, restart it to ensure the profile appears.
+> ℹ️ Restart vatSys if it was running during installation.
 
 ---
 
-## 🔄 Sync & Updates
+## 🔄 How This Repository Works
 
-This repository is automatically synced against the upstream dataset:
+This repository is **fully automated** and follows a strict separation of concerns:
 
-- New upstream releases are detected on a schedule
-- If a dark-themed release already exists, no action is taken
-- Patches are applied deterministically to ensure consistent output
+### ✔ Upstream Data
+- Sourced directly from **vatSys/australia-dataset**
+- No manual edits are made to upstream data
+- New upstream tags are detected automatically
 
-There are **no manual edits** to data files in this repository.
+### ✔ Automation & Tooling
+- All automation lives in the `.github/` directory
+- Patch scripts are **authoritative** and preserved across syncs
+- Workflow files are **never modified by automation**
+
+### ✔ Generated Output
+- A working tree is created from the upstream release
+- Patch scripts are applied deterministically
+- A tagged dark-themed release is produced
+- A ZIP is generated and uploaded
+
+If a themed release already exists for a given upstream tag, the workflow exits safely.
 
 ---
 
 ## 🛠 Patch Scripts
 
-The repository includes Python patch scripts for automated modifications to XML map files in the `maps/` folder.
+Patch scripts are written in Python and operate directly on XML map files.
 
-### Patch Scripts Included
+### Included Scripts
 
-1. **`patch_coast.py`** – Adds `CustomColourName="Coast"` to `<Map>` tags in files containing `coast` in their names.
-2. **`patch_asmgcs.py`** – Updates `ASMGCS.xml` map names with correct `CustomColourName` values, handling changes to existing values.
-3. **`patch_all_cta.py`** – Adds `CustomColourName="ALL_CTA"` and converts line patterns from `Dashed` to `Dotted` in `ALL_CTA.xml`.
-4. **`split_rwy_maps.py`** – Splits runway XML files (any file with `RWY` in the name) into separate map sections (`_Centreline`, `_SIDs`, `_STARs`, `_Symbols`, `_Airspace`, `_Names`) and overwrites the originals. Sections are only written if content exists; unlabelled lines are skipped.
+1. **`patch_readme.py`**  
+Regenerates this README dynamically based on the upstream release.
 
-### Usage
+2. **`patch_colours.py`**  
+Applies dark-theme colour definitions consistently.
 
-Run any script with:
+3. **`patch_profile.py`**  
+Updates profile metadata for dark-theme identification.
 
-```bash
-python <script_name>.py
-```
+4. **`patch_coast.py`**  
+Adds `CustomColourName="Coast"` to applicable map files.
 
-> ⚠️ Backup XML files before running patches as they overwrite originals in-place.
+5. **`patch_ASMGCS.py`**  
+Normalises ASMGCS map colour usage.
+
+6. **`patch_ALL_CTA.py`**  
+Applies CTA colouring and line-style corrections.
+
+7. **`patch_TMA_LL.py`, `patch_ALL_RTES_PTS.py`, `patch_RWY_files.py`**  
+Apply targeted fixes to airspace, routes, and runway map data.
+
+> ⚠️ All scripts overwrite files in-place and are intended for automated use.
+
+---
+
+## 🚀 Release Process (Automation)
+
+Each release follows this process:
+
+1. Detect latest upstream tag
+2. Check if `{UPSTREAM_TAG}-dark` already exists
+3. Rebase working tree onto upstream data
+4. Restore `.github/` tooling
+5. Apply all patch scripts
+6. Commit **data-only changes**
+7. Create a dark-theme tag
+8. Build and upload ZIP asset
+9. Publish GitHub Release
+10. Upload payload to public hosting (FTP)
+
+This ensures:
+- Reproducible output
+- No workflow self-modification
+- No accidental upstream drift
 
 ---
 
@@ -82,66 +126,61 @@ python <script_name>.py
 
 ### GitHub Releases (Recommended)
 
-Download the latest themed dataset from the **Releases** page:
+Each release includes:
+- A pre-packaged ZIP
+- One-to-one mapping with upstream versions
+- Ready-to-install vatSys profile
 
-- Each release corresponds to an upstream version
-- Assets include a pre-packaged ZIP ready for vatSys
-- Once installed this profile should automatically update via downloads from free hosting provided by alwaysdata.com
+Once installed, the profile can update automatically via public hosting.
 
 ---
 
-## 📦 Contents
+## 📦 Repository Contents
 
-The dataset includes:
+- Dark-themed dataset files
 - Profile configuration
-- Colour definitions adjusted for dark theme usage
-- Supporting metadata required by vatSys automated updates
-- Patch scripts for automated XML modifications
+- Automation tooling and patch scripts
+- Release packaging logic
 
 ---
 
-## ⚖️ Attribution & Disclaimer
+## ⚖️ Attribution
 
 - Original dataset © vatSys Australia contributors
-- Theme modifications and patch scripts are provided independently
-- This project is **not affiliated with or endorsed by vatSys, VATSIM or VATPAC**
-
-All credit for data accuracy and structure belongs to the upstream authors.
+- Theme modifications and automation maintained independently
+- This project is **not affiliated with or endorsed by vatSys, VATSIM, or VATPAC**
 
 ---
 
 ## ⚠️ Disclaimer & Limitation of Liability
 
-This dataset and patch scripts are provided **as-is**, without warranty of any kind, express or implied.
+This project is provided **as-is**, without warranty of any kind.
 
-By using this dataset, you acknowledge and agree that:
+By using this dataset, you acknowledge that:
 
-- You use it **at your own risk**
-- The maintainers accept **no responsibility** for errors, omissions, or inaccuracies
-- No liability is accepted for any loss, damage, or disruption arising from its use
-- It is your responsibility to verify suitability for your intended purpose
+- Use is entirely **at your own risk**
+- No liability is accepted for errors or omissions
+- No guarantee of fitness for any purpose is provided
+- Automated updates may change files without notice
 
-This applies to both the dataset itself, any automated processes used to generate it, patch scripts, and/or automatic updates to the profile.
-
----
-
-## 🛠 Automation Details
-
-This repository is maintained via GitHub Actions:
-- Scheduled sync every few hours
-- Tag-based release detection
-- Idempotent patching to prevent duplicate releases
-- Patch scripts are executed automatically to ensure consistency
+This applies to the dataset, scripts, automation, and generated releases.
 
 ---
 
-If you encounter issues specific to the **dark theme** or the patch scripts, please open an issue in **this repository**.
+## 🧩 Issues & Support
+
+For issues related to:
+- Dark theme appearance
+- Automation behaviour
+- Patch scripts
+
+Please open an issue **in this repository**, not upstream.
 """
 
 def main():
-    readme_path = Path("README.md")
-    readme_path.write_text(README_CONTENT, encoding="utf-8")
-    print("README.md successfully regenerated.")
+ readme_path = Path("README.md")
+ readme_path.write_text(README_CONTENT, encoding="utf-8")
+ print("README.md successfully regenerated.")
 
 if __name__ == "__main__":
-    main()
+ main()
