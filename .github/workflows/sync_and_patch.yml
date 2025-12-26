@@ -73,7 +73,7 @@ jobs:
 
     - name: Create working branch
       run: |
-        WORK_BRANCH="work-${{ steps.release.outputs.tag }}"
+        WORK_BRANCH="${{ steps.release.outputs.tag }}-dark"
         git checkout -B "$WORK_BRANCH" "${{ steps.release.outputs.tag }}"
 
     - name: Inject .github tooling
@@ -142,6 +142,19 @@ jobs:
         git push origin "refs/tags/$TAG"
     
         echo "created=true" >> $GITHUB_OUTPUT
+
+    - name: Commit changes
+      if: steps.themed.outputs.exists == 'false'
+      run: |
+        git config user.name "github-actions"
+        git config user.email "actions@github.com"
+        git add --all
+        git reset .github  # Exclude workflow files from commit
+        git commit -m "Apply dark theme for ${{ steps.release.outputs.tag }}" || echo "No changes
+
+    - name: Push working branch to remote
+      if: steps.themed.outputs.exists == 'false'
+      run: git push --set-upstream origin "$BRANCH"
     
     - name: Create GitHub release
       if: steps.themed.outputs.exists == 'false' && steps.tag.outputs.created == 'true'
