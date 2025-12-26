@@ -57,6 +57,11 @@ jobs:
         git checkout -b "$BRANCH" "${{ steps.release.outputs.tag }}"
         echo "branch=$BRANCH" >> $GITHUB_OUTPUT
 
+    - name: Restore scripts after reset
+      if: steps.themed.outputs.exists == 'false'
+      run: |
+        git checkout origin/master -- .github/scripts
+
     # Apply patches
     - name: Patch README
       if: steps.themed.outputs.exists == 'false'
