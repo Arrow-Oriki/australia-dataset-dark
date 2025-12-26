@@ -47,9 +47,11 @@ jobs:
 
     - name: Create working branch for theme
       if: steps.themed.outputs.exists == 'false'
+      id: branch
       run: |
         BRANCH="${{ steps.release.outputs.tag }}-dark-theme"
         git checkout -b "$BRANCH" "${{ steps.release.outputs.tag }}"
+        echo "branch=$BRANCH" >> $GITHUB_OUTPUT
 
     - name: Restore scripts after reset
       if: steps.themed.outputs.exists == 'false'
@@ -116,6 +118,7 @@ jobs:
       id: tag
       run: |
         TAG="${{ steps.release.outputs.tag }}-dark"
+        BRANCH="${{ steps.branch.outputs.branch }}"
 
         if git rev-parse "$TAG" >/dev/null 2>&1; then
           echo "Tag $TAG already exists"
