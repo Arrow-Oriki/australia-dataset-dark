@@ -124,7 +124,7 @@ jobs:
       run: |
         TAG="${{ steps.release.outputs.tag }}-dark"
     
-        if git rev-parse "$TAG" >/dev/null 2>&1; then
+        if git rev-parse "refs/tags/$TAG" >/dev/null 2>&1; then
           echo "Tag $TAG already exists"
           echo "created=false" >> $GITHUB_OUTPUT
           exit 0
