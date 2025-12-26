@@ -51,6 +51,10 @@ jobs:
         BRANCH="${{ steps.release.outputs.tag }}-dark-theme"
         git checkout -b "$BRANCH" "${{ steps.release.outputs.tag }}"
 
+    - name: Restore scripts after reset
+      if: steps.themed.outputs.exists == 'false'
+      run: |
+        git checkout origin/master -- .github/scripts
 
     - name: Patch README
       if: steps.themed.outputs.exists == 'false'
