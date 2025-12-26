@@ -1,0 +1,182 @@
+name: Sync and Patch
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Checkout full history
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    # Add upstream and fetch tags
+    - name: Add upstream
+      run: |
+        git remote add upstream https://github.com/vatSys/australia-dataset.git || true
+        git fetch upstream --tags
+
+    # Get latest upstream release tag
+    - name: Get latest upstream release tag
+      id: release
+      run: |
+        TAG=$(git tag -l '[0-9][0-9][0-9][0-9][a-z]' \
+          --sort=-creatordate \
+          --merged upstream/master | head -n1)
+        echo "Latest upstream tag: $TAG"
+        echo "tag=$TAG" >> $GITHUB_OUTPUT
+
+    # Check if themed release already exists
+    - name: Check if themed release exists
+      id: themed
+      run: |
+        DARK_TAG="${{ steps.release.outputs.tag }}-dark"
+        if git rev-parse "$DARK_TAG" >/dev/null 2>&1; then
+          echo "exists=true" >> $GITHUB_OUTPUT
+        else
+          echo "exists=false" >> $GITHUB_OUTPUT
+        fi
+
+    # Configure Git identity
+    - name: Configure git identity
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
+
+    # Create a working branch from upstream tag
+    - name: Create working branch
+      if: steps.themed.outputs.exists == 'false'
+      id: branch
+      run: |
+        BRANCH="${{ steps.release.outputs.tag }}-dark-theme"
+        git checkout -b "$BRANCH" "${{ steps.release.outputs.tag }}"
+        echo "branch=$BRANCH" >> $GITHUB_OUTPUT
+
+    # Apply patches
+    - name: Patch README
+      if: steps.themed.outputs.exists == 'false'
+      run: UPSTREAM_TAG=${{ steps.release.outputs.tag }} python3 .github/scripts/patch_readme.py
+
+    - name: Apply colour patch
+      if: steps.themed.outputs.exists == 'false'
+      run: python3 .github/scripts/patch_colours.py
+
+    - name: Apply profile patch
+      if: steps.themed.outputs.exists == 'false'
+      run: python3 .github/scripts/patch_profile.py
+
+    - name: Apply coast patch
+      if: steps.themed.outputs.exists == 'false'
+      run: python3 .github/scripts/patch_coast.py
+
+    - name: Apply ASMGCS patch
+      if: steps.themed.outputs.exists == 'false'
+      run: python3 .github/scripts/patch_ASMGCS.py
+
+    - name: Apply CTA_ALL patch
+      if: steps.themed.outputs.exists == 'false'
+      run: python3 .github/scripts/patch_ALL_CTA.py
+
+    - name: Apply TMA_LL patch
+      if: steps.themed.outputs.exists == 'false'
+      run: python3 .github/scripts/patch_TMA_LL.py
+
+    - name: Apply ALL_RTES_PTS patch
+      if: steps.themed.outputs.exists == 'false'
+      run: python3 .github/scripts/patch_ALL_RTES_PTS.py
+
+    - name: Apply RWY patch
+      if: steps.themed.outputs.exists == 'false'
+      run: python3 .github/scripts/patch_RWY_files.py
+
+    # Commit changes excluding .github folder
+    - name: Commit changes (exclude .github)
+      if: steps.themed.outputs.exists == 'false'
+      run: |
+        git add --all
+        git reset .github
+        git commit -m "Apply theme for ${{ steps.release.outputs.tag }}" || echo "No changes"
+
+    # Tag branch and push using PAT
+    - name: Tag branch and push
+      if: steps.themed.outputs.exists == 'false'
+      id: tag
+      env:
+        REPO_PAT: ${{ secrets.REPO_PAT }}
+      run: |
+        TAG="${{ steps.release.outputs.tag }}-dark"
+        BRANCH="${{ steps.branch.outputs.branch }}"
+
+        # Create tag if it doesn't exist
+        if git rev-parse "$TAG" >/dev/null 2>&1; then
+          echo "Tag $TAG already exists"
+          echo "created=false" >> $GITHUB_OUTPUT
+          exit 0
+        fi
+
+        git tag "$TAG"
+
+        # Push branch and tag using PAT
+        git remote set-url origin https://x-access-token:${REPO_PAT}@github.com/${{ github.repository }}.git
+        git push --set-upstream origin "$BRANCH"
+        git push origin "refs/tags/$TAG"
+
+        echo "created=true" >> $GITHUB_OUTPUT
+
+    # Create GitHub release
+    - name: Create GitHub release
+      if: steps.themed.outputs.exists == 'false' && steps.tag.outputs.created == 'true'
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ steps.release.outputs.tag }}-dark
+        release_name: "${{ steps.release.outputs.tag }} Dark Theme"
+        body: |
+          Dark theme variant of upstream vatSys Australia dataset.
+
+          **Upstream release:** ${{ steps.release.outputs.tag }}
+          **Theme:** Dark
+        draft: false
+        prerelease: false
+
+    # Create release ZIP
+    - name: Create release ZIP
+      if: steps.themed.outputs.exists == 'false' && steps.tag.outputs.created == 'true'
+      run: zip -r profile.zip . -x "*.git*"
+
+    # Upload release asset
+    - name: Upload release asset
+      if: steps.themed.outputs.exists == 'false' && steps.tag.outputs.created == 'true'
+      uses: softprops/action-gh-release@v1
+      with:
+        tag_name: ${{ steps.release.outputs.tag }}-dark
+        files: profile.zip
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    # Prepare FTP payload
+    - name: Prepare FTP payload
+      if: steps.themed.outputs.exists == 'false' && steps.tag.outputs.created == 'true'
+      run: |
+        mkdir -p .github/ftp-upload
+        cp profile.zip .github/ftp-upload/
+        cp Profile.xml .github/ftp-upload/
+
+    # Deploy via FTP
+    - name: FTP-Deploy-Action
+      if: steps.themed.outputs.exists == 'false' && steps.tag.outputs.created == 'true'
+      uses: SamKirkland/FTP-Deploy-Action@4.3.0
+      with:
+        server: ${{ secrets.FTP_HOSTNAME }}
+        protocol: ftps
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        port: ${{ secrets.FTP_PORT }}
+        server-dir: ${{ secrets.FTP_PATH }}
+        local-dir: .github/ftp-upload/
