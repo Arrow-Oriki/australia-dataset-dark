@@ -150,7 +150,7 @@ jobs:
         git config user.email "actions@github.com"
         git add --all
         git reset .github  # Exclude workflow files from commit
-        git commit -m "Apply dark theme for ${{ steps.release.outputs.tag }}" || echo "No changes
+        git commit -m "Apply dark theme for ${{ steps.release.outputs.tag }}" || echo "No changes"
 
     - name: Push working branch to remote
       if: steps.themed.outputs.exists == 'false'
