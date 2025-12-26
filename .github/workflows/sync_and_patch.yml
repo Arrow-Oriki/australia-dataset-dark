@@ -45,9 +45,11 @@ jobs:
        git config user.name "github-actions[bot]"
        git config user.email "github-actions[bot]@users.noreply.github.com"  
 
-    - name: Merge upstream
+    - name: Reset to upstream (preserve workflows)
       if: steps.themed.outputs.exists == 'false'
-      run: git merge "${{ steps.release.outputs.tag }}" --no-edit
+      run: |
+        git reset --hard "${{ steps.release.outputs.tag }}"
+        git checkout HEAD@{1} -- .github
 
     - name: Patch README
       if: steps.themed.outputs.exists == 'false'
