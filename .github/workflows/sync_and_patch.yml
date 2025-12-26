@@ -71,31 +71,14 @@ jobs:
        git config user.name "github-actions[bot]"
        git config user.email "github-actions[bot]@users.noreply.github.com"  
 
-    - name: Reset to upstream (preserve .github from remote)
-      if: steps.themed.outputs.exists == 'false'
+    - name: Create working branch
       run: |
-        git fetch origin
-        git fetch --tags
+        WORK_BRANCH="work-${{ steps.release.outputs.tag }}"
+        git checkout -B "$WORK_BRANCH" "${{ steps.release.outputs.tag }}"
 
-        git reset --hard "${{ steps.release.outputs.tag }}"
-
-    - name: Debug branches
+    - name: Inject tooling
       run: |
-        echo "Local branches:"
-        git branch
-        echo
-        echo "Remote branches:"
-        git branch -r
-
-    - name: Restore .github folder from local Dev branch
-      run: |
-        git show-ref --verify --quiet refs/heads/Dev || {
-          echo "Local Dev branch does not exist"
-          git branch
-          exit 1
-        }
-
-        git checkout Dev -- .github
+        git checkout master -- .github
 
     - name: Patch README
       if: steps.themed.outputs.exists == 'false'
@@ -140,7 +123,8 @@ jobs:
       run: |
         git config user.name "github-actions"
         git config user.email "actions@github.com"
-        git commit -am "Apply theme for ${{ steps.release.outputs.tag }}" || echo "No changes"
+        git add .
+        git commit -m "Apply dark theme for ${{ steps.release.outputs.tag }}"
 
     - name: Tag themed release
       if: steps.themed.outputs.exists == 'false'
@@ -155,7 +139,6 @@ jobs:
         fi
     
         git tag "$TAG"
-        git push origin master
         git push origin "refs/tags/$TAG"
     
         echo "created=true" >> $GITHUB_OUTPUT
