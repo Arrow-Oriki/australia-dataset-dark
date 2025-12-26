@@ -147,7 +147,7 @@ jobs:
     - name: Push working branch to remote
       if: steps.themed.outputs.exists == 'false'
       run: |
-            DARK_TAG="${{ steps.release.outputs.tag }}"
+            DARK_TAG="${{ steps.release.outputs.tag }}-dark"
             git push --set-upstream origin "$DARK_TAG"
     
     - name: Create GitHub release
@@ -156,7 +156,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: ${{ steps.release.outputs.tag }}-dark
+        tag_name: ${{ steps.release.outputs.tag }}-dark-tag
         release_name: "${{ steps.release.outputs.tag }} Dark Theme"
         body: |
           Dark theme variant of upstream vatSys Australia dataset.
