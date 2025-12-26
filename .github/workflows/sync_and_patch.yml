@@ -72,11 +72,13 @@ jobs:
        git config user.email "github-actions[bot]@users.noreply.github.com"  
 
     - name: Create working branch
+      if: steps.themed.outputs.exists == 'false'
       run: |
         WORK_BRANCH="${{ steps.release.outputs.tag }}-dark"
         git checkout -B "$WORK_BRANCH" "${{ steps.release.outputs.tag }}"
 
     - name: Inject .github tooling
+      if: steps.themed.outputs.exists == 'false'
       run: |
         git checkout origin/master -- .github
 
@@ -136,7 +138,7 @@ jobs:
         echo "created=true" >> $GITHUB_OUTPUT
 
     - name: Commit changes
-      if: steps.themed.outputs.exists == 'false'
+      if: steps.themed.outputs.exists == 'false' && steps.tag.outputs.created == 'true'
       run: |
         git config user.name "github-actions"
         git config user.email "actions@github.com"
@@ -145,7 +147,7 @@ jobs:
         git commit -m "Apply dark theme for ${{ steps.release.outputs.tag }}" || echo "No changes"
 
     - name: Push working branch to remote
-      if: steps.themed.outputs.exists == 'false'
+      if: steps.themed.outputs.exists == 'false' && steps.tag.outputs.created == 'true'
       run: |
             DARK_TAG="${{ steps.release.outputs.tag }}-dark"
             git push --set-upstream origin "$DARK_TAG"
