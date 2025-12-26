@@ -76,9 +76,11 @@ jobs:
         WORK_BRANCH="work-${{ steps.release.outputs.tag }}"
         git checkout -B "$WORK_BRANCH" "${{ steps.release.outputs.tag }}"
 
-    - name: Inject tooling
+    - name: Inject .github tooling
       run: |
-        git checkout master -- .github
+        DEFAULT_BRANCH="${{ github.event.repository.default_branch }}"
+        echo "Using default branch: $DEFAULT_BRANCH"
+        git checkout "$DEFAULT_BRANCH" -- .github
 
     - name: Patch README
       if: steps.themed.outputs.exists == 'false'
