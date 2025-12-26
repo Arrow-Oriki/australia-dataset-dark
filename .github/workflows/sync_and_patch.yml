@@ -45,11 +45,11 @@ jobs:
        git config user.name "github-actions[bot]"
        git config user.email "github-actions[bot]@users.noreply.github.com"  
 
-    - name: Reset to upstream (preserve workflows)
+    - name: Create working branch for theme
       if: steps.themed.outputs.exists == 'false'
       run: |
-        git reset --hard "${{ steps.release.outputs.tag }}"
-        git checkout HEAD@{1} -- .github
+        BRANCH="${{ steps.release.outputs.tag }}-dark-theme"
+        git checkout -b "$BRANCH" "${{ steps.release.outputs.tag }}"
 
 
     - name: Patch README
@@ -90,30 +90,44 @@ jobs:
       if: steps.themed.outputs.exists == 'false'
       run: python3 .github/scripts/patch_RWY_files.py
 
-    - name: Commit changes
+    - name: Commit dataset changes only
       if: steps.themed.outputs.exists == 'false'
       run: |
         git config user.name "github-actions"
         git config user.email "actions@github.com"
-        git commit -am "Apply theme for ${{ steps.release.outputs.tag }}" || echo "No changes"
+
+        # Stage all changes
+        git add --all
+
+        # Remove workflows/scripts from commit
+        git reset .github/workflows
+        git reset .github/scripts
+
+        # Commit remaining dataset changes
+        git commit -m "Apply dark theme for ${{ steps.release.outputs.tag }}" || echo "No changes"
+
 
     - name: Tag themed release
       if: steps.themed.outputs.exists == 'false'
       id: tag
       run: |
         TAG="${{ steps.release.outputs.tag }}-dark"
-    
+
         if git rev-parse "$TAG" >/dev/null 2>&1; then
           echo "Tag $TAG already exists"
           echo "created=false" >> $GITHUB_OUTPUT
           exit 0
         fi
-    
+
         git tag "$TAG"
-        git push --force-with-lease origin master
+
+        # Push branch and tag safely
+        git push --set-upstream origin "$BRANCH"
         git push origin "refs/tags/$TAG"
-    
+
         echo "created=true" >> $GITHUB_OUTPUT
+      env:
+        GIT_ASKPASS: /bin/echo
     
     - name: Create GitHub release
       if: steps.themed.outputs.exists == 'false' && steps.tag.outputs.created == 'true'
@@ -125,7 +139,7 @@ jobs:
         release_name: "${{ steps.release.outputs.tag }} Dark Theme"
         body: |
           Dark theme variant of upstream vatSys Australia dataset.
-    
+
           **Upstream release:** ${{ steps.release.outputs.tag }}
           **Theme:** Dark
         draft: false
