@@ -64,6 +64,17 @@ jobs:
         echo "::endgroup::"
 
         echo "exists=$EXISTS" >> $GITHUB_OUTPUT
+    
+    - name: Debug branches
+      run: |
+        echo "== Local branches =="
+        git branch
+
+        echo "== Remote branches =="
+        git branch -r
+
+        echo "== HEAD =="
+        git symbolic-ref -q HEAD || git rev-parse HEAD
 
     - name: Configure git identity
       if: steps.themed.outputs.exists == 'false'
