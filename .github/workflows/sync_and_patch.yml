@@ -29,16 +29,41 @@ jobs:
         echo "Latest upstream tag: $TAG"
         echo "tag=$TAG" >> $GITHUB_OUTPUT
 
-    - name: Check if themed release exists
+    - name: DEBUG – Check if themed release exists
       id: themed
       run: |
         DARK_TAG="${{ steps.release.outputs.tag }}-dark"
-    
+
+        echo "::group::Debug tag existence"
+        echo "Computed DARK_TAG: $DARK_TAG"
+        echo
+        echo "== Local tags =="
+        git tag -l || true
+        echo
+        echo "== Remote tags (origin) =="
+        git ls-remote --tags origin || true
+        echo
+        echo "== Local refs matching tag name =="
+        git show-ref | grep "$DARK_TAG" || echo "No matching refs"
+        echo
+        echo "== rev-parse check =="
         if git rev-parse "$DARK_TAG" >/dev/null 2>&1; then
-          echo "exists=true" >> $GITHUB_OUTPUT
+          echo "rev-parse: YES (something with this name exists)"
         else
-          echo "exists=false" >> $GITHUB_OUTPUT
+          echo "rev-parse: NO"
         fi
+        echo
+        echo "== show-ref tag verify =="
+        if git show-ref --tags --verify --quiet "refs/tags/$DARK_TAG"; then
+          echo "show-ref: TAG EXISTS"
+          EXISTS=true
+        else
+          echo "show-ref: tag does NOT exist"
+          EXISTS=false
+        fi
+        echo "::endgroup::"
+
+        echo "exists=$EXISTS" >> $GITHUB_OUTPUT
 
     - name: Configure git identity
       if: steps.themed.outputs.exists == 'false'
