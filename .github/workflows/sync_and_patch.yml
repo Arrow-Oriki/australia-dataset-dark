@@ -154,7 +154,9 @@ jobs:
 
     - name: Push working branch to remote
       if: steps.themed.outputs.exists == 'false'
-      run: git push --set-upstream origin "$BRANCH"
+      run: |
+            DARK_TAG="${{ steps.release.outputs.tag }}-dark"
+            git push --set-upstream origin "$DARK_TAG"
     
     - name: Create GitHub release
       if: steps.themed.outputs.exists == 'false' && steps.tag.outputs.created == 'true'
