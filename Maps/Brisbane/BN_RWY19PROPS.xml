@@ -1,16 +1,17 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Maps>
-  <Map Type="System" Name="BN_RWY19PROPS" Priority="1" Center="-27.384167+153.117500">
-    <!--YBBN-->
-    <Runway Name="01R/19L">
+
+  <Map Type="System" Name="BN_RWY19PROPS_Centreline" Priority="1" Center="-27.384167+153.117500" CustomColourName="Centreline">
+<Runway Name="01R/19L">
       <Threshold Name="01R" Position="-27.402797+153.118219" />
       <Threshold Name="19L" Position="-27.374664+153.134306" ExtendedCentrelineTrack="27.04" ExtendedCentrelineLength="18" ExtendedCentrelineTickInterval="2" />
     </Runway>
-    <Runway Name="01L/19R">
+<Runway Name="01L/19R">
       <Threshold Name="01L" Position="-27.383069+153.106803" />
       <Threshold Name="19R" Position="-27.356544+153.121969" ExtendedCentrelineTrack="27.05" ExtendedCentrelineLength="18" ExtendedCentrelineTickInterval="2" />
     </Runway>
-    <!--SIDs-->
+  </Map>
+  <Map Type="System" Name="BN_RWY19PROPS_SIDs" Priority="1" Center="-27.384167+153.117500" CustomColourName="SIDs">
     <Line>
       <!--Rwy19L GUMKI2-->
       -272410.070+1530705.590/
@@ -51,7 +52,8 @@
       IGMAS/
       WACKO
     </Line>
-    <!--STARs-->
+  </Map>
+  <Map Type="System" Name="BN_RWY19PROPS_STARs" Priority="1" Center="-27.384167+153.117500" CustomColourName="STARs">
     <Line>
       <!--Rwy19L BLAK7A-->
       BLAKA/
@@ -163,7 +165,24 @@
     <Line>
       <!--Rwy19R WODY2V-->
     </Line>
-    <Symbol Type="HollowTriangle">
+    <Line Name="(BN) RWY19PROPS" Width="1.7" Pattern="Dotted">
+      -272311.460+1534205.560/-272146.616+1532914.160/-273805.056+1532806.763/-274729.398+1533006.351
+    </Line>
+    <Line Name="(BN) RWY19PROPS_1" Width="1.7" Pattern="Dotted">
+      -271325.000+1524103.000/-271231.248+1525504.058/-272126.601+1530717.910/-272222.933+1530805.287
+    </Line>
+    <Line Name="(BN) RWY19PROPS_2" Width="1.7" Pattern="Dotted">
+      -272222.933+1530805.287/-272706.563+1531637.883/-273836.412+1531641.066/-275140.536+1531243.157
+    </Line>
+    <Line Name="(BN) RWY19PROPS_3" Width="1.7" Pattern="Dotted">
+      -265516.191+1532337.251/-274840.645+1525303.590
+    </Line>
+    <Line Pattern="Solid">
+      -272133.825+1530741.644/-271706.680+1531014.789/-271715.646+1531034.589/-271706.680+1531014.789/-270532.008+1531652.276/-270540.974+1531712.042/-272142.312+1530800.342/-272133.825+1530741.644
+    </Line>
+  </Map>
+  <Map Type="System" Name="BN_RWY19PROPS_Symbols" Priority="1" Center="-27.384167+153.117500" CustomColourName="Airways_Symbols">
+<Symbol Type="HollowTriangle">
       <Point>BETSO</Point>
       <Point>ATSEP</Point>
       <Point>OLVUN</Point>
@@ -172,12 +191,12 @@
       <Point>LUVNA</Point>
       <Point>PAMGO</Point>
     </Symbol>
-    <Symbol Type="SolidStar">
+<Symbol Type="SolidStar">
       <Point>BOSVU</Point>
       <Point>DAMDA</Point>
       <Point>TOGIN</Point>
     </Symbol>
-    <Symbol Type="HollowStar">
+<Symbol Type="HollowStar">
       <Point>DADAN</Point>
       <Point>DENIS</Point>
       <Point>LILEE</Point>
@@ -241,20 +260,23 @@
       <Point>ATVON</Point>
       <Point>TEGIL</Point>
     </Symbol>
-    <!--(BN) RWY19PROPS Airspace-->
-    <Line Name="(BN) RWY19PROPS" Width="1.7" Pattern="Dotted">
+  </Map>
+  <Map Type="System" Name="BN_RWY19PROPS_Airspace" Priority="1" Center="-27.384167+153.117500" CustomColourName="Airspace">
+<Line Name="(BN) RWY19PROPS" Width="1.7" Pattern="Dotted">
       -272311.460+1534205.560/-272146.616+1532914.160/-273805.056+1532806.763/-274729.398+1533006.351
     </Line>
-    <Line Name="(BN) RWY19PROPS_1" Width="1.7" Pattern="Dotted">
+<Line Name="(BN) RWY19PROPS_1" Width="1.7" Pattern="Dotted">
       -271325.000+1524103.000/-271231.248+1525504.058/-272126.601+1530717.910/-272222.933+1530805.287
     </Line>
-    <Line Name="(BN) RWY19PROPS_2" Width="1.7" Pattern="Dotted">
+<Line Name="(BN) RWY19PROPS_2" Width="1.7" Pattern="Dotted">
       -272222.933+1530805.287/-272706.563+1531637.883/-273836.412+1531641.066/-275140.536+1531243.157
     </Line>
-    <Line Name="(BN) RWY19PROPS_3" Width="1.7" Pattern="Dotted">
+<Line Name="(BN) RWY19PROPS_3" Width="1.7" Pattern="Dotted">
       -265516.191+1532337.251/-274840.645+1525303.590
     </Line>
-    <Label HasLeader="false" Alignment="Center" VerticalAlignment="Middle">
+  </Map>
+  <Map Type="System" Name="BN_RWY19PROPS_Names" Priority="2" Center="-27.384167+153.117500" CustomColourName="Names">
+<Label HasLeader="false" Alignment="Center" VerticalAlignment="Middle">
       <!--(BN) RWY19PROPS Labels-->
       <Point Name="BDN">-27.581602+152.905597</Point>
       <Point Name="BDN/BAN">-26.959428+153.246671</Point>
@@ -262,14 +284,7 @@
       <Point Name="BDS">-27.715979+153.092582</Point>
       <Point Name="BDS/BAS">-27.181279+153.564636</Point>
     </Label>
-  </Map>
-  <Map Type="REST_NTZ_DAIW" Name="BN_RWY19PROPS-NTZ" Priority="0">
-    <Line Pattern="Solid">
-      -272133.825+1530741.644/-271706.680+1531014.789/-271715.646+1531034.589/-271706.680+1531014.789/-270532.008+1531652.276/-270540.974+1531712.042/-272142.312+1530800.342/-272133.825+1530741.644
-    </Line>
-  </Map>
-  <Map Type="System" Name="BN_RWY19PROPS_NAMES" Priority="2" Center="-27.384167+153.117500">
-    <Label>
+<Label>
       <Point>BOSVU</Point>
       <Point>DADAN</Point>
       <Point>DENIS</Point>

@@ -1,22 +1,22 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Maps>
-  <Map Type="System" Name="ES_RWY04" Priority="1" Center="-38.098889+147.149444">
-    <!--YMES-->
-    <Runway Name="04/22">
+
+  <Map Type="System" Name="ES_RWY04_Centreline" Priority="1" Center="-38.098889+147.149444" CustomColourName="Centreline">
+<Runway Name="04/22">
       <Threshold Name="04" Position="-38.106050+147.138561" ExtendedCentrelineTrack="233.86" ExtendedCentrelineLength="10" ExtendedCentrelineTickInterval="5" />
       <Threshold Name="22" Position="-38.093103+147.161006" />
     </Runway>
-    <!--SIDs-->
+  </Map>
+  <Map Type="System" Name="ES_RWY04_SIDs" Priority="1" Center="-38.098889+147.149444" CustomColourName="SIDs">
     <Line>
       <!--Rwy04 ESL5-->
       -380535.170+1470939.620/
       -380535.171+1470939.622/
       -380407.788+1471212.379
     </Line>
-    <!--STARs-->
   </Map>
-  <Map Type="System" Name="ES_RWY04_NAMES" Priority="2" Center="-38.098889+147.149444">
-    <Label>
+  <Map Type="System" Name="ES_RWY04_Names" Priority="2" Center="-38.098889+147.149444" CustomColourName="Names">
+<Label>
       <Point>DUNNE</Point>
       <Point>MOSVO</Point>
       <Point>ANTLA</Point>
