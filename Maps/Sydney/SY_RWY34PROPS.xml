@@ -1,16 +1,17 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Maps>
-  <Map Type="System" Name="SY_RWY34PROPS" Priority="1" Center="-33.946111+151.177222">
-    <!--YSSY-->
-    <Runway Name="16R/34L">
+
+  <Map Type="System" Name="SY_RWY34PROPS_Centreline" Priority="1" Center="-33.946111+151.177222" CustomColourName="Centreline">
+<Runway Name="16R/34L">
       <Threshold Name="16R" Position="-33.930097+151.171783" />
       <Threshold Name="34L" Position="-33.964264+151.180647" ExtendedCentrelineTrack="167.8" ExtendedCentrelineLength="20" ExtendedCentrelineTickInterval="2" />
     </Runway>
-    <Runway Name="16L/34R">
+<Runway Name="16L/34R">
       <Threshold Name="16L" Position="-33.951636+151.188847" />
       <Threshold Name="34R" Position="-33.970756+151.193811" ExtendedCentrelineTrack="167.79" ExtendedCentrelineLength="20" ExtendedCentrelineTickInterval="2" />
     </Runway>
-    <!--SIDs-->
+  </Map>
+  <Map Type="System" Name="SY_RWY34PROPS_SIDs" Priority="1" Center="-33.946111+151.177222" CustomColourName="SIDs">
     <Line>
       <!--Rwy34L KADOM1-->
       -335548.350+1511018.420/
@@ -79,7 +80,8 @@
       -334821.747+1512248.587/
       OLSEM
     </Line>
-    <!--STARs-->
+  </Map>
+  <Map Type="System" Name="SY_RWY34PROPS_STARs" Priority="1" Center="-33.946111+151.177222" CustomColourName="STARs">
     <Line>
       <!--Rwy34L BORE4A-->
       BOREE/
@@ -153,20 +155,43 @@
     <Line>
       <!--Rwy34R RIVET4-->
     </Line>
-    <Symbol Type="HollowTriangle">
+    <Line Name="(SY) RWY34PROPS" Width="1.7" Pattern="Dotted">
+      -340540.000+1501753.000/-335709.000+1510102.000/-334932.000+1510518.000/-334548.000+1510443.000/-333309.000+1510031.000/-331422.000+1505212.000
+    </Line>
+    <Line Name="(SY) RWY34PROPS_1" Width="1.7" Pattern="Dotted">
+      -331210.000+1511816.000/-334251.000+1511329.000/-334818.000+1512116.000/-335615.000+1512409.000/-335959.000+1520455.000
+    </Line>
+    <Line Name="(SY) RWY34PROPS_2" Width="1.7" Pattern="Dotted">
+      -340351.000+1505947.000/-342008.000+1502443.000
+    </Line>
+    <Line Name="(SY) RWY34PROPS_3" Width="1.7" Pattern="Dotted">
+      -343731.000+1513340.000/-340008.000+1512444.000/-335835.000+1511111.000/-340351.000+1505947.000/-341116.000+1510303.000/-344137.000+1511018.000
+    </Line>
+    <Line Name="(SY) RWY34PROPS_4" Width="1.7" Pattern="Dotted">
+      -340401.000+1520420.000/-340008.000+1512444.000
+    </Line>
+    <Line Name="(SY) RWY34PROPS_5" Width="1.7" Pattern="Dotted">
+      -335023.000+1510449.000/-333549.000+1504635.000/-332404.600+1503259.600
+    </Line>
+    <Line Name="(SY) RWY34PROPS_6" Width="1.7" Pattern="Dotted">
+      -335705.890+1511119.850/-335626.198+1511109.739/-335550.887+1511115.168/-335509.429+1511205.503/-335539.620+1511319.050/-335609.470+1511357.312/-335628.753+1511449.753/-335557.943+1512702.979/-335554.000+1512854.000/-335423.300+1520419.000
+    </Line>
+  </Map>
+  <Map Type="System" Name="SY_RWY34PROPS_Symbols" Priority="1" Center="-33.946111+151.177222" CustomColourName="Airways_Symbols">
+<Symbol Type="HollowTriangle">
       <Point>SOSIJ</Point>
       <Point>ENDEV</Point>
     </Symbol>
-    <Symbol Type="SolidStar">
+<Symbol Type="SolidStar">
       <Point>MARUB</Point>
       <Point>NASHO</Point>
       <Point>JAKLN</Point>
     </Symbol>
-    <Symbol Type="Circle">
+<Symbol Type="Circle">
       <Point>RIC NDB</Point>
       <Point>WOL NDB</Point>
     </Symbol>
-    <Symbol Type="HollowStar">
+<Symbol Type="HollowStar">
       <Point>KADOM</Point>
       <Point>ANKUB</Point>
       <Point>HALAS</Point>
@@ -199,29 +224,32 @@
       <Point>DIPPA</Point>
       <Point>MANFA</Point>
     </Symbol>
-    <!--(SY) RWY34PROPS Airspace-->
-    <Line Name="(SY) RWY34PROPS" Width="1.7" Pattern="Dotted">
+  </Map>
+  <Map Type="System" Name="SY_RWY34PROPS_Airspace" Priority="1" Center="-33.946111+151.177222" CustomColourName="Airspace">
+<Line Name="(SY) RWY34PROPS" Width="1.7" Pattern="Dotted">
       -340540.000+1501753.000/-335709.000+1510102.000/-334932.000+1510518.000/-334548.000+1510443.000/-333309.000+1510031.000/-331422.000+1505212.000
     </Line>
-    <Line Name="(SY) RWY34PROPS_1" Width="1.7" Pattern="Dotted">
+<Line Name="(SY) RWY34PROPS_1" Width="1.7" Pattern="Dotted">
       -331210.000+1511816.000/-334251.000+1511329.000/-334818.000+1512116.000/-335615.000+1512409.000/-335959.000+1520455.000
     </Line>
-    <Line Name="(SY) RWY34PROPS_2" Width="1.7" Pattern="Dotted">
+<Line Name="(SY) RWY34PROPS_2" Width="1.7" Pattern="Dotted">
       -340351.000+1505947.000/-342008.000+1502443.000
     </Line>
-    <Line Name="(SY) RWY34PROPS_3" Width="1.7" Pattern="Dotted">
+<Line Name="(SY) RWY34PROPS_3" Width="1.7" Pattern="Dotted">
       -343731.000+1513340.000/-340008.000+1512444.000/-335835.000+1511111.000/-340351.000+1505947.000/-341116.000+1510303.000/-344137.000+1511018.000
     </Line>
-    <Line Name="(SY) RWY34PROPS_4" Width="1.7" Pattern="Dotted">
+<Line Name="(SY) RWY34PROPS_4" Width="1.7" Pattern="Dotted">
       -340401.000+1520420.000/-340008.000+1512444.000
     </Line>
-    <Line Name="(SY) RWY34PROPS_5" Width="1.7" Pattern="Dotted">
+<Line Name="(SY) RWY34PROPS_5" Width="1.7" Pattern="Dotted">
       -335023.000+1510449.000/-333549.000+1504635.000/-332404.600+1503259.600
     </Line>
-    <Line Name="(SY) RWY34PROPS_6" Width="1.7" Pattern="Dotted">
+<Line Name="(SY) RWY34PROPS_6" Width="1.7" Pattern="Dotted">
       -335705.890+1511119.850/-335626.198+1511109.739/-335550.887+1511115.168/-335509.429+1511205.503/-335539.620+1511319.050/-335609.470+1511357.312/-335628.753+1511449.753/-335557.943+1512702.979/-335554.000+1512854.000/-335423.300+1520419.000
     </Line>
-    <Label HasLeader="false" Alignment="Center" VerticalAlignment="Middle">
+  </Map>
+  <Map Type="System" Name="SY_RWY34PROPS_Names" Priority="2" Center="-33.946111+151.177222" CustomColourName="Names">
+<Label HasLeader="false" Alignment="Center" VerticalAlignment="Middle">
       <!--(SY) RWY34PROPS Labels-->
       <Point Name="SDN">-33.435000+150.675833</Point>
       <Point Name="SAN">-33.292778+151.131944</Point>
@@ -239,9 +267,7 @@
       <Point Name="SFE">-34.226389+151.338333</Point>
       <Point Name="SAS/SDS">-34.521111+151.334722</Point>
     </Label>
-  </Map>
-  <Map Type="System" Name="SY_RWY34PROPS_NAMES" Priority="2" Center="-33.946111+151.177222">
-    <Label>
+<Label>
       <Point>KADOM</Point>
       <Point>RIC NDB</Point>
       <Point>ANKUB</Point>
