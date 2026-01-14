@@ -1,16 +1,17 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Maps>
-  <Map Type="System" Name="BN_RWYSODPROPS" Priority="1" Center="-27.384167+153.117500">
-    <!--YBBN-->
-    <Runway Name="01R/19L">
+
+  <Map Type="System" Name="BN_RWYSODPROPS_Centreline" Priority="1" Center="-27.384167+153.117500" CustomColourName="Centreline">
+<Runway Name="01R/19L">
       <Threshold Name="01R" Position="-27.402797+153.118219" />
       <Threshold Name="19L" Position="-27.374664+153.134306" />
     </Runway>
-    <Runway Name="01L/19R">
+<Runway Name="01L/19R">
       <Threshold Name="01L" Position="-27.383069+153.106803" />
       <Threshold Name="19R" Position="-27.356544+153.121969" ExtendedCentrelineTrack="27.05" ExtendedCentrelineLength="18" ExtendedCentrelineTickInterval="2" />
     </Runway>
-    <!--SIDs-->
+  </Map>
+  <Map Type="System" Name="BN_RWYSODPROPS_SIDs" Priority="1" Center="-27.384167+153.117500" CustomColourName="SIDs">
     <Line>
       <!--Rwy01R BIXAD2-->
       -272228.790+1530803.500/
@@ -51,7 +52,8 @@
       LAWNN/
       WACKO
     </Line>
-    <!--STARs-->
+  </Map>
+  <Map Type="System" Name="BN_RWYSODPROPS_STARs" Priority="1" Center="-27.384167+153.117500" CustomColourName="STARs">
     <Line>
       <!--Rwy19R ISPON2.BLAKA-->
       BLAKA/
@@ -143,13 +145,15 @@
     <Line>
       <!--Rwy19R WODY2V-->
     </Line>
-    <Symbol Type="HollowTriangle">
+  </Map>
+  <Map Type="System" Name="BN_RWYSODPROPS_Symbols" Priority="1" Center="-27.384167+153.117500" CustomColourName="Airways_Symbols">
+<Symbol Type="HollowTriangle">
       <Point>OSOKO</Point>
       <Point>TOLAX</Point>
       <Point>LUVNA</Point>
       <Point>PAMGO</Point>
     </Symbol>
-    <Symbol Type="HollowStar">
+<Symbol Type="HollowStar">
       <Point>BEERN</Point>
       <Point>OLMAL</Point>
       <Point>KAKEB</Point>
@@ -212,8 +216,8 @@
       <Point>TEGIL</Point>
     </Symbol>
   </Map>
-  <Map Type="System" Name="BN_RWYSODPROPS_NAMES" Priority="2" Center="-27.384167+153.117500">
-    <Label>
+  <Map Type="System" Name="BN_RWYSODPROPS_Names" Priority="2" Center="-27.384167+153.117500" CustomColourName="Names">
+<Label>
       <Point>BEERN</Point>
       <Point>OLMAL</Point>
       <Point>KAKEB</Point>

@@ -1,16 +1,17 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Maps>
-  <Map Type="System" Name="NW_RWY03A08D" Priority="1" Center="-34.948889+150.536944">
-    <!--YSNW-->
-    <Runway Name="03/21">
+
+  <Map Type="System" Name="NW_RWY03A08D_Centreline" Priority="1" Center="-34.948889+150.536944" CustomColourName="Centreline">
+<Runway Name="03/21">
       <Threshold Name="03" Position="-34.948839+150.536464" ExtendedCentrelineTrack="224.38" ExtendedCentrelineLength="10" ExtendedCentrelineTickInterval="5" />
       <Threshold Name="21" Position="-34.935658+150.552131" />
     </Runway>
-    <Runway Name="08/26">
+<Runway Name="08/26">
       <Threshold Name="08" Position="-34.947867+150.526597" />
       <Threshold Name="26" Position="-34.949247+150.548464" />
     </Runway>
-    <!--SIDs-->
+  </Map>
+  <Map Type="System" Name="NW_RWY03A08D_SIDs" Priority="1" Center="-34.948889+150.536944" CustomColourName="SIDs">
     <Line>
       <!--Rwy08 ABASS5-->
       -345657.290+1503254.470/
@@ -78,22 +79,23 @@
       -345306.000+1503449.000/
       WOL NDB
     </Line>
-    <!--STARs-->
-    <Symbol Type="Circle">
+  </Map>
+  <Map Type="System" Name="NW_RWY03A08D_Symbols" Priority="1" Center="-34.948889+150.536944" CustomColourName="Airways_Symbols">
+<Symbol Type="Circle">
       <Point>CB NDB</Point>
       <Point>COM NDB</Point>
       <Point>GLB NDB</Point>
       <Point>WOL NDB</Point>
     </Symbol>
-    <Symbol Type="HollowStar">
+<Symbol Type="HollowStar">
       <Point>ABASS</Point>
       <Point>AKMIR</Point>
       <Point>TONTO</Point>
       <Point>URBOB</Point>
     </Symbol>
   </Map>
-  <Map Type="System" Name="NW_RWY03A08D_NAMES" Priority="2" Center="-34.948889+150.536944">
-    <Label>
+  <Map Type="System" Name="NW_RWY03A08D_Names" Priority="2" Center="-34.948889+150.536944" CustomColourName="Names">
+<Label>
       <Point>ABASS</Point>
       <Point>AKMIR</Point>
       <Point>CB NDB</Point>
