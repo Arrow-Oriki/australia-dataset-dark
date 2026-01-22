@@ -1,16 +1,17 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Maps>
-  <Map Type="System" Name="SY_RWYSODPROPS" Priority="1" Center="-33.946111+151.177222">
-    <!--YSSY-->
-    <Runway Name="16L/34R">
+
+  <Map Type="System" Name="SY_RWYSODPROPS_Centreline" Priority="1" Center="-33.946111+151.177222" CustomColourName="Centreline">
+<Runway Name="16L/34R">
       <Threshold Name="16L" Position="-33.951636+151.188847" />
       <Threshold Name="34R" Position="-33.970756+151.193811" />
     </Runway>
-    <Runway Name="16R/34L">
+<Runway Name="16R/34L">
       <Threshold Name="16R" Position="-33.930097+151.171783" />
       <Threshold Name="34L" Position="-33.964264+151.180647" ExtendedCentrelineTrack="167.8" ExtendedCentrelineLength="20" ExtendedCentrelineTickInterval="2" />
     </Runway>
-    <!--SIDs-->
+  </Map>
+  <Map Type="System" Name="SY_RWYSODPROPS_SIDs" Priority="1" Center="-33.946111+151.177222" CustomColourName="SIDs">
     <Line>
       <!--Rwy16L ABBEY3-->
       -335814.720+1511137.720/
@@ -59,7 +60,8 @@
       KEVIN/
       OPTIC
     </Line>
-    <!--STARs-->
+  </Map>
+  <Map Type="System" Name="SY_RWYSODPROPS_STARs" Priority="1" Center="-33.946111+151.177222" CustomColourName="STARs">
     <Line>
       <!--Rwy34L BORE4A-->
       BOREE/
@@ -108,10 +110,30 @@
       BOOGI/
       DUDOK
     </Line>
-    <Symbol Type="HollowTriangle">
+    <Line Name="(SY) RWYSODPROPS_SDN" Width="1.7" Pattern="Dotted">
+      -340035.569+1520454.840/-335508.526+1511258.527/-333606.700+1511413.996/-331220.086+1511918.831
+    </Line>
+    <Line Name="(SY) RWYSODPROPS_SDS" Width="1.7" Pattern="Dotted">
+      -340349.005+1520404.317/-335905.719+1512158.491/-340514.672+1511517.967/-344023.287+1512420.515
+    </Line>
+    <Line Name="(SY) RWYSODPROPS_SDS_1" Width="1.7" Pattern="Dotted">
+      -342019.851+1502447.097/-340742.251+1505031.823/-341044.425+1510416.632/-344151.328+1511215.758
+    </Line>
+    <Line Name="(SY) RWYSODPROPS_SDS_2" Width="1.7" Pattern="Dotted">
+      -335814.720+1511137.720/-335923.315+1511200.420/-340028.500+1511443.600/-340811.500+1512216.800/-343133.000+1514508.000
+    </Line>
+    <Line Name="(SY) RWYSODPROPS_SDN_1" Width="1.7" Pattern="Dotted">
+      -340032.309+1501701.746/-335734.023+1505832.552/-334451.160+1510558.515/-333928.243+1510145.524/-333734.988+1510216.445/-333509.370+1510217.555/-333231.476+1510147.927/-331429.467+1505205.877
+    </Line>
+    <Line Name="(SY) RWYSODPROPS_SDN_2" Width="1.7" Pattern="Dotted">
+      -335548.350+1511018.420/-335558.387+1511021.732/-335456.281+1511003.593/-335407.926+1510931.588/-334738.730+1510122.814/-333549.000+1504635.000/-332404.600+1503259.600
+    </Line>
+  </Map>
+  <Map Type="System" Name="SY_RWYSODPROPS_Symbols" Priority="1" Center="-33.946111+151.177222" CustomColourName="Airways_Symbols">
+<Symbol Type="HollowTriangle">
       <Point>SOSIJ</Point>
     </Symbol>
-    <Symbol Type="SolidStar">
+<Symbol Type="SolidStar">
       <Point>KEVIN</Point>
       <Point>DIPSO</Point>
       <Point>EVONN</Point>
@@ -120,10 +142,10 @@
       <Point>OPTIC</Point>
       <Point>NASHO</Point>
     </Symbol>
-    <Symbol Type="Circle">
+<Symbol Type="Circle">
       <Point>WOL NDB</Point>
     </Symbol>
-    <Symbol Type="HollowStar">
+<Symbol Type="HollowStar">
       <Point>JULIA</Point>
       <Point>ABBEY</Point>
       <Point>IDBIM</Point>
@@ -156,26 +178,29 @@
       <Point>TAMMI</Point>
       <Point>BOOGI</Point>
     </Symbol>
-    <!--(SY) RWYSODPROPS Airspace-->
-    <Line Name="(SY) RWYSODPROPS_SDN" Width="1.7" Pattern="Dotted">
+  </Map>
+  <Map Type="System" Name="SY_RWYSODPROPS_Airspace" Priority="1" Center="-33.946111+151.177222" CustomColourName="Airspace">
+<Line Name="(SY) RWYSODPROPS_SDN" Width="1.7" Pattern="Dotted">
       -340035.569+1520454.840/-335508.526+1511258.527/-333606.700+1511413.996/-331220.086+1511918.831
     </Line>
-    <Line Name="(SY) RWYSODPROPS_SDS" Width="1.7" Pattern="Dotted">
+<Line Name="(SY) RWYSODPROPS_SDS" Width="1.7" Pattern="Dotted">
       -340349.005+1520404.317/-335905.719+1512158.491/-340514.672+1511517.967/-344023.287+1512420.515
     </Line>
-    <Line Name="(SY) RWYSODPROPS_SDS_1" Width="1.7" Pattern="Dotted">
+<Line Name="(SY) RWYSODPROPS_SDS_1" Width="1.7" Pattern="Dotted">
       -342019.851+1502447.097/-340742.251+1505031.823/-341044.425+1510416.632/-344151.328+1511215.758
     </Line>
-    <Line Name="(SY) RWYSODPROPS_SDS_2" Width="1.7" Pattern="Dotted">
+<Line Name="(SY) RWYSODPROPS_SDS_2" Width="1.7" Pattern="Dotted">
       -335814.720+1511137.720/-335923.315+1511200.420/-340028.500+1511443.600/-340811.500+1512216.800/-343133.000+1514508.000
     </Line>
-    <Line Name="(SY) RWYSODPROPS_SDN_1" Width="1.7" Pattern="Dotted">
+<Line Name="(SY) RWYSODPROPS_SDN_1" Width="1.7" Pattern="Dotted">
       -340032.309+1501701.746/-335734.023+1505832.552/-334451.160+1510558.515/-333928.243+1510145.524/-333734.988+1510216.445/-333509.370+1510217.555/-333231.476+1510147.927/-331429.467+1505205.877
     </Line>
-    <Line Name="(SY) RWYSODPROPS_SDN_2" Width="1.7" Pattern="Dotted">
+<Line Name="(SY) RWYSODPROPS_SDN_2" Width="1.7" Pattern="Dotted">
       -335548.350+1511018.420/-335558.387+1511021.732/-335456.281+1511003.593/-335407.926+1510931.588/-334738.730+1510122.814/-333549.000+1504635.000/-332404.600+1503259.600
     </Line>
-    <Label HasLeader="false" Alignment="Center" VerticalAlignment="Middle">
+  </Map>
+  <Map Type="System" Name="SY_RWYSODPROPS_Names" Priority="2" Center="-33.946111+151.177222" CustomColourName="Names">
+<Label HasLeader="false" Alignment="Center" VerticalAlignment="Middle">
       <!--(SY) RWYSODPROPS Labels-->
       <Point Name="SDN">-33.435000+150.675833</Point>
       <Point Name="SAN">-33.292778+151.131944</Point>
@@ -191,9 +216,7 @@
       <Point Name="SAS/SDS">-34.100000+150.729444</Point>
       <Point Name="SDS/SAS/SFW">-34.235000+151.176944</Point>
     </Label>
-  </Map>
-  <Map Type="System" Name="SY_RWYSODPROPS_NAMES" Priority="2" Center="-33.946111+151.177222">
-    <Label>
+<Label>
       <Point>KEVIN</Point>
       <Point>JULIA</Point>
       <Point>ABBEY</Point>

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Maps>
-  <Map Type="System" Name="ALL_ROUTES_HIGH" Priority="1" Center="-23.700+133.870">
+  <Map Type="System" Name="ALL_ROUTES_HIGH" Priority="1" Center="-23.700+133.870" CustomColourName="ALL_ROUTES_HIGH_COLOUR">
     <Line Name="A216_0">CS VOR.A216.HOOVR</Line>
     <Line Name="A339_0">VALRA.A339.ELBIS</Line>
     <Line Name="A346_0">OVRON.A346.SALAG</Line>
@@ -1516,7 +1516,7 @@
       <Point>IDODA</Point>
     </Symbol>
   </Map>
-  <Map Type="System" Name="ALL_ROUTES_LOW" Priority="1" Center="-23.700+133.870">
+  <Map Type="System" Name="ALL_ROUTES_LOW" Priority="1" Center="-23.700+133.870" CustomColourName="ALL_ROUTES_LOW_COLOUR">
     <Line Name="A216_0">KIBAV.A216.HOOVR</Line>
     <Line Name="A346_0">VEMLA.A346.SALAG</Line>
     <Line Name="A461_0">DN VOR.A461.LEC NDB</Line>
@@ -3314,7 +3314,7 @@
       <Point>IDODA</Point>
     </Symbol>
   </Map>
-  <Map Type="System" Name="ALL_POINTS_LOW" Priority="1" Center="-23.700+133.870">
+  <Map Type="System" Name="ALL_POINTS_LOW" Priority="1" Center="-23.700+133.870" CustomColourName="ALL_POINTS_LOW_COLOUR">
     <Label>
       <Point>AREPA</Point>
       <Point>FRAZA</Point>
@@ -4510,7 +4510,7 @@
       <Point>IDODA</Point>
     </Label>
   </Map>
-  <Map Type="System" Name="ALL_POINTS_HIGH" Priority="1" Center="-23.700+133.870">
+  <Map Type="System" Name="ALL_POINTS_HIGH" Priority="1" Center="-23.700+133.870" CustomColourName="ALL_POINTS_HIGH_COLOUR">
     <Label>
       <Point>LOCKA</Point>
       <Point>ZAARS</Point>

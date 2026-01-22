@@ -1,12 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Maps>
-  <Map Type="System" Name="AS_RWY12" Priority="1" Center="-23.806667+133.902222">
-    <!--YBAS-->
-    <Runway Name="12/30">
+
+  <Map Type="System" Name="AS_RWY12_Centreline" Priority="1" Center="-23.806667+133.902222" CustomColourName="Centreline">
+<Runway Name="12/30">
       <Threshold Name="12" Position="-23.801031+133.893361" ExtendedCentrelineTrack="300.25" ExtendedCentrelineLength="15" ExtendedCentrelineTickInterval="1" />
       <Threshold Name="30" Position="-23.812119+133.914028" />
     </Runway>
-    <!--SIDs-->
+  </Map>
+  <Map Type="System" Name="AS_RWY12_SIDs" Priority="1" Center="-23.806667+133.902222" CustomColourName="SIDs">
     <Line>
       <!--Rwy12 DESET4-->
       -234843.630+1335450.500/
@@ -201,14 +202,15 @@
       BODAS/
       TUMSO
     </Line>
-    <!--STARs-->
-    <Symbol Type="SolidStar">
+  </Map>
+  <Map Type="System" Name="AS_RWY12_Symbols" Priority="1" Center="-23.806667+133.902222" CustomColourName="Airways_Symbols">
+<Symbol Type="SolidStar">
       <Point>PUNED</Point>
     </Symbol>
-    <Symbol Type="Circle">
+<Symbol Type="Circle">
       <Point>TNK VOR</Point>
     </Symbol>
-    <Symbol Type="HollowStar">
+<Symbol Type="HollowStar">
       <Point>DESET</Point>
       <Point>DIGLA</Point>
       <Point>ELLOW</Point>
@@ -246,8 +248,8 @@
       <Point>TUMSO</Point>
     </Symbol>
   </Map>
-  <Map Type="System" Name="AS_RWY12_NAMES" Priority="2" Center="-23.806667+133.902222">
-    <Label>
+  <Map Type="System" Name="AS_RWY12_Names" Priority="2" Center="-23.806667+133.902222" CustomColourName="Names">
+<Label>
       <Point>DESET</Point>
       <Point>DIGLA</Point>
       <Point>ELLOW</Point>
