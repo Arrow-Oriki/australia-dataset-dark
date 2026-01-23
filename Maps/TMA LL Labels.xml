@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Maps>
-  <Map Type="System" Name="TMA_LL_LABELS" Priority="2" Center="-2380.8+13390.1">
+  <Map Type="System" Name="TMA_LL_LABELS" Priority="2" Center="-2380.8+13390.1" CustomColourName="TMA_LL_Colour">
     <Label HasLeader="False" Alignment="Center" VerticalAlignment="Middle">
       <Point Name="C045">-2404.4612+13350.8565</Point>
       <Point Name="C045">-2359.6391+13351.2018</Point>

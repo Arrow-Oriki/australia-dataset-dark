@@ -1,16 +1,17 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Maps>
-  <Map Type="System" Name="ML_RWY16A27D" Priority="1" Center="-37.673333+144.843333">
-    <!--YMML-->
-    <Runway Name="16/34">
+
+  <Map Type="System" Name="ML_RWY16A27D_Centreline" Priority="1" Center="-37.673333+144.843333" CustomColourName="Centreline">
+<Runway Name="16/34">
       <Threshold Name="16" Position="-37.653181+144.834914" ExtendedCentrelineTrack="351.56" ExtendedCentrelineLength="11" ExtendedCentrelineTickInterval="1" />
       <Threshold Name="34" Position="-37.685778+144.841000" />
     </Runway>
-    <Runway Name="09/27">
+<Runway Name="09/27">
       <Threshold Name="09" Position="-37.660750+144.822253" />
       <Threshold Name="27" Position="-37.662256+144.848092" />
     </Runway>
-    <!--SIDs-->
+  </Map>
+  <Map Type="System" Name="ML_RWY16A27D_SIDs" Priority="1" Center="-37.673333+144.843333" CustomColourName="SIDs">
     <Line>
       <!--Rwy16 ISPEG1-->
       -374108.800+1445027.600/
@@ -69,7 +70,8 @@
       DARLY/
       SUNTI
     </Line>
-    <!--STARs-->
+  </Map>
+  <Map Type="System" Name="ML_RWY16A27D_STARs" Priority="1" Center="-37.673333+144.843333" CustomColourName="STARs">
     <Line>
       <!--Rwy16 ALAX1A-->
       ALAXO/
@@ -125,18 +127,32 @@
       VENPU/
       LUVKA
     </Line>
-    <Symbol Type="HollowTriangle">
+    <Line Name="(ML) RWY16A27D_MDS" Width="1.7" Pattern="Dotted">
+      -380114.000+1451640.000/-375200.000+1451014.000/-374332.000+1450443.000/-374352.146+1445404.608/-373941.000+1445011.000/-373718.000+1441245.000
+    </Line>
+    <Line Name="(ML) RWY16A27D_MDN-MAE_1" Width="1.7" Pattern="Dotted">
+      -374332.000+1450443.000/-374017.000+1450242.000/-373730.000+1450107.000/-373313.000+1445822.000/-372306.000+1450556.000/-372032.000+1451943.000
+    </Line>
+    <Line Name="(ML) RWY16A27D_MDN-MAE_3" Width="1.7" Pattern="Dotted">
+      -371028.000+1445944.000/-372445.500+1444722.100/-373941.000+1445011.000
+    </Line>
+    <Line Name="(ML) RWY16A27D_MDS_2" Width="1.7" Pattern="Dotted">
+      -373941.000+1445011.000/-374024.000+1450455.000
+    </Line>
+  </Map>
+  <Map Type="System" Name="ML_RWY16A27D_Symbols" Priority="1" Center="-37.673333+144.843333" CustomColourName="Airways_Symbols">
+<Symbol Type="HollowTriangle">
       <Point>BELTA</Point>
       <Point>EMSEK</Point>
       <Point>LUVKA</Point>
     </Symbol>
-    <Symbol Type="SolidStar">
+<Symbol Type="SolidStar">
       <Point>HORSH</Point>
     </Symbol>
-    <Symbol Type="Circle">
+<Symbol Type="Circle">
       <Point>MNG VOR</Point>
     </Symbol>
-    <Symbol Type="HollowStar">
+<Symbol Type="HollowStar">
       <Point>ISPEG</Point>
       <Point>LILPU</Point>
       <Point>DARLY</Point>
@@ -179,20 +195,23 @@
       <Point>DUGOT</Point>
       <Point>VENPU</Point>
     </Symbol>
-    <!--(ML) RWY16A27D Airspace-->
-    <Line Name="(ML) RWY16A27D_MDS" Width="1.7" Pattern="Dotted">
+  </Map>
+  <Map Type="System" Name="ML_RWY16A27D_Airspace" Priority="1" Center="-37.673333+144.843333" CustomColourName="Airspace">
+<Line Name="(ML) RWY16A27D_MDS" Width="1.7" Pattern="Dotted">
       -380114.000+1451640.000/-375200.000+1451014.000/-374332.000+1450443.000/-374352.146+1445404.608/-373941.000+1445011.000/-373718.000+1441245.000
     </Line>
-    <Line Name="(ML) RWY16A27D_MDN-MAE_1" Width="1.7" Pattern="Dotted">
+<Line Name="(ML) RWY16A27D_MDN-MAE_1" Width="1.7" Pattern="Dotted">
       -374332.000+1450443.000/-374017.000+1450242.000/-373730.000+1450107.000/-373313.000+1445822.000/-372306.000+1450556.000/-372032.000+1451943.000
     </Line>
-    <Line Name="(ML) RWY16A27D_MDN-MAE_3" Width="1.7" Pattern="Dotted">
+<Line Name="(ML) RWY16A27D_MDN-MAE_3" Width="1.7" Pattern="Dotted">
       -371028.000+1445944.000/-372445.500+1444722.100/-373941.000+1445011.000
     </Line>
-    <Line Name="(ML) RWY16A27D_MDS_2" Width="1.7" Pattern="Dotted">
+<Line Name="(ML) RWY16A27D_MDS_2" Width="1.7" Pattern="Dotted">
       -373941.000+1445011.000/-374024.000+1450455.000
     </Line>
-    <Label HasLeader="false" Alignment="Center" VerticalAlignment="Middle">
+  </Map>
+  <Map Type="System" Name="ML_RWY16A27D_Names" Priority="2" Center="-37.673333+144.843333" CustomColourName="Names">
+<Label HasLeader="false" Alignment="Center" VerticalAlignment="Middle">
       <!--(ML) RWY16A27D Labels-->
       <Point Name="MDS">-38.037778+144.683889</Point>
       <Point Name="MDN">-37.354722+144.485556</Point>
@@ -200,9 +219,7 @@
       <Point Name="MDS/MAE">-37.699167+144.920000</Point>
       <Point Name="MDN/MAE">-37.263889+145.104722</Point>
     </Label>
-  </Map>
-  <Map Type="System" Name="ML_RWY16A27D_NAMES" Priority="2" Center="-37.673333+144.843333">
-    <Label>
+<Label>
       <Point>HORSH</Point>
       <Point>ISPEG</Point>
       <Point>LILPU</Point>

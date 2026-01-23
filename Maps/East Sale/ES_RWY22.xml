@@ -1,12 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Maps>
-  <Map Type="System" Name="ES_RWY22" Priority="1" Center="-38.098889+147.149444">
-    <!--YMES-->
-    <Runway Name="04/22">
+
+  <Map Type="System" Name="ES_RWY22_Centreline" Priority="1" Center="-38.098889+147.149444" CustomColourName="Centreline">
+<Runway Name="04/22">
       <Threshold Name="04" Position="-38.106050+147.138561" />
       <Threshold Name="22" Position="-38.093103+147.161006" ExtendedCentrelineTrack="53.88" ExtendedCentrelineLength="15" ExtendedCentrelineTickInterval="1" />
     </Runway>
-    <!--SIDs-->
+  </Map>
+  <Map Type="System" Name="ES_RWY22_SIDs" Priority="1" Center="-38.098889+147.149444" CustomColourName="SIDs">
     <Line>
       <!--Rwy22 ANTLA2-->
       -380621.780+1470818.820/
@@ -89,15 +90,16 @@
       -380203.000+1471421.000/
       VISER
     </Line>
-    <!--STARs-->
-    <Symbol Type="HollowTriangle">
+  </Map>
+  <Map Type="System" Name="ES_RWY22_Symbols" Priority="1" Center="-38.098889+147.149444" CustomColourName="Airways_Symbols">
+<Symbol Type="HollowTriangle">
       <Point>KELAN</Point>
     </Symbol>
-    <Symbol Type="Circle">
+<Symbol Type="Circle">
       <Point>AY VOR</Point>
       <Point>MNG VOR</Point>
     </Symbol>
-    <Symbol Type="HollowStar">
+<Symbol Type="HollowStar">
       <Point>ANTLA</Point>
       <Point>BULKO</Point>
       <Point>DUNNE</Point>
@@ -109,8 +111,8 @@
       <Point>VISER</Point>
     </Symbol>
   </Map>
-  <Map Type="System" Name="ES_RWY22_NAMES" Priority="2" Center="-38.098889+147.149444">
-    <Label>
+  <Map Type="System" Name="ES_RWY22_Names" Priority="2" Center="-38.098889+147.149444" CustomColourName="Names">
+<Label>
       <Point>ANTLA</Point>
       <Point>AY VOR</Point>
       <Point>BULKO</Point>
