@@ -1,12 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Maps>
-  <Map Type="System" Name="SU_RWY31" Priority="1" Center="-26.603333+153.091111">
-    <!--YBSU-->
-    <Runway Name="13/31">
+
+  <Map Type="System" Name="SU_RWY31_Centreline" Priority="1" Center="-26.603333+153.091111" CustomColourName="Centreline">
+<Runway Name="13/31">
       <Threshold Name="13" Position="-26.583214+153.074517" />
       <Threshold Name="31" Position="-26.600728+153.089547" ExtendedCentrelineTrack="142.35" ExtendedCentrelineLength="10" ExtendedCentrelineTickInterval="1" />
     </Runway>
-    <!--SIDs-->
+  </Map>
+  <Map Type="System" Name="SU_RWY31_SIDs" Priority="1" Center="-26.603333+153.091111" CustomColourName="SIDs">
     <Line>
       <!--Rwy31 MOOLO2-->
       -263459.570+1530428.260/
@@ -23,7 +24,8 @@
       BIDKI/
       TAPET
     </Line>
-    <!--STARs-->
+  </Map>
+  <Map Type="System" Name="SU_RWY31_STARs" Priority="1" Center="-26.603333+153.091111" CustomColourName="STARs">
     <Line>
       <!--Rwy31 ITID2W-->
       ITIDE/
@@ -57,12 +59,14 @@
     <Line>
       <!--Rwy31 SEBV1Z-->
     </Line>
-    <Symbol Type="HollowTriangle">
+  </Map>
+  <Map Type="System" Name="SU_RWY31_Symbols" Priority="1" Center="-26.603333+153.091111" CustomColourName="Airways_Symbols">
+<Symbol Type="HollowTriangle">
       <Point>SAKAP</Point>
       <Point>OVRUL</Point>
       <Point>IKISA</Point>
     </Symbol>
-    <Symbol Type="HollowStar">
+<Symbol Type="HollowStar">
       <Point>IGOLO</Point>
       <Point>NOGAM</Point>
       <Point>VEKNU</Point>
@@ -81,8 +85,8 @@
       <Point>METUK</Point>
     </Symbol>
   </Map>
-  <Map Type="System" Name="SU_RWY31_NAMES" Priority="2" Center="-26.603333+153.091111">
-    <Label>
+  <Map Type="System" Name="SU_RWY31_Names" Priority="2" Center="-26.603333+153.091111" CustomColourName="Names">
+<Label>
       <Point>IGOLO</Point>
       <Point>NOGAM</Point>
       <Point>VEKNU</Point>
