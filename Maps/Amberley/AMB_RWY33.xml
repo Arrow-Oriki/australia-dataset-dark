@@ -1,16 +1,17 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Maps>
-  <Map Type="System" Name="AMB_RWY33" Priority="1" Center="-27.640556+152.711944">
-    <!--YAMB-->
-    <Runway Name="04/22">
+
+  <Map Type="System" Name="AMB_RWY33_Centreline" Priority="1" Center="-27.640556+152.711944" CustomColourName="Centreline">
+<Runway Name="04/22">
       <Threshold Name="04" Position="-27.644611+152.707869" ExtendedCentrelineTrack="234.32" ExtendedCentrelineLength="5" ExtendedCentrelineTickInterval="5" />
       <Threshold Name="22" Position="-27.636589+152.720414" ExtendedCentrelineTrack="54.32" ExtendedCentrelineLength="5" ExtendedCentrelineTickInterval="5" />
     </Runway>
-    <Runway Name="15/33">
+<Runway Name="15/33">
       <Threshold Name="15" Position="-27.621703+152.705272" />
       <Threshold Name="33" Position="-27.647331+152.716472" ExtendedCentrelineTrack="158.74" ExtendedCentrelineLength="10" ExtendedCentrelineTickInterval="5" />
     </Runway>
-    <!--SIDs-->
+  </Map>
+  <Map Type="System" Name="AMB_RWY33_SIDs" Priority="1" Center="-27.640556+152.711944" CustomColourName="SIDs">
     <Line>
       <!--Rwy33 BOBO5A-->
       -273718.130+1524218.980/
@@ -123,7 +124,8 @@
       -274721.990+1524106.700/
       TATEN
     </Line>
-    <!--STARs-->
+  </Map>
+  <Map Type="System" Name="AMB_RWY33_STARs" Priority="1" Center="-27.640556+152.711944" CustomColourName="STARs">
     <Line>
       <!--Rwy33 BYRON2-->
       SEMAJ/
@@ -187,13 +189,15 @@
     <Line>
       <!--Rwy22 NORTH5-->
     </Line>
-    <Symbol Type="HollowTriangle">
+  </Map>
+  <Map Type="System" Name="AMB_RWY33_Symbols" Priority="1" Center="-27.640556+152.711944" CustomColourName="Airways_Symbols">
+<Symbol Type="HollowTriangle">
       <Point>BIGIX</Point>
     </Symbol>
-    <Symbol Type="Circle">
+<Symbol Type="Circle">
       <Point>BN VOR</Point>
     </Symbol>
-    <Symbol Type="HollowStar">
+<Symbol Type="HollowStar">
       <Point>AKSIK</Point>
       <Point>DEBEE</Point>
       <Point>BOBOP</Point>
@@ -222,8 +226,8 @@
       <Point>ANKED</Point>
     </Symbol>
   </Map>
-  <Map Type="System" Name="AMB_RWY33_NAMES" Priority="2" Center="-27.640556+152.711944">
-    <Label>
+  <Map Type="System" Name="AMB_RWY33_Names" Priority="2" Center="-27.640556+152.711944" CustomColourName="Names">
+<Label>
       <Point>AKSIK</Point>
       <Point>DEBEE</Point>
       <Point>BOBOP</Point>
