@@ -1,12 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Maps>
-  <Map Type="System" Name="CS_RWY33" Priority="1" Center="-16.885833+145.755278">
-    <!--YBCS-->
-    <Runway Name="15/33">
+
+  <Map Type="System" Name="CS_RWY33_Centreline" Priority="1" Center="-16.885833+145.755278" CustomColourName="Centreline">
+<Runway Name="15/33">
       <Threshold Name="15" Position="-16.865817+145.743569" />
       <Threshold Name="33" Position="-16.891969+145.755392" ExtendedCentrelineTrack="156.48" ExtendedCentrelineLength="25" ExtendedCentrelineTickInterval="2" />
     </Runway>
-    <!--SIDs-->
+  </Map>
+  <Map Type="System" Name="CS_RWY33_SIDs" Priority="1" Center="-16.885833+145.755278" CustomColourName="SIDs">
     <Line>
       <!--Rwy33 EAZEE3-->
       -165156.940+1454436.850/
@@ -14,7 +15,8 @@
       BUNPO/
       EAZEE
     </Line>
-    <!--STARs-->
+  </Map>
+  <Map Type="System" Name="CS_RWY33_STARs" Priority="1" Center="-16.885833+145.755278" CustomColourName="STARs">
     <Line>
       <!--Rwy33 HEND2A.ANDOP-->
       ANDOP/
@@ -183,14 +185,19 @@
       TOTTY/
       LEBAD
     </Line>
-    <Symbol Type="HollowTriangle">
+    <Line Name="(CS) RWY33" Width="1.7" Pattern="Dotted">
+      -172404.000+1455916.000/-165331.090+1454519.410/-165156.940+1454436.850/-164013.000+1453917.000/-162349.572+1452001.845
+    </Line>
+  </Map>
+  <Map Type="System" Name="CS_RWY33_Symbols" Priority="1" Center="-16.885833+145.755278" CustomColourName="Airways_Symbols">
+<Symbol Type="HollowTriangle">
       <Point>HENDO</Point>
       <Point>KAKAG</Point>
       <Point>LAVUP</Point>
       <Point>LOTVA</Point>
       <Point>LEBAD</Point>
     </Symbol>
-    <Symbol Type="HollowStar">
+<Symbol Type="HollowStar">
       <Point>CANNU</Point>
       <Point>BUNPO</Point>
       <Point>EAZEE</Point>
@@ -215,19 +222,20 @@
       <Point>ZANEY</Point>
       <Point>IGMOL</Point>
     </Symbol>
-    <!--(CS) RWY33 Airspace-->
-    <Line Name="(CS) RWY33" Width="1.7" Pattern="Dotted">
+  </Map>
+  <Map Type="System" Name="CS_RWY33_Airspace" Priority="1" Center="-16.885833+145.755278" CustomColourName="Airspace">
+<Line Name="(CS) RWY33" Width="1.7" Pattern="Dotted">
       -172404.000+1455916.000/-165331.090+1454519.410/-165156.940+1454436.850/-164013.000+1453917.000/-162349.572+1452001.845
     </Line>
-    <Label HasLeader="false" Alignment="Center" VerticalAlignment="Middle">
+  </Map>
+  <Map Type="System" Name="CS_RWY33_Names" Priority="2" Center="-16.885833+145.755278" CustomColourName="Names">
+<Label HasLeader="false" Alignment="Center" VerticalAlignment="Middle">
       <!--(CS) RWY33 Labels-->
       <Point Name="APP">-16.484167+146.055833</Point>
       <Point Name="DEP">-17.101111+145.369444</Point>
       <Point Name="DEP BCTA">-16.619167+146.167222</Point>
     </Label>
-  </Map>
-  <Map Type="System" Name="CS_RWY33_NAMES" Priority="2" Center="-16.885833+145.755278">
-    <Label>
+<Label>
       <Point>CANNU</Point>
       <Point>BUNPO</Point>
       <Point>EAZEE</Point>
