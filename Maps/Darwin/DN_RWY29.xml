@@ -1,12 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Maps>
-  <Map Type="System" Name="DN_RWY29" Priority="1" Center="-12.414722+130.876667">
-    <!--YPDN-->
-    <Runway Name="11/29">
+
+  <Map Type="System" Name="DN_RWY29_Centreline" Priority="1" Center="-12.414722+130.876667" CustomColourName="Centreline">
+<Runway Name="11/29">
       <Threshold Name="11" Position="-12.409403+130.865261" />
       <Threshold Name="29" Position="-12.419228+130.894442" ExtendedCentrelineTrack="108.91" ExtendedCentrelineLength="10" ExtendedCentrelineTickInterval="1" />
     </Runway>
-    <!--SIDs-->
+  </Map>
+  <Map Type="System" Name="DN_RWY29_SIDs" Priority="1" Center="-12.414722+130.876667" CustomColourName="SIDs">
     <Line>
       <!--Rwy29 HELLI6-->
       -122433.850+1305154.940/
@@ -69,7 +70,8 @@
       AGIGA/
       VANDI
     </Line>
-    <!--STARs-->
+  </Map>
+  <Map Type="System" Name="DN_RWY29_STARs" Priority="1" Center="-12.414722+130.876667" CustomColourName="STARs">
     <Line>
       <!--Rwy29 ANUP2A-->
       ANUPA/
@@ -122,14 +124,16 @@
     <Line>
       <!--Rwy29 WANG5X-->
     </Line>
-    <Symbol Type="HollowTriangle">
+  </Map>
+  <Map Type="System" Name="DN_RWY29_Symbols" Priority="1" Center="-12.414722+130.876667" CustomColourName="Airways_Symbols">
+<Symbol Type="HollowTriangle">
       <Point>LAPAR</Point>
       <Point>KITTY</Point>
       <Point>DRADO</Point>
       <Point>MABAM</Point>
       <Point>MOMAN</Point>
     </Symbol>
-    <Symbol Type="HollowStar">
+<Symbol Type="HollowStar">
       <Point>NASUX</Point>
       <Point>BARNY</Point>
       <Point>HELLI</Point>
@@ -178,8 +182,8 @@
       <Point>NOONA</Point>
     </Symbol>
   </Map>
-  <Map Type="System" Name="DN_RWY29_NAMES" Priority="2" Center="-12.414722+130.876667">
-    <Label>
+  <Map Type="System" Name="DN_RWY29_Names" Priority="2" Center="-12.414722+130.876667" CustomColourName="Names">
+<Label>
       <Point>NASUX</Point>
       <Point>BARNY</Point>
       <Point>HELLI</Point>
