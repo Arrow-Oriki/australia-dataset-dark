@@ -1,12 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Maps>
-  <Map Type="System" Name="CG_RWY32" Priority="1" Center="-28.164444+153.504722">
-    <!--YBCG-->
-    <Runway Name="14/32">
+
+  <Map Type="System" Name="CG_RWY32_Centreline" Priority="1" Center="-28.164444+153.504722" CustomColourName="Centreline">
+<Runway Name="14/32">
       <Threshold Name="14" Position="-28.156511+153.500706" />
       <Threshold Name="32" Position="-28.172569+153.510919" ExtendedCentrelineTrack="150.59" ExtendedCentrelineLength="10" ExtendedCentrelineTickInterval="1" />
     </Runway>
-    <!--SIDs-->
+  </Map>
+  <Map Type="System" Name="CG_RWY32_SIDs" Priority="1" Center="-28.164444+153.504722" CustomColourName="SIDs">
     <Line>
       <!--Rwy32 APAGI5-->
       -280923.440+1533002.540/
@@ -36,7 +37,8 @@
       -281650.949+1533519.682/
       CG612
     </Line>
-    <!--STARs-->
+  </Map>
+  <Map Type="System" Name="CG_RWY32_STARs" Priority="1" Center="-28.164444+153.504722" CustomColourName="STARs">
     <Line>
       <!--Rwy32 BERN4A.OVREX-->
       OVREX/
@@ -83,12 +85,14 @@
       TENIP/
       ATKEN
     </Line>
-    <Symbol Type="HollowTriangle">
+  </Map>
+  <Map Type="System" Name="CG_RWY32_Symbols" Priority="1" Center="-28.164444+153.504722" CustomColourName="Airways_Symbols">
+<Symbol Type="HollowTriangle">
       <Point>FIKUL</Point>
       <Point>JAAPI</Point>
       <Point>ATKEN</Point>
     </Symbol>
-    <Symbol Type="HollowStar">
+<Symbol Type="HollowStar">
       <Point>STIMP</Point>
       <Point>MICKS</Point>
       <Point>CG612</Point>
@@ -113,8 +117,8 @@
       <Point>TENIP</Point>
     </Symbol>
   </Map>
-  <Map Type="System" Name="CG_RWY32_NAMES" Priority="2" Center="-28.164444+153.504722">
-    <Label>
+  <Map Type="System" Name="CG_RWY32_Names" Priority="2" Center="-28.164444+153.504722" CustomColourName="Names">
+<Label>
       <Point>STIMP</Point>
       <Point>MICKS</Point>
       <Point>CG612</Point>

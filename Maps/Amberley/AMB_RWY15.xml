@@ -1,16 +1,17 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Maps>
-  <Map Type="System" Name="AMB_RWY15" Priority="1" Center="-27.640556+152.711944">
-    <!--YAMB-->
-    <Runway Name="04/22">
+
+  <Map Type="System" Name="AMB_RWY15_Centreline" Priority="1" Center="-27.640556+152.711944" CustomColourName="Centreline">
+<Runway Name="04/22">
       <Threshold Name="04" Position="-27.644611+152.707869" ExtendedCentrelineTrack="234.32" ExtendedCentrelineLength="5" ExtendedCentrelineTickInterval="5" />
       <Threshold Name="22" Position="-27.636589+152.720414" ExtendedCentrelineTrack="54.32" ExtendedCentrelineLength="5" ExtendedCentrelineTickInterval="5" />
     </Runway>
-    <Runway Name="15/33">
+<Runway Name="15/33">
       <Threshold Name="15" Position="-27.621703+152.705272" ExtendedCentrelineTrack="338.73" ExtendedCentrelineLength="15" ExtendedCentrelineTickInterval="1" />
       <Threshold Name="33" Position="-27.647331+152.716472" />
     </Runway>
-    <!--SIDs-->
+  </Map>
+  <Map Type="System" Name="AMB_RWY15_SIDs" Priority="1" Center="-27.640556+152.711944" CustomColourName="SIDs">
     <Line>
       <!--Rwy15 BOBO5A-->
       -273850.390+1524259.300/
@@ -86,7 +87,8 @@
       -275029.840+1524026.690/
       TATEN
     </Line>
-    <!--STARs-->
+  </Map>
+  <Map Type="System" Name="AMB_RWY15_STARs" Priority="1" Center="-27.640556+152.711944" CustomColourName="STARs">
     <Line>
       <!--Rwy15 BYRON2-->
       SEMAJ/
@@ -150,15 +152,17 @@
     <Line>
       <!--Rwy22 NORTH5-->
     </Line>
-    <Symbol Type="HollowTriangle">
+  </Map>
+  <Map Type="System" Name="AMB_RWY15_Symbols" Priority="1" Center="-27.640556+152.711944" CustomColourName="Airways_Symbols">
+<Symbol Type="HollowTriangle">
       <Point>BIGIX</Point>
       <Point>SOOTY</Point>
       <Point>SHNAB</Point>
     </Symbol>
-    <Symbol Type="Circle">
+<Symbol Type="Circle">
       <Point>BN VOR</Point>
     </Symbol>
-    <Symbol Type="HollowStar">
+<Symbol Type="HollowStar">
       <Point>DEBEE</Point>
       <Point>BOBOP</Point>
       <Point>IMATI</Point>
@@ -180,8 +184,8 @@
       <Point>MOSSI</Point>
     </Symbol>
   </Map>
-  <Map Type="System" Name="AMB_RWY15_NAMES" Priority="2" Center="-27.640556+152.711944">
-    <Label>
+  <Map Type="System" Name="AMB_RWY15_Names" Priority="2" Center="-27.640556+152.711944" CustomColourName="Names">
+<Label>
       <Point>DEBEE</Point>
       <Point>BOBOP</Point>
       <Point>BN VOR</Point>
