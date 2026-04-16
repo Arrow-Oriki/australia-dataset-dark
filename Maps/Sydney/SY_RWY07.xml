@@ -1,12 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Maps>
-  <Map Type="System" Name="SY_RWY07" Priority="1" Center="-33.946111+151.177222">
-    <!--YSSY-->
-    <Runway Name="07/25">
+
+  <Map Type="System" Name="SY_RWY07_Centreline" Priority="1" Center="-33.946111+151.177222" CustomColourName="Centreline">
+<Runway Name="07/25">
       <Threshold Name="07" Position="-33.943739+151.163628" ExtendedCentrelineTrack="254.19" ExtendedCentrelineLength="10" ExtendedCentrelineTickInterval="1" />
       <Threshold Name="25" Position="-33.937775+151.188908" />
     </Runway>
-    <!--SIDs-->
+  </Map>
+  <Map Type="System" Name="SY_RWY07_SIDs" Priority="1" Center="-33.946111+151.177222" CustomColourName="SIDs">
     <Line>
       <!--Rwy07 FISHA9-->
       -335615.990+1511120.070/
@@ -34,7 +35,8 @@
       -335818.852+1512530.291/
       WOL NDB
     </Line>
-    <!--STARs-->
+  </Map>
+  <Map Type="System" Name="SY_RWY07_STARs" Priority="1" Center="-33.946111+151.177222" CustomColourName="STARs">
     <Line>
       <!--Rwy07 BORE4A-->
       BOREE/
@@ -79,16 +81,36 @@
       BOOGI/
       TESAT
     </Line>
-    <Symbol Type="HollowTriangle">
+    <Line Name="(SY) RWY07" Width="1.7" Pattern="Dotted">
+      -331422.000+1505212.000/-333257.000+1510119.000/-333424.330+1510145.758/-333626.206+1510158.889/-333828.131+1510146.410/-334026.396+1510108.670/-334033.000+1510102.000/-334111.000+1510037.000/-335434.000+1505222.000/-334947.000+1510708.000/-335459.000+1511004.000/-335812.000+1511101.000/-340428.000+1510849.000/-335951.000+1512445.000/-340401.000+1520420.000
+    </Line>
+    <Line Name="(SY) RWY07_1" Width="1.7" Pattern="Dotted">
+      -335959.000+1520455.000/-335536.000+1511635.000/-335059.000+1511357.000/-333839.000+1511345.000/-331203.000+1511818.000
+    </Line>
+    <Line Name="(SY) RWY07_2" Width="1.7" Pattern="Dotted">
+      -335433.000+1505222.000/-335619.000+1504655.000/-335701.000+1504446.000/-335843.000+1504427.000/-340540.000+1501753.000
+    </Line>
+    <Line Name="(SY) RWY07_3" Width="1.7" Pattern="Dotted">
+      -342007.000+1502443.000/-341327.242+1504057.530/-341018.000+1504839.000/-340914.000+1505219.000/-340428.000+1510849.000
+    </Line>
+    <Line Name="(SY) RWY07_4" Width="1.7" Pattern="Dotted">
+      -341327.242+1504057.530/-341134.015+1503932.402/-340648.952+1503654.003/-340145.431+1503518.044/-340108.302+1503511.580
+    </Line>
+    <Line Name="(SY) RWY07_5" Width="1.7" Pattern="Dotted">
+      -334730.000+1520356.000/-335536.000+1511635.000/-335637.700+1511057.300
+    </Line>
+  </Map>
+  <Map Type="System" Name="SY_RWY07_Symbols" Priority="1" Center="-33.946111+151.177222" CustomColourName="Airways_Symbols">
+<Symbol Type="HollowTriangle">
       <Point>ANKUB</Point>
     </Symbol>
-    <Symbol Type="SolidStar">
+<Symbol Type="SolidStar">
       <Point>FISHA</Point>
     </Symbol>
-    <Symbol Type="Circle">
+<Symbol Type="Circle">
       <Point>WOL NDB</Point>
     </Symbol>
-    <Symbol Type="HollowStar">
+<Symbol Type="HollowStar">
       <Point>OLSEM</Point>
       <Point>BOREE</Point>
       <Point>VASRA</Point>
@@ -112,26 +134,29 @@
       <Point>TAMMI</Point>
       <Point>BOOGI</Point>
     </Symbol>
-    <!--(SY) RWY07 Airspace-->
-    <Line Name="(SY) RWY07" Width="1.7" Pattern="Dotted">
+  </Map>
+  <Map Type="System" Name="SY_RWY07_Airspace" Priority="1" Center="-33.946111+151.177222" CustomColourName="Airspace">
+<Line Name="(SY) RWY07" Width="1.7" Pattern="Dotted">
       -331422.000+1505212.000/-333257.000+1510119.000/-333424.330+1510145.758/-333626.206+1510158.889/-333828.131+1510146.410/-334026.396+1510108.670/-334033.000+1510102.000/-334111.000+1510037.000/-335434.000+1505222.000/-334947.000+1510708.000/-335459.000+1511004.000/-335812.000+1511101.000/-340428.000+1510849.000/-335951.000+1512445.000/-340401.000+1520420.000
     </Line>
-    <Line Name="(SY) RWY07_1" Width="1.7" Pattern="Dotted">
+<Line Name="(SY) RWY07_1" Width="1.7" Pattern="Dotted">
       -335959.000+1520455.000/-335536.000+1511635.000/-335059.000+1511357.000/-333839.000+1511345.000/-331203.000+1511818.000
     </Line>
-    <Line Name="(SY) RWY07_2" Width="1.7" Pattern="Dotted">
+<Line Name="(SY) RWY07_2" Width="1.7" Pattern="Dotted">
       -335433.000+1505222.000/-335619.000+1504655.000/-335701.000+1504446.000/-335843.000+1504427.000/-340540.000+1501753.000
     </Line>
-    <Line Name="(SY) RWY07_3" Width="1.7" Pattern="Dotted">
+<Line Name="(SY) RWY07_3" Width="1.7" Pattern="Dotted">
       -342007.000+1502443.000/-341327.242+1504057.530/-341018.000+1504839.000/-340914.000+1505219.000/-340428.000+1510849.000
     </Line>
-    <Line Name="(SY) RWY07_4" Width="1.7" Pattern="Dotted">
+<Line Name="(SY) RWY07_4" Width="1.7" Pattern="Dotted">
       -341327.242+1504057.530/-341134.015+1503932.402/-340648.952+1503654.003/-340145.431+1503518.044/-340108.302+1503511.580
     </Line>
-    <Line Name="(SY) RWY07_5" Width="1.7" Pattern="Dotted">
+<Line Name="(SY) RWY07_5" Width="1.7" Pattern="Dotted">
       -334730.000+1520356.000/-335536.000+1511635.000/-335637.700+1511057.300
     </Line>
-    <Label HasLeader="false" Alignment="Center" VerticalAlignment="Middle">
+  </Map>
+  <Map Type="System" Name="SY_RWY07_Names" Priority="2" Center="-33.946111+151.177222" CustomColourName="Names">
+<Label HasLeader="false" Alignment="Center" VerticalAlignment="Middle">
       <!--(SY) RWY07 Labels-->
       <Point Name="SAN">-33.292778+151.131944</Point>
       <Point Name="SAN">-34.046111+152.028889</Point>
@@ -146,9 +171,7 @@
       <Point Name="SDS">-34.451389+150.782778</Point>
       <Point Name="SDS">-34.464167+151.596944</Point>
     </Label>
-  </Map>
-  <Map Type="System" Name="SY_RWY07_NAMES" Priority="2" Center="-33.946111+151.177222">
-    <Label>
+<Label>
       <Point>FISHA</Point>
       <Point>OLSEM</Point>
       <Point>WOL NDB</Point>

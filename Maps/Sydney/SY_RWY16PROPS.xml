@@ -1,16 +1,17 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Maps>
-  <Map Type="System" Name="SY_RWY16PROPS" Priority="1" Center="-33.946111+151.177222">
-    <!--YSSY-->
-    <Runway Name="16L/34R">
+
+  <Map Type="System" Name="SY_RWY16PROPS_Centreline" Priority="1" Center="-33.946111+151.177222" CustomColourName="Centreline">
+<Runway Name="16L/34R">
       <Threshold Name="16L" Position="-33.951636+151.188847" ExtendedCentrelineTrack="347.79" ExtendedCentrelineLength="15" ExtendedCentrelineTickInterval="1" />
       <Threshold Name="34R" Position="-33.970756+151.193811" />
     </Runway>
-    <Runway Name="16R/34L">
+<Runway Name="16R/34L">
       <Threshold Name="16R" Position="-33.930097+151.171783" ExtendedCentrelineTrack="347.8" ExtendedCentrelineLength="15" ExtendedCentrelineTickInterval="1" />
       <Threshold Name="34L" Position="-33.964264+151.180647" />
     </Runway>
-    <!--SIDs-->
+  </Map>
+  <Map Type="System" Name="SY_RWY16PROPS_SIDs" Priority="1" Center="-33.946111+151.177222" CustomColourName="SIDs">
     <Line>
       <!--Rwy16L KEVIN7-->
       -335814.720+1511137.720/
@@ -79,7 +80,8 @@
       ISBEX/
       WOL NDB
     </Line>
-    <!--STARs-->
+  </Map>
+  <Map Type="System" Name="SY_RWY16PROPS_STARs" Priority="1" Center="-33.946111+151.177222" CustomColourName="STARs">
     <Line>
       <!--Rwy16L BORE4A-->
       BOREE/
@@ -149,11 +151,37 @@
     <Line>
       <!--Rwy16R RIVET4-->
     </Line>
-    <Symbol Type="HollowTriangle">
+    <Line Name="(SY) RWY16PROPS" Width="1.7" Pattern="Dotted">
+      -331422.000+1505212.000/-333257.000+1510119.000
+    </Line>
+    <Line Name="(SY) RWY16PROPS_1" Width="1.7" Pattern="Dotted">
+      -333217.000+1511741.000/-331210.000+1511816.000
+    </Line>
+    <Line Name="(SY) RWY16PROPS_2" Width="1.7" Pattern="Dotted">
+      -335346.000+1511743.000/-334851.000+1511841.000/-334047.000+1511915.000/-333217.000+1511741.000/-333200.679+1511609.478/-333138.000+1511057.000/-333200.679+1510544.522/-333308.035+1510041.404/-333458.051+1505556.739/-333726.000+1505142.000/-334443.000+1505128.000/-334504.000+1505354.000/-335542.000+1505919.000/-335720.000+1510009.000/-335346.000+1511743.000
+    </Line>
+    <Line Name="(SY) RWY16PROPS_3" Width="1.7" Pattern="Dotted">
+      -335959.000+1520455.000/-335547.000+1512003.000/-334851.000+1511841.000
+    </Line>
+    <Line Name="(SY) RWY16PROPS_4" Width="1.7" Pattern="Dotted">
+      -335835.000+1511111.000/-340401.000+1520421.000
+    </Line>
+    <Line Name="(SY) RWY16PROPS_5" Width="1.7" Pattern="Dotted">
+      -335720.000+1510009.000/-340540.000+1501753.000
+    </Line>
+    <Line Name="(SY) RWY16PROPS_6" Width="1.7" Pattern="Dotted">
+      -342007.000+1502443.000/-335835.000+1511111.000/-335814.720+1511137.720
+    </Line>
+    <Line Name="(SY) RWY16PROPS_7" Width="1.7" Pattern="Dotted">
+      -335814.720+1511137.720/-335923.315+1511200.420/-340028.500+1511443.600/-340811.500+1512216.800/-343133.000+1514508.000
+    </Line>
+  </Map>
+  <Map Type="System" Name="SY_RWY16PROPS_Symbols" Priority="1" Center="-33.946111+151.177222" CustomColourName="Airways_Symbols">
+<Symbol Type="HollowTriangle">
       <Point>TONUX</Point>
       <Point>URDEN</Point>
     </Symbol>
-    <Symbol Type="SolidStar">
+<Symbol Type="SolidStar">
       <Point>KEVIN</Point>
       <Point>DIPSO</Point>
       <Point>EVONN</Point>
@@ -163,11 +191,11 @@
       <Point>GROOK</Point>
       <Point>KADOM</Point>
     </Symbol>
-    <Symbol Type="Circle">
+<Symbol Type="Circle">
       <Point>RIC NDB</Point>
       <Point>WOL NDB</Point>
     </Symbol>
-    <Symbol Type="HollowStar">
+<Symbol Type="HollowStar">
       <Point>IDBIM</Point>
       <Point>CAWLY</Point>
       <Point>EXOVA</Point>
@@ -204,32 +232,35 @@
       <Point>DALAR</Point>
       <Point>DUMOP</Point>
     </Symbol>
-    <!--(SY) RWY16PROPS Airspace-->
-    <Line Name="(SY) RWY16PROPS" Width="1.7" Pattern="Dotted">
+  </Map>
+  <Map Type="System" Name="SY_RWY16PROPS_Airspace" Priority="1" Center="-33.946111+151.177222" CustomColourName="Airspace">
+<Line Name="(SY) RWY16PROPS" Width="1.7" Pattern="Dotted">
       -331422.000+1505212.000/-333257.000+1510119.000
     </Line>
-    <Line Name="(SY) RWY16PROPS_1" Width="1.7" Pattern="Dotted">
+<Line Name="(SY) RWY16PROPS_1" Width="1.7" Pattern="Dotted">
       -333217.000+1511741.000/-331210.000+1511816.000
     </Line>
-    <Line Name="(SY) RWY16PROPS_2" Width="1.7" Pattern="Dotted">
+<Line Name="(SY) RWY16PROPS_2" Width="1.7" Pattern="Dotted">
       -335346.000+1511743.000/-334851.000+1511841.000/-334047.000+1511915.000/-333217.000+1511741.000/-333200.679+1511609.478/-333138.000+1511057.000/-333200.679+1510544.522/-333308.035+1510041.404/-333458.051+1505556.739/-333726.000+1505142.000/-334443.000+1505128.000/-334504.000+1505354.000/-335542.000+1505919.000/-335720.000+1510009.000/-335346.000+1511743.000
     </Line>
-    <Line Name="(SY) RWY16PROPS_3" Width="1.7" Pattern="Dotted">
+<Line Name="(SY) RWY16PROPS_3" Width="1.7" Pattern="Dotted">
       -335959.000+1520455.000/-335547.000+1512003.000/-334851.000+1511841.000
     </Line>
-    <Line Name="(SY) RWY16PROPS_4" Width="1.7" Pattern="Dotted">
+<Line Name="(SY) RWY16PROPS_4" Width="1.7" Pattern="Dotted">
       -335835.000+1511111.000/-340401.000+1520421.000
     </Line>
-    <Line Name="(SY) RWY16PROPS_5" Width="1.7" Pattern="Dotted">
+<Line Name="(SY) RWY16PROPS_5" Width="1.7" Pattern="Dotted">
       -335720.000+1510009.000/-340540.000+1501753.000
     </Line>
-    <Line Name="(SY) RWY16PROPS_6" Width="1.7" Pattern="Dotted">
+<Line Name="(SY) RWY16PROPS_6" Width="1.7" Pattern="Dotted">
       -342007.000+1502443.000/-335835.000+1511111.000/-335814.720+1511137.720
     </Line>
-    <Line Name="(SY) RWY16PROPS_7" Width="1.7" Pattern="Dotted">
+<Line Name="(SY) RWY16PROPS_7" Width="1.7" Pattern="Dotted">
       -335814.720+1511137.720/-335923.315+1511200.420/-340028.500+1511443.600/-340811.500+1512216.800/-343133.000+1514508.000
     </Line>
-    <Label HasLeader="false" Alignment="Center" VerticalAlignment="Middle">
+  </Map>
+  <Map Type="System" Name="SY_RWY16PROPS_Names" Priority="2" Center="-33.946111+151.177222" CustomColourName="Names">
+<Label HasLeader="false" Alignment="Center" VerticalAlignment="Middle">
       <!--(SY) RWY16PROPS Labels-->
       <Point Name="SAN">-33.292778+151.131944</Point>
       <Point Name="SAN">-33.489167+151.139167</Point>
@@ -246,9 +277,7 @@
       <Point Name="SFE">-33.720556+151.220000</Point>
       <Point Name="SFW">-33.723056+151.043333</Point>
     </Label>
-  </Map>
-  <Map Type="System" Name="SY_RWY16PROPS_NAMES" Priority="2" Center="-33.946111+151.177222">
-    <Label>
+<Label>
       <Point>IDBIM</Point>
       <Point>KEVIN</Point>
       <Point>CAWLY</Point>
