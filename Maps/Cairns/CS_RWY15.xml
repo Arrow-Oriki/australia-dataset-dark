@@ -1,12 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Maps>
-  <Map Type="System" Name="CS_RWY15" Priority="1" Center="-16.885833+145.755278">
-    <!--YBCS-->
-    <Runway Name="15/33">
+
+  <Map Type="System" Name="CS_RWY15_Centreline" Priority="1" Center="-16.885833+145.755278" CustomColourName="Centreline">
+<Runway Name="15/33">
       <Threshold Name="15" Position="-16.865817+145.743569" ExtendedCentrelineTrack="336.48" ExtendedCentrelineLength="18" ExtendedCentrelineTickInterval="2" />
       <Threshold Name="33" Position="-16.891969+145.755392" />
     </Runway>
-    <!--SIDs-->
+  </Map>
+  <Map Type="System" Name="CS_RWY15_SIDs" Priority="1" Center="-16.885833+145.755278" CustomColourName="SIDs">
     <Line>
       <!--Rwy15 AKROM1-->
       -165331.090+1454519.410/
@@ -40,7 +41,8 @@
       CS VOR/
       NONUM
     </Line>
-    <!--STARs-->
+  </Map>
+  <Map Type="System" Name="CS_RWY15_STARs" Priority="1" Center="-16.885833+145.755278" CustomColourName="STARs">
     <Line>
       <!--Rwy15 CODI1A.ANDOP-->
       ANDOP/
@@ -238,7 +240,12 @@
       KASPI/
       ATOSU
     </Line>
-    <Symbol Type="HollowTriangle">
+    <Line Name="(CS) RWY15" Width="1.7" Pattern="Dotted">
+      -172236.000+1460228.717/-172139.100+1460201.118/-172133.199+1460137.117/-172009.000+1460040.317/-171844.899+1460007.220/-171736.100+1455958.321/-171630.101+1455934.123/-171506.199+1455852.223/-171452.699+1455835.722/-171455.500+1455820.622/-171433.101+1455804.322/-171322.598+1455805.723/-171345.098+1455755.422/-171345.000+1455743.222/-171318.098+1455801.223/-171251.000+1455801.122/-171136.000+1455731.024/-171012.000+1455743.123/-170924.098+1455701.325/-170759.902+1455649.024/-170703.101+1455534.126/-170618.101+1455507.228/-170527.100+1455458.325/-170428.700+1455356.630/-170358.399+1455344.728/-170352.499+1455320.828/-170342.000+1455316.130/-170200.100+1455316.329/-170103.000+1455331.028/-170036.000+1455355.231/-170030.200+1455340.331/-170018.000+1455349.230/-165957.098+1455340.331/-165506.657+1454722.745/-165331.090+1454513.144/-161815.000+1452917.753
+    </Line>
+  </Map>
+  <Map Type="System" Name="CS_RWY15_Symbols" Priority="1" Center="-16.885833+145.755278" CustomColourName="Airways_Symbols">
+<Symbol Type="HollowTriangle">
       <Point>GUNRO</Point>
       <Point>KASPI</Point>
       <Point>BENJI</Point>
@@ -248,10 +255,10 @@
       <Point>TODEG</Point>
       <Point>ATOSU</Point>
     </Symbol>
-    <Symbol Type="Circle">
+<Symbol Type="Circle">
       <Point>CS VOR</Point>
     </Symbol>
-    <Symbol Type="HollowStar">
+<Symbol Type="HollowStar">
       <Point>AKROM</Point>
       <Point>NONUM</Point>
       <Point>CODIE</Point>
@@ -271,19 +278,20 @@
       <Point>BERSI</Point>
       <Point>FOGGI</Point>
     </Symbol>
-    <!--(CS) RWY15 Airspace-->
-    <Line Name="(CS) RWY15" Width="1.7" Pattern="Dotted">
+  </Map>
+  <Map Type="System" Name="CS_RWY15_Airspace" Priority="1" Center="-16.885833+145.755278" CustomColourName="Airspace">
+<Line Name="(CS) RWY15" Width="1.7" Pattern="Dotted">
       -172236.000+1460228.717/-172139.100+1460201.118/-172133.199+1460137.117/-172009.000+1460040.317/-171844.899+1460007.220/-171736.100+1455958.321/-171630.101+1455934.123/-171506.199+1455852.223/-171452.699+1455835.722/-171455.500+1455820.622/-171433.101+1455804.322/-171322.598+1455805.723/-171345.098+1455755.422/-171345.000+1455743.222/-171318.098+1455801.223/-171251.000+1455801.122/-171136.000+1455731.024/-171012.000+1455743.123/-170924.098+1455701.325/-170759.902+1455649.024/-170703.101+1455534.126/-170618.101+1455507.228/-170527.100+1455458.325/-170428.700+1455356.630/-170358.399+1455344.728/-170352.499+1455320.828/-170342.000+1455316.130/-170200.100+1455316.329/-170103.000+1455331.028/-170036.000+1455355.231/-170030.200+1455340.331/-170018.000+1455349.230/-165957.098+1455340.331/-165506.657+1454722.745/-165331.090+1454513.144/-161815.000+1452917.753
     </Line>
-    <Label HasLeader="false" Alignment="Center" VerticalAlignment="Middle">
+  </Map>
+  <Map Type="System" Name="CS_RWY15_Names" Priority="2" Center="-16.885833+145.755278" CustomColourName="Names">
+<Label HasLeader="false" Alignment="Center" VerticalAlignment="Middle">
       <!--(CS) RWY15 Labels-->
       <Point Name="APP">-16.484167+146.055833</Point>
       <Point Name="DEP">-17.101111+145.369444</Point>
       <Point Name="DEP BCTA">-16.619167+146.167222</Point>
     </Label>
-  </Map>
-  <Map Type="System" Name="CS_RWY15_NAMES" Priority="2" Center="-16.885833+145.755278">
-    <Label>
+<Label>
       <Point>AKROM</Point>
       <Point>CS VOR</Point>
       <Point>NONUM</Point>

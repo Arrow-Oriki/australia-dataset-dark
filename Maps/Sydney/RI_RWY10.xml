@@ -1,12 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Maps>
-  <Map Type="System" Name="RI_RWY10" Priority="1" Center="-33.600556+150.780833">
-    <!--YSRI-->
-    <Runway Name="10/28">
+
+  <Map Type="System" Name="RI_RWY10_Centreline" Priority="1" Center="-33.600556+150.780833" CustomColourName="Centreline">
+<Runway Name="10/28">
       <Threshold Name="10" Position="-33.601614+150.771247" ExtendedCentrelineTrack="287.1" ExtendedCentrelineLength="5" ExtendedCentrelineTickInterval="5" />
       <Threshold Name="28" Position="-33.607272+150.793219" />
     </Runway>
-    <!--SIDs-->
+  </Map>
+  <Map Type="System" Name="RI_RWY10_SIDs" Priority="1" Center="-33.600556+150.780833" CustomColourName="SIDs">
     <Line>
       <!--Rwy10 ANKUB2-->
       -333626.180+1504735.590/
@@ -40,15 +41,16 @@
       -333626.490+1504737.191/
       -333713.769+1505042.039
     </Line>
-    <!--STARs-->
-    <Symbol Type="HollowStar">
+  </Map>
+  <Map Type="System" Name="RI_RWY10_Symbols" Priority="1" Center="-33.600556+150.780833" CustomColourName="Airways_Symbols">
+<Symbol Type="HollowStar">
       <Point>ANKUB</Point>
       <Point>KADOM</Point>
       <Point>MUDGI</Point>
     </Symbol>
   </Map>
-  <Map Type="System" Name="RI_RWY10_NAMES" Priority="2" Center="-33.600556+150.780833">
-    <Label>
+  <Map Type="System" Name="RI_RWY10_Names" Priority="2" Center="-33.600556+150.780833" CustomColourName="Names">
+<Label>
       <Point>ANKUB</Point>
       <Point>KADOM</Point>
       <Point>MUDGI</Point>

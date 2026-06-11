@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Maps>
-  <Map Type="System" Name="TL_COAST" Priority="3" Centre="-19.2525+146.765278">
+  <Map Type="System" Name="TL_COAST" Priority="3" Centre="-19.2525+146.765278" CustomColourName="Coast">
     <Line Name="Coastline">
       -17.772556+146.11375/
       -17.794583+146.091667/
