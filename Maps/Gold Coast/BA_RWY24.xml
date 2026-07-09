@@ -1,12 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Maps>
-  <Map Type="System" Name="BA_RWY24" Priority="1" Center="-28.833889+153.562500">
-    <!--YBNA-->
-    <Runway Name="06/24">
+
+  <Map Type="System" Name="BA_RWY24_Centreline" Priority="1" Center="-28.833889+153.562500" CustomColourName="Centreline">
+<Runway Name="06/24">
       <Threshold Name="06" Position="-28.835736+153.551808" />
       <Threshold Name="24" Position="-28.830864+153.570472" ExtendedCentrelineTrack="73.49" ExtendedCentrelineLength="15" ExtendedCentrelineTickInterval="5" />
     </Runway>
-    <!--SIDs-->
+  </Map>
+  <Map Type="System" Name="BA_RWY24_SIDs" Priority="1" Center="-28.833889+153.562500" CustomColourName="SIDs">
     <Line>
       <!--Rwy24 BNA1-->
       -285008.650+1533306.510/
@@ -19,7 +20,8 @@
       NA521/
       IDNER
     </Line>
-    <!--STARs-->
+  </Map>
+  <Map Type="System" Name="BA_RWY24_STARs" Priority="1" Center="-28.833889+153.562500" CustomColourName="STARs">
     <Line>
       <!--Rwy24 UPSE1A-->
       UPSEL/
@@ -47,13 +49,15 @@
     <Line>
       <!--Rwy24 UPSE1Y-->
     </Line>
-    <Symbol Type="HollowTriangle">
+  </Map>
+  <Map Type="System" Name="BA_RWY24_Symbols" Priority="1" Center="-28.833889+153.562500" CustomColourName="Airways_Symbols">
+<Symbol Type="HollowTriangle">
       <Point>RUNLO</Point>
       <Point>MADAK</Point>
       <Point>POLUR</Point>
       <Point>AVBAK</Point>
     </Symbol>
-    <Symbol Type="HollowStar">
+<Symbol Type="HollowStar">
       <Point>SAPOR</Point>
       <Point>NA521</Point>
       <Point>IDNER</Point>
@@ -68,8 +72,8 @@
       <Point>IGMIM</Point>
     </Symbol>
   </Map>
-  <Map Type="System" Name="BA_RWY24_NAMES" Priority="2" Center="-28.833889+153.562500">
-    <Label>
+  <Map Type="System" Name="BA_RWY24_Names" Priority="2" Center="-28.833889+153.562500" CustomColourName="Names">
+<Label>
       <Point>SAPOR</Point>
       <Point>NA521</Point>
       <Point>IDNER</Point>

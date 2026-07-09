@@ -1,16 +1,17 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Maps>
-  <Map Type="System" Name="PH_RWY2124" Priority="1" Center="-31.940278+115.966944">
-    <!--YPPH-->
-    <Runway Name="03/21">
+
+  <Map Type="System" Name="PH_RWY2124_Centreline" Priority="1" Center="-31.940278+115.966944" CustomColourName="Centreline">
+<Runway Name="03/21">
       <Threshold Name="03" Position="-31.958739+115.959683" />
       <Threshold Name="21" Position="-31.928594+115.968464" ExtendedCentrelineTrack="13.95" ExtendedCentrelineLength="10" ExtendedCentrelineTickInterval="1" />
     </Runway>
-    <Runway Name="06/24">
+<Runway Name="06/24">
       <Threshold Name="06" Position="-31.940989+115.959203" />
       <Threshold Name="24" Position="-31.930908+115.978792" ExtendedCentrelineTrack="58.9" ExtendedCentrelineLength="10" ExtendedCentrelineTickInterval="1" />
     </Runway>
-    <!--SIDs-->
+  </Map>
+  <Map Type="System" Name="PH_RWY2124_SIDs" Priority="1" Center="-31.940278+115.966944" CustomColourName="SIDs">
     <Line>
       <!--Rwy21 AMANA5-->
       -315731.460+1155734.860/
@@ -116,7 +117,8 @@
       BURGU/
       YNRV
     </Line>
-    <!--STARs-->
+  </Map>
+  <Map Type="System" Name="PH_RWY2124_STARs" Priority="1" Center="-31.940278+115.966944" CustomColourName="STARs">
     <Line>
       <!--Rwy21 IPMO2A.KAGMI-->
       KAGMI/
@@ -201,14 +203,34 @@
     <Line>
       <!--Rwy24 SOLU3A-->
     </Line>
-    <Symbol Type="HollowTriangle">
+    <Line Name="(PH) RWY2124" Width="2.7" Pattern="Dotted">
+      -315735.000+1151515.000/-315653.000+1154731.000/-315644.187+1154738.384/-315611.461+1154748.741/-315540.757+1154805.635/-315513.009+1154828.550/-315449.057+1154856.791/-315429.630+1154929.498/-315415.317+1155005.680/-315406.552+1155044.237/-315403.600+1155124.000/-315406.552+1155203.763/-315415.317+1155242.320/-315429.630+1155318.502/-315449.057+1155351.209/-315513.009+1155419.450/-315540.757+1155442.365/-315611.461+1155459.259/-315635.000+1155510.000/-315625.000+1155801.000/-315333.000+1161215.000/-315249.000+1161545.000/-315421.000+1161912.000/-315818.000+1162701.000/-320429.000+1163847.000
+    </Line>
+    <Line Name="(PH) RWY2124_1" Width="2.7" Pattern="Dotted">
+      -312107.000+1160409.000/-315515.000+1155427.000
+    </Line>
+    <Line Name="(PH) RWY2124_2" Width="2.7" Pattern="Dotted">
+      -313355.000+1163026.000/-315333.000+1161215.000
+    </Line>
+    <Line Name="(PH) RWY2124_3" Width="2.7" Pattern="Dotted">
+      -313809.000+1163357.000/-315421.000+1161912.000
+    </Line>
+    <Line Name="(PH) RWY2124_4" Width="2.7" Pattern="Dotted">
+      -314843.000+1163853.000/-315818.000+1162701.000
+    </Line>
+    <Line Name="(PH) RWY2124_5" Width="2.7" Pattern="Dotted">
+      -322351.000+1152938.000/-321329.000+1154047.000/-321349.000+1155652.000/-321335.000+1160503.000/-321556.000+1161015.000/-322416.000+1162456.000
+    </Line>
+  </Map>
+  <Map Type="System" Name="PH_RWY2124_Symbols" Priority="1" Center="-31.940278+115.966944" CustomColourName="Airways_Symbols">
+<Symbol Type="HollowTriangle">
       <Point>WOOFY</Point>
       <Point>HAIGH</Point>
       <Point>MOCUR</Point>
       <Point>SPUDO</Point>
       <Point>KOORI</Point>
     </Symbol>
-    <Symbol Type="HollowStar">
+<Symbol Type="HollowStar">
       <Point>AVBAD</Point>
       <Point>BAMIL</Point>
       <Point>DADSI</Point>
@@ -278,26 +300,29 @@
       <Point>PATMU</Point>
       <Point>UPNIS</Point>
     </Symbol>
-    <!--(PH) RWY2124 Airspace-->
-    <Line Name="(PH) RWY2124" Width="2.7" Pattern="Dotted">
+  </Map>
+  <Map Type="System" Name="PH_RWY2124_Airspace" Priority="1" Center="-31.940278+115.966944" CustomColourName="Airspace">
+<Line Name="(PH) RWY2124" Width="2.7" Pattern="Dotted">
       -315735.000+1151515.000/-315653.000+1154731.000/-315644.187+1154738.384/-315611.461+1154748.741/-315540.757+1154805.635/-315513.009+1154828.550/-315449.057+1154856.791/-315429.630+1154929.498/-315415.317+1155005.680/-315406.552+1155044.237/-315403.600+1155124.000/-315406.552+1155203.763/-315415.317+1155242.320/-315429.630+1155318.502/-315449.057+1155351.209/-315513.009+1155419.450/-315540.757+1155442.365/-315611.461+1155459.259/-315635.000+1155510.000/-315625.000+1155801.000/-315333.000+1161215.000/-315249.000+1161545.000/-315421.000+1161912.000/-315818.000+1162701.000/-320429.000+1163847.000
     </Line>
-    <Line Name="(PH) RWY2124_1" Width="2.7" Pattern="Dotted">
+<Line Name="(PH) RWY2124_1" Width="2.7" Pattern="Dotted">
       -312107.000+1160409.000/-315515.000+1155427.000
     </Line>
-    <Line Name="(PH) RWY2124_2" Width="2.7" Pattern="Dotted">
+<Line Name="(PH) RWY2124_2" Width="2.7" Pattern="Dotted">
       -313355.000+1163026.000/-315333.000+1161215.000
     </Line>
-    <Line Name="(PH) RWY2124_3" Width="2.7" Pattern="Dotted">
+<Line Name="(PH) RWY2124_3" Width="2.7" Pattern="Dotted">
       -313809.000+1163357.000/-315421.000+1161912.000
     </Line>
-    <Line Name="(PH) RWY2124_4" Width="2.7" Pattern="Dotted">
+<Line Name="(PH) RWY2124_4" Width="2.7" Pattern="Dotted">
       -314843.000+1163853.000/-315818.000+1162701.000
     </Line>
-    <Line Name="(PH) RWY2124_5" Width="2.7" Pattern="Dotted">
+<Line Name="(PH) RWY2124_5" Width="2.7" Pattern="Dotted">
       -322351.000+1152938.000/-321329.000+1154047.000/-321349.000+1155652.000/-321335.000+1160503.000/-321556.000+1161015.000/-322416.000+1162456.000
     </Line>
-    <Label HasLeader="false" Alignment="Center" VerticalAlignment="Middle">
+  </Map>
+  <Map Type="System" Name="PH_RWY2124_Names" Priority="2" Center="-31.940278+115.966944" CustomColourName="Names">
+<Label HasLeader="false" Alignment="Center" VerticalAlignment="Middle">
       <!--(PH) RWY2124 Labels-->
       <Point Name="PHA">-31.521111+116.130000</Point>
       <Point Name="PHA/PHD">-31.644444+115.644167</Point>
@@ -307,9 +332,7 @@
       <Point Name="PHD">-32.161111+115.477500</Point>
       <Point Name="PHR">-32.298368+115.904811</Point>
     </Label>
-  </Map>
-  <Map Type="System" Name="PH_RWY2124_NAMES" Priority="2" Center="-31.940278+115.966944">
-    <Label>
+<Label>
       <Point>AVBAD</Point>
       <Point>BAMIL</Point>
       <Point>DADSI</Point>
