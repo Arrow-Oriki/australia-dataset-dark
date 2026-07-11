@@ -1,12 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Maps>
-  <Map Type="System" Name="ED_RWY18" Priority="1" Center="-34.702500+138.620833">
-    <!--YPED-->
-    <Runway Name="18/36">
+
+  <Map Type="System" Name="ED_RWY18_Centreline" Priority="1" Center="-34.702500+138.620833" CustomColourName="Centreline">
+<Runway Name="18/36">
       <Threshold Name="18" Position="-34.694536+138.617583" ExtendedCentrelineTrack="8.52" ExtendedCentrelineLength="10" ExtendedCentrelineTickInterval="1" />
       <Threshold Name="36" Position="-34.717353+138.613444" />
     </Runway>
-    <!--SIDs-->
+  </Map>
+  <Map Type="System" Name="ED_RWY18_SIDs" Priority="1" Center="-34.702500+138.620833" CustomColourName="SIDs">
     <Line>
       <!--Rwy18 DOLVU1-->
       -344302.470+1383648.400/
@@ -29,7 +30,8 @@
       -343550.644+1383534.334/
       DOLVU
     </Line>
-    <!--STARs-->
+  </Map>
+  <Map Type="System" Name="ED_RWY18_STARs" Priority="1" Center="-34.702500+138.620833" CustomColourName="STARs">
     <Line>
       <!--Rwy18 AD2E-->
       AD VOR/
@@ -67,14 +69,16 @@
       KLAVA/
       APOKI
     </Line>
-    <Symbol Type="HollowTriangle">
+  </Map>
+  <Map Type="System" Name="ED_RWY18_Symbols" Priority="1" Center="-34.702500+138.620833" CustomColourName="Airways_Symbols">
+<Symbol Type="HollowTriangle">
       <Point>APOKI</Point>
       <Point>UPTUN</Point>
     </Symbol>
-    <Symbol Type="Circle">
+<Symbol Type="Circle">
       <Point>AD VOR</Point>
     </Symbol>
-    <Symbol Type="HollowStar">
+<Symbol Type="HollowStar">
       <Point>DOLVU</Point>
       <Point>POTUS</Point>
       <Point>PAVSA</Point>
@@ -93,8 +97,8 @@
       <Point>KLAVA</Point>
     </Symbol>
   </Map>
-  <Map Type="System" Name="ED_RWY18_NAMES" Priority="2" Center="-34.702500+138.620833">
-    <Label>
+  <Map Type="System" Name="ED_RWY18_Names" Priority="2" Center="-34.702500+138.620833" CustomColourName="Names">
+<Label>
       <Point>DOLVU</Point>
       <Point>AD VOR</Point>
       <Point>POTUS</Point>

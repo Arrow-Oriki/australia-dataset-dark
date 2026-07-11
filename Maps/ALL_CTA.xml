@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Maps>
-  <Map Type="System" Name="ALL_CTA" Priority="2">
-    <Line Name="ADELAIDE_CONTROL_ZONE_(C)" Pattern="Dashed">
+  <Map Type="System" Name="ALL_CTA" Priority="2" CustomColourName="CTA_Colour">
+    <Line Name="ADELAIDE_CONTROL_ZONE_(C)" Pattern="Dotted">
         -344727.000+1382426.000/
         -344838.000+1383218.000/
         -345057.000+1383555.000/
@@ -37,7 +37,7 @@
         -344823.107+1382251.319/
         -344727.000+1382426.000
     </Line>
-    <Line Name="AMBERLEY_CONTROL_ZONE_(C)" Pattern="Dashed">
+    <Line Name="AMBERLEY_CONTROL_ZONE_(C)" Pattern="Dotted">
         -272924.000+1524734.000/
         -274234.000+1525259.000/
         -274413.000+1525155.000/
@@ -69,7 +69,7 @@
         -272902.131+1524634.318/
         -272924.000+1524734.000
     </Line>
-    <Line Name="BRISBANE_CONTROL_ZONE_A_(C)" Pattern="Dashed">
+    <Line Name="BRISBANE_CONTROL_ZONE_A_(C)" Pattern="Dotted">
         -272058.000+1530006.000/
         -271917.000+1530104.000/
         -271858.834+1530114.618/
@@ -110,7 +110,7 @@
         -272146.156+1525941.608/
         -272058.000+1530006.000
     </Line>
-    <Line Name="BRISBANE_CONTROL_ZONE_B_(C)" Pattern="Dashed">
+    <Line Name="BRISBANE_CONTROL_ZONE_B_(C)" Pattern="Dotted">
         -272058.000+1530006.000/
         -271917.000+1530104.000/
         -271858.834+1530114.618/
@@ -153,7 +153,7 @@
         -272146.156+1525941.608/
         -272058.000+1530006.000
     </Line>
-    <Line Name="CAIRNS_CONTROL_ZONE_(C)" Pattern="Dashed">
+    <Line Name="CAIRNS_CONTROL_ZONE_(C)" Pattern="Dotted">
         -165320.000+1453930.000/
         -164841.000+1453809.000/
         -164826.903+1453817.038/
@@ -186,7 +186,7 @@
         -170030.000+1454420.000/
         -165320.000+1453930.000
     </Line>
-    <Line Name="CANBERRA_CONTROL_ZONE_(C)" Pattern="Dashed">
+    <Line Name="CANBERRA_CONTROL_ZONE_(C)" Pattern="Dotted">
         -352420.000+1490507.000/
         -351055.000+1490536.000/
         -351037.221+1490611.675/
@@ -209,7 +209,7 @@
         -352432.538+1490523.443/
         -352420.000+1490507.000
     </Line>
-    <Line Name="DARWIN_CONTROL_ZONE_(C)" Pattern="Dashed">
+    <Line Name="DARWIN_CONTROL_ZONE_(C)" Pattern="Dotted">
         -123148.000+1305121.000/
         -123113.000+1304936.000/
         -123108.660+1304927.853/
@@ -243,7 +243,7 @@
         -123202.616+1305225.287/
         -123148.000+1305121.000
     </Line>
-    <Line Name="EAST_SALE_CONTROL_ZONE_(C)" Pattern="Dashed">
+    <Line Name="EAST_SALE_CONTROL_ZONE_(C)" Pattern="Dotted">
         -380056.000+1470858.000/
         -380100.553+1471004.124/
         -380114.072+1471108.245/
@@ -282,7 +282,7 @@
         -380100.553+1470751.876/
         -380056.000+1470858.000
     </Line>
-    <Line Name="EDINBURGH_CONTROL_ZONE_(C)" Pattern="Dashed">
+    <Line Name="EDINBURGH_CONTROL_ZONE_(C)" Pattern="Dotted">
         -344337.000+1383127.000/
         -343222.000+1382708.000/
         -343209.000+1382839.000/
@@ -337,7 +337,7 @@
         -344351.473+1383131.978/
         -344337.000+1383127.000
     </Line>
-    <Line Name="GINGIN_CONTROL_ZONE_(C)" Pattern="Dashed">
+    <Line Name="GINGIN_CONTROL_ZONE_(C)" Pattern="Dotted">
         -313243.000+1155016.000/
         -313236.892+1154947.605/
         -313214.774+1154852.005/
@@ -373,7 +373,7 @@
         -313242.739+1155015.812/
         -313243.000+1155016.000
     </Line>
-    <Line Name="GOLD_COAST_CONTROL_ZONE_(C)" Pattern="Dashed">
+    <Line Name="GOLD_COAST_CONTROL_ZONE_(C)" Pattern="Dotted">
         -281651.000+1532755.000/
         -280709.000+1532304.000/
         -280637.828+1532321.626/
@@ -404,7 +404,7 @@
         -281701.612+1532851.180/
         -281651.000+1532755.000
     </Line>
-    <Line Name="LEARMONTH_CONTROL_ZONE_(C)" Pattern="Dashed">
+    <Line Name="LEARMONTH_CONTROL_ZONE_(C)" Pattern="Dotted">
         -220843.000+1135945.000/
         -220757.000+1140022.000/
         -215952.000+1140022.000/
@@ -471,7 +471,7 @@
         -220843.600+1135946.467/
         -220843.000+1135945.000
     </Line>
-    <Line Name="MELBOURNE_CONTROL_ZONE_(C)" Pattern="Dashed">
+    <Line Name="MELBOURNE_CONTROL_ZONE_(C)" Pattern="Dotted">
         -373225.000+1444943.000/
         -373300.000+1445612.000/
         -374130.000+1450442.000/
@@ -498,7 +498,7 @@
         -373231.279+1444850.879/
         -373225.000+1444943.000
     </Line>
-    <Line Name="OAKEY_CONTROL_ZONE_(C)" Pattern="Dashed">
+    <Line Name="OAKEY_CONTROL_ZONE_(C)" Pattern="Dotted">
         -271859.000+1514417.000/
         -271903.554+1514515.633/
         -271917.079+1514612.489/
@@ -537,7 +537,7 @@
         -271903.554+1514318.367/
         -271859.000+1514417.000
     </Line>
-    <Line Name="PEARCE_CONTROL_ZONE_(C)" Pattern="Dashed">
+    <Line Name="PEARCE_CONTROL_ZONE_(C)" Pattern="Dotted">
         -313706.000+1160525.000/
         -314406.000+1160237.000/
         -314524.000+1160033.000/
@@ -565,7 +565,7 @@
         -313636.131+1160449.431/
         -313706.000+1160525.000
     </Line>
-    <Line Name="PERTH_CONTROL_ZONE_(C)" Pattern="Dashed">
+    <Line Name="PERTH_CONTROL_ZONE_(C)" Pattern="Dotted">
         -320302.000+1155136.000/
         -320041.000+1154721.000/
         -315820.000+1154737.000/
@@ -610,7 +610,7 @@
         -320301.850+1155139.365/
         -320302.000+1155136.000
     </Line>
-    <Line Name="SCHERGER_CONTROL_ZONE_(C)" Pattern="Dashed">
+    <Line Name="SCHERGER_CONTROL_ZONE_(C)" Pattern="Dotted">
         -122226.000+1420514.000/
         -122239.660+1420754.000/
         -122320.226+1421029.156/
@@ -649,7 +649,7 @@
         -122239.660+1420234.000/
         -122226.000+1420514.000
     </Line>
-    <Line Name="SYDNEY_CONTROL_ZONE_(C)" Pattern="Dashed">
+    <Line Name="SYDNEY_CONTROL_ZONE_(C)" Pattern="Dotted">
         -335621.000+1510128.000/
         -335417.000+1510237.000/
         -335310.000+1510315.000/
@@ -846,7 +846,7 @@
         -335705.000+1510125.000/
         -335621.000+1510128.000
     </Line>
-    <Line Name="TINDAL_CONTROL_ZONE_(C)" Pattern="Dashed">
+    <Line Name="TINDAL_CONTROL_ZONE_(C)" Pattern="Dotted">
         -142116.000+1322240.000/
         -142125.109+1322427.548/
         -142152.158+1322611.834/
@@ -885,7 +885,7 @@
         -142125.109+1322052.452/
         -142116.000+1322240.000
     </Line>
-    <Line Name="TOWNSVILLE_CONTROL_ZONE_(C)" Pattern="Dashed">
+    <Line Name="TOWNSVILLE_CONTROL_ZONE_(C)" Pattern="Dotted">
         -191125.000+1463942.000/
         -191047.888+1464001.893/
         -190947.942+1464046.387/
@@ -928,7 +928,7 @@
         -191237.000+1463908.000/
         -191125.000+1463942.000
     </Line>
-    <Line Name="WESTERN_SYDNEY_CONTROL_ZONE_(C)" Pattern="Dashed">
+    <Line Name="WESTERN_SYDNEY_CONTROL_ZONE_(C)" Pattern="Dotted">
         -335939.000+1503615.000/
         -335623.000+1503358.000/
         -335358.000+1503428.000/
@@ -941,7 +941,7 @@
         -335634.000+1504238.000/
         -335939.000+1503615.000
     </Line>
-    <Line Name="WILLIAMTOWN_CONTROL_ZONE_A_(C)" Pattern="Dashed">
+    <Line Name="WILLIAMTOWN_CONTROL_ZONE_A_(C)" Pattern="Dotted">
         -324722.000+1513730.000/
         -324708.000+1513658.000/
         -324554.733+1513706.046/
@@ -1003,7 +1003,7 @@
         -324754.262+1513818.611/
         -324722.000+1513730.000
     </Line>
-    <Line Name="WILLIAMTOWN_CONTROL_ZONE_B_(C)" Pattern="Dashed">
+    <Line Name="WILLIAMTOWN_CONTROL_ZONE_B_(C)" Pattern="Dotted">
         -324036.000+1514008.000/
         -322301.000+1515408.000/
         -322312.683+1515507.449/
@@ -1053,7 +1053,7 @@
         -323924.130+1514135.104/
         -324036.000+1514008.000
     </Line>
-    <Line Name="ALBURY_CONTROL_ZONE_(D)" Pattern="Dashed">
+    <Line Name="ALBURY_CONTROL_ZONE_(D)" Pattern="Dotted">
         -355653.000+1470152.000/
         -360124.000+1464930.000/
         -360140.077+1464920.988/
@@ -1077,7 +1077,7 @@
         -355708.206+1470225.477/
         -355653.000+1470152.000
     </Line>
-    <Line Name="ALICE_SPRINGS_CONTROL_ZONE_(D)" Pattern="Dashed">
+    <Line Name="ALICE_SPRINGS_CONTROL_ZONE_(D)" Pattern="Dotted">
         -233849.000+1335110.000/
         -234603.000+1340438.000/
         -234645.438+1340448.701/
@@ -1102,7 +1102,7 @@
         -233906.140+1335018.970/
         -233849.000+1335110.000
     </Line>
-    <Line Name="ARCHERFIELD_CONTROL_ZONE_(D)" Pattern="Dashed">
+    <Line Name="ARCHERFIELD_CONTROL_ZONE_(D)" Pattern="Dotted">
         -273248.000+1525731.000/
         -273011.000+1525909.000/
         -273343.000+1530446.000/
@@ -1126,7 +1126,7 @@
         -273311.400+1525718.217/
         -273248.000+1525731.000
     </Line>
-    <Line Name="AVALON_CONTROL_ZONE_(D)" Pattern="Dashed">
+    <Line Name="AVALON_CONTROL_ZONE_(D)" Pattern="Dotted">
         -380836.000+1442149.000/
         -375454.000+1442429.000/
         -375450.897+1442441.909/
@@ -1151,7 +1151,7 @@
         -380917.583+1442304.790/
         -380836.000+1442149.000
     </Line>
-    <Line Name="BALLINA_CONTROL_ZONE_(D)" Pattern="Dashed">
+    <Line Name="BALLINA_CONTROL_ZONE_(D)" Pattern="Dotted">
         -284454.000+1533911.000/
         -284820.000+1532601.000/
         -284848.840+1532552.936/
@@ -1170,7 +1170,7 @@
         -284531.891+1533952.008/
         -284454.000+1533911.000
     </Line>
-    <Line Name="BANKSTOWN_CONTROL_ZONE_(D)" Pattern="Dashed">
+    <Line Name="BANKSTOWN_CONTROL_ZONE_(D)" Pattern="Dotted">
         -335323.000+1505403.000/
         -335156.000+1505513.000/
         -335135.000+1505752.000/
@@ -1189,7 +1189,7 @@
         -335800.000+1505443.000/
         -335323.000+1505403.000
     </Line>
-    <Line Name="BROOME_CONTROL_ZONE_(D)" Pattern="Dashed">
+    <Line Name="BROOME_CONTROL_ZONE_(D)" Pattern="Dotted">
         -174749.000+1221405.000/
         -174757.197+1221543.484/
         -174821.539+1221718.983/
@@ -1228,7 +1228,7 @@
         -174757.197+1221226.516/
         -174749.000+1221405.000
     </Line>
-    <Line Name="CAMDEN_CONTROL_ZONE_(D)" Pattern="Dashed">
+    <Line Name="CAMDEN_CONTROL_ZONE_(D)" Pattern="Dotted">
         -340025.000+1504112.000/
         -340026.822+1504137.137/
         -340032.234+1504201.511/
@@ -1267,7 +1267,7 @@
         -340026.822+1504046.863/
         -340025.000+1504112.000
     </Line>
-    <Line Name="COFFS_HARBOUR_CONTROL_ZONE_(D)" Pattern="Dashed">
+    <Line Name="COFFS_HARBOUR_CONTROL_ZONE_(D)" Pattern="Dotted">
         -302020.000+1525859.000/
         -302026.690+1525859.739/
         -302137.427+1525921.603/
@@ -1301,7 +1301,7 @@
         -301305.000+1530306.000/
         -302020.000+1525859.000
     </Line>
-    <Line Name="HAMILTON_IS_CONTROL_ZONE_(D)" Pattern="Dashed">
+    <Line Name="HAMILTON_IS_CONTROL_ZONE_(D)" Pattern="Dotted">
         -201934.000+1485110.000/
         -201917.000+1485009.000/
         -201840.212+1485020.162/
@@ -1348,7 +1348,7 @@
         -202001.374+1485102.908/
         -201934.000+1485110.000
     </Line>
-    <Line Name="HOBART_CONTROL_ZONE_(D)" Pattern="Dashed">
+    <Line Name="HOBART_CONTROL_ZONE_(D)" Pattern="Dotted">
         -425158.000+1472133.000/
         -424949.000+1471945.000/
         -424846.147+1471952.613/
@@ -1375,7 +1375,7 @@
         -425718.000+1473140.000/
         -425158.000+1472133.000
     </Line>
-    <Line Name="JANDAKOT_CONTROL_ZONE_(D)" Pattern="Dashed">
+    <Line Name="JANDAKOT_CONTROL_ZONE_(D)" Pattern="Dotted">
         -320251.000+1155252.000/
         -320253.733+1155328.877/
         -320301.850+1155404.635/
@@ -1414,7 +1414,7 @@
         -320253.733+1155215.123/
         -320251.000+1155252.000
     </Line>
-    <Line Name="KARRATHA_CONTROL_ZONE_(D)" Pattern="Dashed">
+    <Line Name="KARRATHA_CONTROL_ZONE_(D)" Pattern="Dotted">
         -203543.000+1163111.000/
         -203758.000+1163556.000/
         -203723.701+1163615.287/
@@ -1461,7 +1461,7 @@
         -203724.916+1163022.125/
         -203543.000+1163111.000
     </Line>
-    <Line Name="LAUNCESTON_CONTROL_ZONE_(D)" Pattern="Dashed">
+    <Line Name="LAUNCESTON_CONTROL_ZONE_(D)" Pattern="Dotted">
         -412438.000+1471247.000/
         -412445.277+1471438.140/
         -412506.890+1471625.923/
@@ -1500,7 +1500,7 @@
         -412445.277+1471055.860/
         -412438.000+1471247.000
     </Line>
-    <Line Name="MACKAY_CONTROL_ZONE_(D)" Pattern="Dashed">
+    <Line Name="MACKAY_CONTROL_ZONE_(D)" Pattern="Dotted">
         -210423.000+1491115.000/
         -210428.466+1491221.994/
         -210444.696+1491326.957/
@@ -1539,7 +1539,7 @@
         -210428.466+1491008.006/
         -210423.000+1491115.000
     </Line>
-    <Line Name="MOORABBIN_CONTROL_ZONE_(D)" Pattern="Dashed">
+    <Line Name="MOORABBIN_CONTROL_ZONE_(D)" Pattern="Dotted">
         -375533.000+1450608.000/
         -375535.733+1450647.626/
         -375543.848+1450726.050/
@@ -1578,7 +1578,7 @@
         -375535.733+1450528.374/
         -375533.000+1450608.000
     </Line>
-    <Line Name="PARAFIELD_CONTROL_ZONE_(D)" Pattern="Dashed">
+    <Line Name="PARAFIELD_CONTROL_ZONE_(D)" Pattern="Dotted">
         -344838.000+1383218.000/
         -344629.000+1383413.000/
         -344620.000+1383536.000/
@@ -1609,7 +1609,7 @@
         -345057.000+1383555.000/
         -344838.000+1383218.000
     </Line>
-    <Line Name="ROCKHAMPTON_CONTROL_ZONE_(D)" Pattern="Dashed">
+    <Line Name="ROCKHAMPTON_CONTROL_ZONE_(D)" Pattern="Dotted">
         -232449.000+1502112.000/
         -232432.485+1502103.931/
         -232321.753+1502043.350/
@@ -1652,7 +1652,7 @@
         -232607.000+1502146.000/
         -232449.000+1502112.000
     </Line>
-    <Line Name="SUNSHINE_COAST_CONTROL_ZONE_(D)" Pattern="Dashed">
+    <Line Name="SUNSHINE_COAST_CONTROL_ZONE_(D)" Pattern="Dotted">
         -263113.000+1525754.000/
         -263029.904+1525828.463/
         -262938.173+1525926.351/
@@ -1716,7 +1716,7 @@
         -263153.000+1525828.000/
         -263113.000+1525754.000
     </Line>
-    <Line Name="TAMWORTH_CONTROL_ZONE_(D)" Pattern="Dashed">
+    <Line Name="TAMWORTH_CONTROL_ZONE_(D)" Pattern="Dotted">
         -311252.000+1504800.000/
         -311451.000+1504736.000/
         -311458.000+1504948.000/
@@ -1748,7 +1748,7 @@
         -311249.783+1504758.358/
         -311252.000+1504800.000
     </Line>
-    <Line Name="ADELAIDE_CTA_A" Pattern="Dashed">
+    <Line Name="ADELAIDE_CTA_A" Pattern="Dotted">
         -353001.000+1364920.000/
         -351526.000+1373454.000/
         -352137.467+1373822.226/
@@ -1791,7 +1791,7 @@
         -352651.832+1364738.867/
         -353001.000+1364920.000
     </Line>
-    <Line Name="BRISBANE_FIR_CTA_A1" Pattern="Dashed">
+    <Line Name="BRISBANE_FIR_CTA_A1" Pattern="Dotted">
         -224731.000+1473214.000/
         -204343.000+1470135.000/
         -204439.000+1464530.000/
@@ -1949,7 +1949,7 @@
         -232000.000+1480000.000/
         -224731.000+1473214.000
     </Line>
-    <Line Name="BRISBANE_FIR_CTA_A2" Pattern="Dashed">
+    <Line Name="BRISBANE_FIR_CTA_A2" Pattern="Dotted">
         -140813.000+1150832.000/
         -120000.000+1143000.000/
         -120000.000+1232000.000/
@@ -2054,7 +2054,7 @@
         -190000.000+1201500.000/
         -140813.000+1150832.000
     </Line>
-    <Line Name="DARWIN_CTA_A1" Pattern="Dashed">
+    <Line Name="DARWIN_CTA_A1" Pattern="Dotted">
         -105524.000+1305423.000/
         -105645.589+1311017.971/
         -110047.915+1312544.373/
@@ -2093,7 +2093,7 @@
         -105645.589+1303828.029/
         -105524.000+1305423.000
     </Line>
-    <Line Name="MELBOURNE_FIR_CTA_A1" Pattern="Dashed">
+    <Line Name="MELBOURNE_FIR_CTA_A1" Pattern="Dotted">
         -332222.000+1482227.000/
         -324303.000+1492142.000/
         -324914.000+1492824.000/
@@ -2227,7 +2227,7 @@
         -341702.000+1482730.000/
         -332222.000+1482227.000
     </Line>
-    <Line Name="MELBOURNE_FIR_CTA_A2" Pattern="Dashed">
+    <Line Name="MELBOURNE_FIR_CTA_A2" Pattern="Dotted">
         -060000.000+0750000.000/
         -020000.000+0780000.000/
         -020000.000+0920000.000/
@@ -2293,7 +2293,7 @@
         -800000.000+0750000.000/
         -060000.000+0750000.000
     </Line>
-    <Line Name="PERTH_CTA_A" Pattern="Dashed">
+    <Line Name="PERTH_CTA_A" Pattern="Dotted">
         -330337.000+1144613.000/
         -324514.000+1150624.000/
         -323411.000+1151826.000/
@@ -2335,7 +2335,7 @@
         -325406.679+1143527.190/
         -330337.000+1144613.000
     </Line>
-    <Line Name="ADELAIDE_CTA_C1" Pattern="Dashed">
+    <Line Name="ADELAIDE_CTA_C1" Pattern="Dotted">
         -344727.000+1382426.000/
         -344430.000+1383150.000/
         -344438.887+1383158.819/
@@ -2398,7 +2398,7 @@
         -344823.107+1382251.319/
         -344727.000+1382426.000
     </Line>
-    <Line Name="ADELAIDE_CTA_C2" Pattern="Dashed">
+    <Line Name="ADELAIDE_CTA_C2" Pattern="Dotted">
         -343649.000+1383128.000/
         -343707.158+1383541.207/
         -343801.085+1383946.810/
@@ -2437,7 +2437,7 @@
         -343707.158+1382714.793/
         -343649.000+1383128.000
     </Line>
-    <Line Name="ADELAIDE_CTA_C3" Pattern="Dashed">
+    <Line Name="ADELAIDE_CTA_C3" Pattern="Dotted">
         -342049.000+1383128.000/
         -342121.580+1383902.333/
         -342258.350+1384623.151/
@@ -2476,7 +2476,7 @@
         -342121.580+1382353.667/
         -342049.000+1383128.000
     </Line>
-    <Line Name="ADELAIDE_CTA_C4" Pattern="Dashed">
+    <Line Name="ADELAIDE_CTA_C4" Pattern="Dotted">
         -340649.000+1383128.000/
         -340734.125+1384157.288/
         -340948.167+1385208.006/
@@ -2515,7 +2515,7 @@
         -340734.125+1382058.712/
         -340649.000+1383128.000
     </Line>
-    <Line Name="ADELAIDE_CTA_C5" Pattern="Dashed">
+    <Line Name="ADELAIDE_CTA_C5" Pattern="Dotted">
         -352056.000+1371751.000/
         -351526.000+1373454.000/
         -352137.467+1373822.226/
@@ -2558,7 +2558,7 @@
         -351839.954+1371636.876/
         -352056.000+1371751.000
     </Line>
-    <Line Name="ALBURY_CTA_C1" Pattern="Dashed">
+    <Line Name="ALBURY_CTA_C1" Pattern="Dotted">
         -354811.000+1470028.000/
         -353447.000+1470606.000/
         -353552.891+1471035.120/
@@ -2603,7 +2603,7 @@
         -354805.000+1465758.000/
         -354811.000+1470028.000
     </Line>
-    <Line Name="ALBURY_CTA_C2" Pattern="Dashed">
+    <Line Name="ALBURY_CTA_C2" Pattern="Dotted">
         -361827.000+1462525.000/
         -361520.000+1463024.000/
         -361632.008+1463106.649/
@@ -2622,7 +2622,7 @@
         -361900.687+1462543.354/
         -361827.000+1462525.000
     </Line>
-    <Line Name="ALBURY_CTA_C3" Pattern="Dashed">
+    <Line Name="ALBURY_CTA_C3" Pattern="Dotted">
         -354811.000+1470028.000/
         -352030.000+1471204.000/
         -352146.346+1471650.347/
@@ -2666,7 +2666,7 @@
         -354805.000+1465758.000/
         -354811.000+1470028.000
     </Line>
-    <Line Name="ALICE_SPRINGS_CTA_C1" Pattern="Dashed">
+    <Line Name="ALICE_SPRINGS_CTA_C1" Pattern="Dotted">
         -232534.000+1335241.000/
         -232554.000+1335650.815/
         -232653.389+1340053.101/
@@ -2705,7 +2705,7 @@
         -232554.000+1334831.185/
         -232534.000+1335241.000
     </Line>
-    <Line Name="ALICE_SPRINGS_CTA_C2" Pattern="Dashed">
+    <Line Name="ALICE_SPRINGS_CTA_C2" Pattern="Dotted">
         -242551.000+1340129.000/
         -242254.000+1340048.000/
         -242301.033+1335932.806/
@@ -2748,7 +2748,7 @@
         -242412.187+1340719.827/
         -242551.000+1340129.000
     </Line>
-    <Line Name="ALICE_SPRINGS_CTA_C3" Pattern="Dashed">
+    <Line Name="ALICE_SPRINGS_CTA_C3" Pattern="Dotted">
         -243639.000+1340359.000/
         -243144.000+1340250.000/
         -243152.742+1340116.356/
@@ -2791,7 +2791,7 @@
         -243431.934+1341129.232/
         -243639.000+1340359.000
     </Line>
-    <Line Name="ALICE_SPRINGS_CTA_C4" Pattern="Dashed">
+    <Line Name="ALICE_SPRINGS_CTA_C4" Pattern="Dotted">
         -224734.000+1335241.000/
         -224828.283+1340359.125/
         -225109.518+1341457.093/
@@ -2830,7 +2830,7 @@
         -224828.283+1334122.875/
         -224734.000+1335241.000
     </Line>
-    <Line Name="ALICE_SPRINGS_CTA_C5" Pattern="Dashed">
+    <Line Name="ALICE_SPRINGS_CTA_C5" Pattern="Dotted">
         -222734.000+1335241.000/
         -222846.200+1340742.974/
         -223220.669+1342218.324/
@@ -2869,7 +2869,7 @@
         -222846.200+1333739.026/
         -222734.000+1335241.000
     </Line>
-    <Line Name="BALLINA_CTA_C1" Pattern="Dashed">
+    <Line Name="BALLINA_CTA_C1" Pattern="Dotted">
         -283756.000+1531714.000/
         -283929.000+1531644.000/
         -284232.000+1531039.000/
@@ -2896,7 +2896,7 @@
         -283818.950+1531832.556/
         -283756.000+1531714.000
     </Line>
-    <Line Name="BALLINA_CTA_C2" Pattern="Dashed">
+    <Line Name="BALLINA_CTA_C2" Pattern="Dotted">
         -282827.000+1530316.000/
         -285102.000+1525725.000/
         -285431.000+1525630.000/
@@ -2926,7 +2926,7 @@
         -282922.534+1530405.141/
         -282827.000+1530316.000
     </Line>
-    <Line Name="BRISBANE_CTA_C01" Pattern="Dashed">
+    <Line Name="BRISBANE_CTA_C01" Pattern="Dotted">
         -271328.000+1530739.000/
         -271102.000+1530748.000/
         -271113.919+1530923.555/
@@ -2957,7 +2957,7 @@
         -271358.000+1530406.000/
         -271328.000+1530739.000
     </Line>
-    <Line Name="BRISBANE_CTA_C02" Pattern="Dashed">
+    <Line Name="BRISBANE_CTA_C02" Pattern="Dotted">
         -272345.000+1525551.000/
         -271659.000+1525525.000/
         -271519.812+1525642.563/
@@ -3008,7 +3008,7 @@
         -272446.750+1525557.373/
         -272345.000+1525551.000
     </Line>
-    <Line Name="BRISBANE_CTA_C03" Pattern="Dashed">
+    <Line Name="BRISBANE_CTA_C03" Pattern="Dotted">
         -272345.000+1525551.000/
         -271659.000+1525525.000/
         -271519.812+1525642.563/
@@ -3061,7 +3061,7 @@
         -272446.750+1525557.373/
         -272345.000+1525551.000
     </Line>
-    <Line Name="BRISBANE_CTA_C04" Pattern="Dashed">
+    <Line Name="BRISBANE_CTA_C04" Pattern="Dotted">
         -273007.000+1525210.000/
         -272809.918+1525109.811/
         -272538.296+1525024.429/
@@ -3096,7 +3096,7 @@
         -273429.000+1524940.000/
         -273007.000+1525210.000
     </Line>
-    <Line Name="BRISBANE_CTA_C05" Pattern="Dashed">
+    <Line Name="BRISBANE_CTA_C05" Pattern="Dotted">
         -274234.000+1525259.000/
         -271325.000+1524103.000/
         -270455.000+1525241.000/
@@ -3139,7 +3139,7 @@
         -274514.000+1525851.000/
         -274234.000+1525259.000
     </Line>
-    <Line Name="BRISBANE_CTA_C06" Pattern="Dashed">
+    <Line Name="BRISBANE_CTA_C06" Pattern="Dotted">
         -275709.000+1531723.000/
         -275151.000+1531210.000/
         -275157.000+1530821.000/
@@ -3205,7 +3205,7 @@
         -280400.000+1532117.000/
         -275709.000+1531723.000
     </Line>
-    <Line Name="BRISBANE_CTA_C07" Pattern="Dashed">
+    <Line Name="BRISBANE_CTA_C07" Pattern="Dotted">
         -275151.000+1531210.000/
         -275157.000+1530821.000/
         -275129.530+1530227.465/
@@ -3269,7 +3269,7 @@
         -275215.000+1531233.000/
         -275151.000+1531210.000
     </Line>
-    <Line Name="BRISBANE_CTA_C08" Pattern="Dashed">
+    <Line Name="BRISBANE_CTA_C08" Pattern="Dotted">
         -280202.000+1531003.000/
         -282827.000+1530316.000/
         -282922.534+1530405.141/
@@ -3332,7 +3332,7 @@
         -280157.000+1530821.000/
         -280202.000+1531003.000
     </Line>
-    <Line Name="BRISBANE_CTA_C09" Pattern="Dashed">
+    <Line Name="BRISBANE_CTA_C09" Pattern="Dotted">
         -280200.000+1523427.000/
         -280010.407+1523156.972/
         -275358.664+1522500.644/
@@ -3397,7 +3397,7 @@
         -280956.318+1523331.010/
         -280200.000+1523427.000
     </Line>
-    <Line Name="BRISBANE_CTA_C10" Pattern="Dashed">
+    <Line Name="BRISBANE_CTA_C10" Pattern="Dotted">
         -280812.000+1521644.000/
         -280332.514+1521155.557/
         -275412.529+1520439.173/
@@ -3491,7 +3491,7 @@
         -280948.257+1521630.175/
         -280812.000+1521644.000
     </Line>
-    <Line Name="BRISBANE_CTA_C11" Pattern="Dashed">
+    <Line Name="BRISBANE_CTA_C11" Pattern="Dotted">
         -280812.000+1521644.000/
         -280332.514+1521155.557/
         -275412.529+1520439.173/
@@ -3587,7 +3587,7 @@
         -280948.257+1521630.175/
         -280812.000+1521644.000
     </Line>
-    <Line Name="CAIRNS_CTA_C1" Pattern="Dashed">
+    <Line Name="CAIRNS_CTA_C1" Pattern="Dotted">
         -164841.000+1453809.000/
         -164252.000+1453525.000/
         -164149.291+1453634.821/
@@ -3612,7 +3612,7 @@
         -164826.903+1453817.038/
         -164841.000+1453809.000
     </Line>
-    <Line Name="CAIRNS_CTA_C2" Pattern="Dashed">
+    <Line Name="CAIRNS_CTA_C2" Pattern="Dotted">
         -164841.000+1453809.000/
         -164252.000+1453525.000/
         -164149.291+1453634.821/
@@ -3644,7 +3644,7 @@
         -165320.000+1453930.000/
         -164841.000+1453809.000
     </Line>
-    <Line Name="CAIRNS_CTA_C3" Pattern="Dashed">
+    <Line Name="CAIRNS_CTA_C3" Pattern="Dotted">
         -164252.000+1453525.000/
         -163318.000+1453055.000/
         -163157.529+1453309.541/
@@ -3685,7 +3685,7 @@
         -164317.970+1453502.096/
         -164252.000+1453525.000
     </Line>
-    <Line Name="CAIRNS_CTA_C4" Pattern="Dashed">
+    <Line Name="CAIRNS_CTA_C4" Pattern="Dotted">
         -163704.000+1453242.000/
         -163318.000+1453055.000/
         -163157.529+1453309.541/
@@ -3730,7 +3730,7 @@
         -163713.320+1453233.523/
         -163704.000+1453242.000
     </Line>
-    <Line Name="CAIRNS_CTA_C5" Pattern="Dashed">
+    <Line Name="CAIRNS_CTA_C5" Pattern="Dotted">
         -170546.000+1451022.000/
         -170316.724+1450914.903/
         -165712.749+1450734.169/
@@ -3773,7 +3773,7 @@
         -165837.000+1452307.000/
         -170546.000+1451022.000
     </Line>
-    <Line Name="CAIRNS_CTA_C6" Pattern="Dashed">
+    <Line Name="CAIRNS_CTA_C6" Pattern="Dotted">
         -170546.000+1451022.000/
         -170316.724+1450914.903/
         -165712.749+1450734.169/
@@ -3816,7 +3816,7 @@
         -165837.000+1452307.000/
         -170546.000+1451022.000
     </Line>
-    <Line Name="CAIRNS_CTA_C7" Pattern="Dashed">
+    <Line Name="CAIRNS_CTA_C7" Pattern="Dotted">
         -170546.000+1451022.000/
         -171252.000+1445741.000/
         -170801.185+1445528.005/
@@ -3859,7 +3859,7 @@
         -170858.412+1451200.351/
         -170546.000+1451022.000
     </Line>
-    <Line Name="CAIRNS_CTA_C8" Pattern="Dashed">
+    <Line Name="CAIRNS_CTA_C8" Pattern="Dotted">
         -160101.000+1454438.000/
         -160146.381+1455340.000/
         -160401.164+1460225.736/
@@ -3898,7 +3898,7 @@
         -160146.381+1453536.000/
         -160101.000+1454438.000
     </Line>
-    <Line Name="CAIRNS_CTA_C9" Pattern="Dashed">
+    <Line Name="CAIRNS_CTA_C9" Pattern="Dotted">
         -154601.000+1454438.000/
         -154659.922+1455621.721/
         -154954.925+1460744.401/
@@ -3937,7 +3937,7 @@
         -154659.922+1453254.279/
         -154601.000+1454438.000
     </Line>
-    <Line Name="CANBERRA_CTA_C1" Pattern="Dashed">
+    <Line Name="CANBERRA_CTA_C1" Pattern="Dotted">
         -350639.000+1490649.000/
         -350159.000+1490435.000/
         -350150.711+1490504.022/
@@ -3982,7 +3982,7 @@
         -350721.237+1490501.540/
         -350639.000+1490649.000
     </Line>
-    <Line Name="CANBERRA_CTA_C2" Pattern="Dashed">
+    <Line Name="CANBERRA_CTA_C2" Pattern="Dotted">
         -353130.000+1490344.000/
         -353550.000+1490349.000/
         -353634.694+1490728.695/
@@ -4024,7 +4024,7 @@
         -353043.987+1490155.315/
         -353130.000+1490344.000
     </Line>
-    <Line Name="CANBERRA_CTA_C3" Pattern="Dashed">
+    <Line Name="CANBERRA_CTA_C3" Pattern="Dotted">
         -345653.000+1491145.000/
         -345711.157+1491559.235/
         -345805.082+1492005.838/
@@ -4063,7 +4063,7 @@
         -345711.157+1490730.765/
         -345653.000+1491145.000
     </Line>
-    <Line Name="CANBERRA_CTA_C4" Pattern="Dashed">
+    <Line Name="CANBERRA_CTA_C4" Pattern="Dotted">
         -354041.000+1491140.000/
         -354549.000+1490148.000/
         -354503.790+1485906.427/
@@ -4096,7 +4096,7 @@
         -353327.000+1492531.000/
         -354041.000+1491140.000
     </Line>
-    <Line Name="CANBERRA_CTA_C5" Pattern="Dashed">
+    <Line Name="CANBERRA_CTA_C5" Pattern="Dotted">
         -355158.000+1484804.000/
         -355128.962+1484704.400/
         -354727.382+1484003.175/
@@ -4128,7 +4128,7 @@
         -354549.000+1490148.000/
         -355158.000+1484804.000
     </Line>
-    <Line Name="COFFS_HARBOUR_CTA_C1" Pattern="Dashed">
+    <Line Name="COFFS_HARBOUR_CTA_C1" Pattern="Dotted">
         -295817.000+1525908.000/
         -295729.980+1530251.437/
         -295710.000+1530716.000/
@@ -4172,7 +4172,7 @@
         -300303.000+1530054.000/
         -295817.000+1525908.000
     </Line>
-    <Line Name="COFFS_HARBOUR_CTA_C2" Pattern="Dashed">
+    <Line Name="COFFS_HARBOUR_CTA_C2" Pattern="Dotted">
         -295038.000+1525619.000/
         -294937.209+1530115.710/
         -294910.000+1530716.000/
@@ -4218,7 +4218,7 @@
         -295817.000+1525908.000/
         -295038.000+1525619.000
     </Line>
-    <Line Name="COFFS_HARBOUR_CTA_C3" Pattern="Dashed">
+    <Line Name="COFFS_HARBOUR_CTA_C3" Pattern="Dotted">
         -293619.000+1525104.000/
         -293450.712+1525816.896/
         -293410.000+1530716.000/
@@ -4268,7 +4268,7 @@
         -295038.000+1525619.000/
         -293619.000+1525104.000
     </Line>
-    <Line Name="DARWIN_CTA_C1" Pattern="Dashed">
+    <Line Name="DARWIN_CTA_C1" Pattern="Dotted">
         -122458.000+1305805.000/
         -121936.000+1305803.000/
         -121947.223+1305816.345/
@@ -4286,7 +4286,7 @@
         -123130.000+1305645.000/
         -122458.000+1305805.000
     </Line>
-    <Line Name="DARWIN_CTA_C2" Pattern="Dashed">
+    <Line Name="DARWIN_CTA_C2" Pattern="Dotted">
         -122838.000+1304605.000/
         -122946.000+1303806.000/
         -122728.864+1303728.301/
@@ -4345,7 +4345,7 @@
         -122910.000+1304631.000/
         -122838.000+1304605.000
     </Line>
-    <Line Name="DARWIN_CTA_C3" Pattern="Dashed">
+    <Line Name="DARWIN_CTA_C3" Pattern="Dotted">
         -115908.000+1303921.000/
         -120330.000+1304151.000/
         -120154.322+1304538.451/
@@ -4388,7 +4388,7 @@
         -115924.727+1303902.936/
         -115908.000+1303921.000
     </Line>
-    <Line Name="DARWIN_CTA_C4" Pattern="Dashed">
+    <Line Name="DARWIN_CTA_C4" Pattern="Dotted">
         -114524.000+1305423.000/
         -114600.370+1310128.692/
         -114748.385+1310821.543/
@@ -4427,7 +4427,7 @@
         -114600.370+1304717.308/
         -114524.000+1305423.000
     </Line>
-    <Line Name="DARWIN_CTA_C5" Pattern="Dashed">
+    <Line Name="DARWIN_CTA_C5" Pattern="Dotted">
         -113524.000+1305423.000/
         -113609.435+1310314.793/
         -113824.373+1311150.573/
@@ -4466,7 +4466,7 @@
         -113609.435+1304531.207/
         -113524.000+1305423.000
     </Line>
-    <Line Name="DARWIN_CTA_C6" Pattern="Dashed">
+    <Line Name="DARWIN_CTA_C6" Pattern="Dotted">
         -112024.000+1305423.000/
         -112123.013+1310553.712/
         -112418.278+1311703.677/
@@ -4505,7 +4505,7 @@
         -112123.013+1304252.288/
         -112024.000+1305423.000
     </Line>
-    <Line Name="GOLD_COAST_CTA_C1" Pattern="Dashed">
+    <Line Name="GOLD_COAST_CTA_C1" Pattern="Dotted">
         -275913.000+1531834.000/
         -280400.000+1532117.000/
         -280709.000+1532304.000/
@@ -4541,7 +4541,7 @@
         -275838.127+1531918.937/
         -275913.000+1531834.000
     </Line>
-    <Line Name="GOLD_COAST_CTA_C2" Pattern="Dashed">
+    <Line Name="GOLD_COAST_CTA_C2" Pattern="Dotted">
         -280400.000+1532117.000/
         -275913.000+1531834.000/
         -275838.127+1531918.937/
@@ -4575,7 +4575,7 @@
         -281945.000+1531710.000/
         -280400.000+1532117.000
     </Line>
-    <Line Name="HOBART_CTA_C1" Pattern="Dashed">
+    <Line Name="HOBART_CTA_C1" Pattern="Dotted">
         -424001.000+1465337.000/
         -423544.567+1465618.418/
         -423128.738+1470025.028/
@@ -4605,7 +4605,7 @@
         -424640.000+1470330.000/
         -424001.000+1465337.000
     </Line>
-    <Line Name="HOBART_CTA_C2" Pattern="Dashed">
+    <Line Name="HOBART_CTA_C2" Pattern="Dotted">
         -424001.000+1465337.000/
         -423612.000+1464828.000/
         -423312.612+1465027.155/
@@ -4636,7 +4636,7 @@
         -424640.000+1470330.000/
         -424001.000+1465337.000
     </Line>
-    <Line Name="HOBART_CTA_C3" Pattern="Dashed">
+    <Line Name="HOBART_CTA_C3" Pattern="Dotted">
         -422505.000+1463332.000/
         -424001.000+1465337.000/
         -424640.000+1470330.000/
@@ -4674,7 +4674,7 @@
         -421829.904+1463948.447/
         -422505.000+1463332.000
     </Line>
-    <Line Name="LAUNCESTON_CTA_C1" Pattern="Dashed">
+    <Line Name="LAUNCESTON_CTA_C1" Pattern="Dotted">
         -411959.000+1463636.000/
         -413139.000+1470031.000/
         -414154.000+1470452.000/
@@ -4698,7 +4698,7 @@
         -411732.809+1463812.268/
         -411959.000+1463636.000
     </Line>
-    <Line Name="LAUNCESTON_CTA_C2" Pattern="Dashed">
+    <Line Name="LAUNCESTON_CTA_C2" Pattern="Dotted">
         -414154.000+1470452.000/
         -420116.000+1470046.000/
         -420210.442+1470546.165/
@@ -4728,7 +4728,7 @@
         -413139.000+1470031.000/
         -414154.000+1470452.000
     </Line>
-    <Line Name="LAUNCESTON_CTA_C3" Pattern="Dashed">
+    <Line Name="LAUNCESTON_CTA_C3" Pattern="Dotted">
         -411641.000+1462953.000/
         -413139.000+1470031.000/
         -414154.000+1470452.000/
@@ -4759,7 +4759,7 @@
         -411430.533+1463119.247/
         -411641.000+1462953.000
     </Line>
-    <Line Name="LAUNCESTON_CTA_C4" Pattern="Dashed">
+    <Line Name="LAUNCESTON_CTA_C4" Pattern="Dotted">
         -411144.000+1461951.000/
         -413139.000+1470031.000/
         -414154.000+1470452.000/
@@ -4790,7 +4790,7 @@
         -410956.353+1462100.916/
         -411144.000+1461951.000
     </Line>
-    <Line Name="MELBOURNE_CTA_C1" Pattern="Dashed">
+    <Line Name="MELBOURNE_CTA_C1" Pattern="Dotted">
         -374821.000+1444206.000/
         -374420.000+1443925.000/
         -374300.617+1443839.251/
@@ -4826,7 +4826,7 @@
         -374907.372+1444334.255/
         -374821.000+1444206.000
     </Line>
-    <Line Name="MELBOURNE_CTA_C2" Pattern="Dashed">
+    <Line Name="MELBOURNE_CTA_C2" Pattern="Dotted">
         -374821.000+1444206.000/
         -374420.000+1443925.000/
         -374300.617+1443839.251/
@@ -4861,7 +4861,7 @@
         -375229.000+1444412.000/
         -374821.000+1444206.000
     </Line>
-    <Line Name="MELBOURNE_CTA_C3" Pattern="Dashed">
+    <Line Name="MELBOURNE_CTA_C3" Pattern="Dotted">
         -374448.000+1442611.000/
         -375104.000+1442513.000/
         -375057.000+1442733.000/
@@ -4920,7 +4920,7 @@
         -374443.000+1443246.000/
         -374448.000+1442611.000
     </Line>
-    <Line Name="MELBOURNE_CTA_C4" Pattern="Dashed">
+    <Line Name="MELBOURNE_CTA_C4" Pattern="Dotted">
         -374448.000+1442611.000/
         -375104.000+1442513.000/
         -375057.000+1442733.000/
@@ -4976,7 +4976,7 @@
         -374301.762+1442538.052/
         -374448.000+1442611.000
     </Line>
-    <Line Name="MELBOURNE_CTA_C5" Pattern="Dashed">
+    <Line Name="MELBOURNE_CTA_C5" Pattern="Dotted">
         -370936.000+1445032.000/
         -371003.165+1445704.237/
         -371123.851+1450324.787/
@@ -5015,7 +5015,7 @@
         -371003.165+1444359.763/
         -370936.000+1445032.000
     </Line>
-    <Line Name="MELBOURNE_CTA_C6N1" Pattern="Dashed">
+    <Line Name="MELBOURNE_CTA_C6N1" Pattern="Dotted">
         -365941.000+1442423.000/
         -371217.000+1443454.000/
         -371123.851+1443739.213/
@@ -5028,7 +5028,7 @@
         -365717.258+1443116.423/
         -365941.000+1442423.000
     </Line>
-    <Line Name="MELBOURNE_CTA_C7N" Pattern="Dashed">
+    <Line Name="MELBOURNE_CTA_C7N" Pattern="Dotted">
         -375404.000+1441722.000/
         -380146.000+1440104.000/
         -375447.347+1435656.051/
@@ -5069,7 +5069,7 @@
         -375431.430+1441736.248/
         -375404.000+1441722.000
     </Line>
-    <Line Name="PERTH_CTA_C1" Pattern="Dashed">
+    <Line Name="PERTH_CTA_C1" Pattern="Dotted">
         -320515.000+1154925.000/
         -320507.317+1154913.279/
         -320345.853+1154737.412/
@@ -5127,7 +5127,7 @@
         -320519.696+1154922.770/
         -320515.000+1154925.000
     </Line>
-    <Line Name="PERTH_CTA_C2" Pattern="Dashed">
+    <Line Name="PERTH_CTA_C2" Pattern="Dotted">
         -320948.000+1155641.000/
         -320851.000+1154155.000/
         -320815.172+1154116.965/
@@ -5165,14 +5165,14 @@
         -320740.000+1155851.000/
         -320948.000+1155641.000
     </Line>
-    <Line Name="PERTH_CTA_C3" Pattern="Dashed">
+    <Line Name="PERTH_CTA_C3" Pattern="Dotted">
         -320851.000+1154155.000/
         -321010.000+1154422.000/
         -321059.000+1155529.000/
         -320948.000+1155641.000/
         -320851.000+1154155.000
     </Line>
-    <Line Name="PERTH_CTA_C4" Pattern="Dashed">
+    <Line Name="PERTH_CTA_C4" Pattern="Dotted">
         -321329.000+1154047.000/
         -321349.000+1155652.000/
         -321335.000+1160503.000/
@@ -5208,7 +5208,7 @@
         -321048.927+1153739.287/
         -321329.000+1154047.000
     </Line>
-    <Line Name="PERTH_CTA_C5" Pattern="Dashed">
+    <Line Name="PERTH_CTA_C5" Pattern="Dotted">
         -322351.000+1152938.000/
         -321329.000+1154047.000/
         -321349.000+1155652.000/
@@ -5245,7 +5245,7 @@
         -321946.251+1152455.802/
         -322351.000+1152938.000
     </Line>
-    <Line Name="PERTH_CTA_C6" Pattern="Dashed">
+    <Line Name="PERTH_CTA_C6" Pattern="Dotted">
         -323411.000+1151826.000/
         -322351.000+1152938.000/
         -321329.000+1154047.000/
@@ -5283,7 +5283,7 @@
         -322842.293+1151209.799/
         -323411.000+1151826.000
     </Line>
-    <Line Name="PERTH_CTA_C7" Pattern="Dashed">
+    <Line Name="PERTH_CTA_C7" Pattern="Dotted">
         -324514.000+1150624.000/
         -323411.000+1151826.000/
         -322351.000+1152938.000/
@@ -5323,7 +5323,7 @@
         -323815.189+1145826.267/
         -324514.000+1150624.000
     </Line>
-    <Line Name="ROCKHAMPTON_CTA_C1" Pattern="Dashed">
+    <Line Name="ROCKHAMPTON_CTA_C1" Pattern="Dotted">
         -231055.000+1495127.000/
         -231034.937+1495130.078/
         -230454.355+1495424.609/
@@ -5370,7 +5370,7 @@
         -231741.000+1501153.000/
         -231055.000+1495127.000
     </Line>
-    <Line Name="ROCKHAMPTON_CTA_C2" Pattern="Dashed">
+    <Line Name="ROCKHAMPTON_CTA_C2" Pattern="Dotted">
         -231741.000+1501153.000/
         -230751.000+1494216.000/
         -230727.835+1494219.166/
@@ -5417,7 +5417,7 @@
         -232010.362+1501108.355/
         -231741.000+1501153.000
     </Line>
-    <Line Name="ROCKHAMPTON_CTA_C3" Pattern="Dashed">
+    <Line Name="ROCKHAMPTON_CTA_C3" Pattern="Dotted">
         -231741.000+1501153.000/
         -230426.000+1493204.000/
         -230359.321+1493207.544/
@@ -5464,7 +5464,7 @@
         -232010.362+1501108.355/
         -231741.000+1501153.000
     </Line>
-    <Line Name="ROCKHAMPTON_CTA_C4" Pattern="Dashed">
+    <Line Name="ROCKHAMPTON_CTA_C4" Pattern="Dotted">
         -230100.000+1492152.000/
         -230030.154+1492156.448/
         -225016.179+1492713.233/
@@ -5511,7 +5511,7 @@
         -231741.000+1501153.000/
         -230100.000+1492152.000
     </Line>
-    <Line Name="SOUTH-EASTERN_CTA_C1" Pattern="Dashed">
+    <Line Name="SOUTH-EASTERN_CTA_C1" Pattern="Dotted">
         -332222.000+1482227.000/
         -331037.000+1484019.000/
         -332224.000+1494003.000/
@@ -5617,7 +5617,7 @@
         -341702.000+1482730.000/
         -332222.000+1482227.000
     </Line>
-    <Line Name="SOUTH-EASTERN_CTA_C2" Pattern="Dashed">
+    <Line Name="SOUTH-EASTERN_CTA_C2" Pattern="Dotted">
         -332303.000+1494356.000/
         -331103.000+1495212.000/
         -330450.941+1495748.705/
@@ -5723,7 +5723,7 @@
         -332224.000+1494003.000/
         -332303.000+1494356.000
     </Line>
-    <Line Name="SUNSHINE_COAST_CTA_C1" Pattern="Dashed">
+    <Line Name="SUNSHINE_COAST_CTA_C1" Pattern="Dotted">
         -264253.000+1530336.000/
         -264211.000+1530232.000/
         -264157.000+1530821.000/
@@ -5746,7 +5746,7 @@
         -264256.613+1530400.352/
         -264253.000+1530336.000
     </Line>
-    <Line Name="SUNSHINE_COAST_CTA_C2" Pattern="Dashed">
+    <Line Name="SUNSHINE_COAST_CTA_C2" Pattern="Dotted">
         -263925.000+1533759.000/
         -265158.000+1533807.000/
         -265115.538+1533710.148/
@@ -5794,7 +5794,7 @@
         -263836.142+1533619.159/
         -263925.000+1533759.000
     </Line>
-    <Line Name="SUNSHINE_COAST_CTA_C3" Pattern="Dashed">
+    <Line Name="SUNSHINE_COAST_CTA_C3" Pattern="Dotted">
         -263234.000+1525843.000/
         -263153.000+1525828.000/
         -263113.000+1525754.000/
@@ -5811,13 +5811,13 @@
         -263157.000+1530821.000/
         -263234.000+1525843.000
     </Line>
-    <Line Name="SUNSHINE_COAST_CTA_C4" Pattern="Dashed">
+    <Line Name="SUNSHINE_COAST_CTA_C4" Pattern="Dotted">
         -262323.000+1524115.000/
         -262220.000+1523900.000/
         -262050.000+1524307.000/
         -262323.000+1524115.000
     </Line>
-    <Line Name="SUNSHINE_COAST_CTA_C5" Pattern="Dashed">
+    <Line Name="SUNSHINE_COAST_CTA_C5" Pattern="Dotted">
         -262050.000+1524307.000/
         -261946.225+1524402.932/
         -261641.812+1524729.695/
@@ -5833,7 +5833,7 @@
         -262050.012+1524332.573/
         -262050.000+1524307.000
     </Line>
-    <Line Name="SUNSHINE_COAST_CTA_C6" Pattern="Dashed">
+    <Line Name="SUNSHINE_COAST_CTA_C6" Pattern="Dotted">
         -262103.000+1523619.000/
         -262049.066+1523625.457/
         -261632.690+1523947.233/
@@ -5856,7 +5856,7 @@
         -262220.000+1523900.000/
         -262103.000+1523619.000
     </Line>
-    <Line Name="SWAMPY_CTA_C1" Pattern="Dashed">
+    <Line Name="SWAMPY_CTA_C1" Pattern="Dotted">
         -210149.000+1483350.000/
         -210904.000+1490458.000/
         -210920.369+1490454.848/
@@ -5924,7 +5924,7 @@
         -201125.000+1482027.000/
         -210149.000+1483350.000
     </Line>
-    <Line Name="SWAMPY_CTA_C2" Pattern="Dashed">
+    <Line Name="SWAMPY_CTA_C2" Pattern="Dotted">
         -200857.000+1481115.000/
         -205938.000+1482430.000/
         -210904.000+1490458.000/
@@ -5987,7 +5987,7 @@
         -200534.790+1481219.400/
         -200857.000+1481115.000
     </Line>
-    <Line Name="SWAMPY_CTA_C3" Pattern="Dashed">
+    <Line Name="SWAMPY_CTA_C3" Pattern="Dotted">
         -200613.000+1480102.000/
         -200857.000+1481115.000/
         -205938.000+1482430.000/
@@ -6029,7 +6029,7 @@
         -200206.747+1480220.261/
         -200613.000+1480102.000
     </Line>
-    <Line Name="SWAMPY_CTA_C4" Pattern="Dashed">
+    <Line Name="SWAMPY_CTA_C4" Pattern="Dotted">
         -200327.000+1475049.000/
         -200857.000+1481115.000/
         -205938.000+1482430.000/
@@ -6070,7 +6070,7 @@
         -195838.144+1475221.563/
         -200327.000+1475049.000
     </Line>
-<Line Name="SYDNEY_CTA_C01A" Pattern="Dashed">
+<Line Name="SYDNEY_CTA_C01A" Pattern="Dotted">
         -335807.000+1511557.000/
         -335334.000+1511706.000/
         -335315.054+1511712.279/
@@ -6155,7 +6155,7 @@
         -335935.000+1511508.000/
         -335807.000+1511557.000
     </Line>
-    <Line Name="SYDNEY_CTA_C01B" Pattern="Dashed">
+    <Line Name="SYDNEY_CTA_C01B" Pattern="Dotted">
         -335115.000+1511137.000/
         -335135.871+1511146.893/
         -335139.201+1511127.269/
@@ -6196,7 +6196,7 @@
         -335120.000+1511201.000/
         -335115.000+1511137.000
     </Line>
-    <Line Name="SYDNEY_CTA_C02" Pattern="Dashed">
+    <Line Name="SYDNEY_CTA_C02" Pattern="Dotted">
         -335104.000+1510454.000/
         -335028.000+1510456.000/
         -335004.254+1510501.223/
@@ -6404,7 +6404,7 @@
         -335037.000+1510654.000/
         -335104.000+1510454.000
     </Line>
-    <Line Name="SYDNEY_CTA_C03A" Pattern="Dashed">
+    <Line Name="SYDNEY_CTA_C03A" Pattern="Dotted">
         -335156.000+1505513.000/
         -335323.000+1505403.000/
         -335218.000+1505032.000/
@@ -6464,7 +6464,7 @@
         -335131.000+1505831.000/
         -335156.000+1505513.000
     </Line>
-    <Line Name="SYDNEY_CTA_C03B" Pattern="Dashed">
+    <Line Name="SYDNEY_CTA_C03B" Pattern="Dotted">
         -335323.000+1505403.000/
         -335156.000+1505513.000/
         -335135.000+1505752.000/
@@ -6483,7 +6483,7 @@
         -335800.000+1505443.000/
         -335323.000+1505403.000
     </Line>
-    <Line Name="SYDNEY_CTA_C04" Pattern="Dashed">
+    <Line Name="SYDNEY_CTA_C04" Pattern="Dotted">
         -334326.000+1503829.000/
         -333500.000+1505550.000/
         -333458.051+1505556.739/
@@ -6531,7 +6531,7 @@
         -334638.000+1503750.000/
         -334326.000+1503829.000
     </Line>
-    <Line Name="SYDNEY_CTA_C05" Pattern="Dashed">
+    <Line Name="SYDNEY_CTA_C05" Pattern="Dotted">
         -335003.000+1501524.000/
         -334530.000+1502449.000/
         -334130.000+1503303.000/
@@ -6584,7 +6584,7 @@
         -340739.000+1501216.000/
         -335003.000+1501524.000
     </Line>
-    <Line Name="SYDNEY_CTA_C06" Pattern="Dashed">
+    <Line Name="SYDNEY_CTA_C06" Pattern="Dotted">
         -335003.000+1501524.000/
         -334530.000+1502449.000/
         -333741.000+1502623.000/
@@ -6628,7 +6628,7 @@
         -340739.000+1501216.000/
         -335003.000+1501524.000
     </Line>
-    <Line Name="SYDNEY_CTA_C07" Pattern="Dashed">
+    <Line Name="SYDNEY_CTA_C07" Pattern="Dotted">
         -333003.000+1501311.000/
         -331611.000+1504709.000/
         -331422.000+1505212.000/
@@ -6673,7 +6673,7 @@
         -333733.744+1500852.808/
         -333003.000+1501311.000
     </Line>
-    <Line Name="SYDNEY_CTA_C08" Pattern="Dashed">
+    <Line Name="SYDNEY_CTA_C08" Pattern="Dotted">
         -334042.000+1494909.000/
         -332938.000+1501243.000/
         -333003.000+1501311.000/
@@ -6721,7 +6721,7 @@
         -334400.881+1494803.257/
         -334042.000+1494909.000
     </Line>
-    <Line Name="SYDNEY_CTA_C09" Pattern="Dashed">
+    <Line Name="SYDNEY_CTA_C09" Pattern="Dotted">
         -334703.000+1493534.000/
         -334042.000+1494909.000/
         -333216.308+1495201.926/
@@ -6769,7 +6769,7 @@
         -335940.000+1493450.000/
         -334703.000+1493534.000
     </Line>
-    <Line Name="SYDNEY_CTA_C10" Pattern="Dashed">
+    <Line Name="SYDNEY_CTA_C10" Pattern="Dotted">
         -340133.000+1503221.000/
         -335939.000+1503615.000/
         -335634.000+1504238.000/
@@ -6779,7 +6779,7 @@
         -340851.000+1503727.000/
         -340133.000+1503221.000
     </Line>
-    <Line Name="SYDNEY_CTA_D1" Pattern="Dashed">
+    <Line Name="SYDNEY_CTA_D1" Pattern="Dotted">
         -335753.000+1505719.000/
         -335705.000+1510125.000/
         -340119.000+1510307.000/
@@ -6787,7 +6787,7 @@
         -340105.000+1505837.000/
         -335753.000+1505719.000
     </Line>
-    <Line Name="TAMWORTH_CTA_C1" Pattern="Dashed">
+    <Line Name="TAMWORTH_CTA_C1" Pattern="Dotted">
         -310951.000+1511543.000/
         -310751.000+1510641.000/
         -310633.135+1510703.207/
@@ -6830,7 +6830,7 @@
         -311147.526+1511504.000/
         -310951.000+1511543.000
     </Line>
-    <Line Name="TAMWORTH_CTA_C2" Pattern="Dashed">
+    <Line Name="TAMWORTH_CTA_C2" Pattern="Dotted">
         -313602.000+1510906.000/
         -312429.000+1510204.000/
         -312352.415+1510316.366/
@@ -6875,7 +6875,7 @@
         -313746.930+1510415.635/
         -313602.000+1510906.000
     </Line>
-    <Line Name="TAMWORTH_CTA_C3" Pattern="Dashed">
+    <Line Name="TAMWORTH_CTA_C3" Pattern="Dotted">
         -311848.000+1504650.000/
         -313933.000+1504242.000/
         -314847.000+1504344.000/
@@ -6921,7 +6921,7 @@
         -311844.291+1504645.073/
         -311848.000+1504650.000
     </Line>
-    <Line Name="TAMWORTH_CTA_C4" Pattern="Dashed">
+    <Line Name="TAMWORTH_CTA_C4" Pattern="Dotted">
         -311848.000+1504650.000/
         -313933.000+1504242.000/
         -315856.000+1504452.000/
@@ -6967,7 +6967,7 @@
         -311844.291+1504645.073/
         -311848.000+1504650.000
     </Line>
-    <Line Name="TAMWORTH_CTA_C5" Pattern="Dashed">
+    <Line Name="TAMWORTH_CTA_C5" Pattern="Dotted">
         -311848.000+1504650.000/
         -313933.000+1504242.000/
         -320902.000+1504559.000/
@@ -7013,7 +7013,7 @@
         -311844.291+1504645.073/
         -311848.000+1504650.000
     </Line>
-    <Line Name="TASMANIAN_CTA_C2" Pattern="Dashed">
+    <Line Name="TASMANIAN_CTA_C2" Pattern="Dotted">
         -422231.000+1463007.000/
         -421556.000+1462534.000/
         -421159.109+1462933.346/
@@ -7064,7 +7064,7 @@
         -424001.000+1465337.000/
         -422231.000+1463007.000
     </Line>
-    <Line Name="TASMANIAN_CTA_C3" Pattern="Dashed">
+    <Line Name="TASMANIAN_CTA_C3" Pattern="Dotted">
         -422231.000+1463007.000/
         -420607.000+1461849.000/
         -420527.405+1461920.358/
@@ -7117,7 +7117,7 @@
         -424001.000+1465337.000/
         -422231.000+1463007.000
     </Line>
-    <Line Name="TASMANIAN_CTA_C4" Pattern="Dashed">
+    <Line Name="TASMANIAN_CTA_C4" Pattern="Dotted">
         -422231.000+1463007.000/
         -420607.000+1461849.000/
         -420527.405+1461920.358/
@@ -7170,7 +7170,7 @@
         -424001.000+1465337.000/
         -422231.000+1463007.000
     </Line>
-    <Line Name="TOWNSVILLE_CTA_C1" Pattern="Dashed">
+    <Line Name="TOWNSVILLE_CTA_C1" Pattern="Dotted">
         -190339.000+1464530.000/
         -190349.016+1464731.258/
         -190418.760+1464928.843/
@@ -7209,7 +7209,7 @@
         -190349.016+1464328.742/
         -190339.000+1464530.000
     </Line>
-    <Line Name="TOWNSVILLE_CTA_C2" Pattern="Dashed">
+    <Line Name="TOWNSVILLE_CTA_C2" Pattern="Dotted">
         -185639.000+1464530.000/
         -185655.378+1464848.284/
         -185744.017+1465200.576/
@@ -7248,7 +7248,7 @@
         -185655.378+1464211.716/
         -185639.000+1464530.000
     </Line>
-    <Line Name="TOWNSVILLE_CTA_C3" Pattern="Dashed">
+    <Line Name="TOWNSVILLE_CTA_C3" Pattern="Dotted">
         -184939.000+1464530.000/
         -185001.731+1465005.205/
         -185109.240+1465432.109/
@@ -7287,7 +7287,7 @@
         -185001.731+1464054.795/
         -184939.000+1464530.000
     </Line>
-    <Line Name="TOWNSVILLE_CTA_C4" Pattern="Dashed">
+    <Line Name="TOWNSVILLE_CTA_C4" Pattern="Dotted">
         -183839.000+1464530.000/
         -183911.698+1465205.868/
         -184048.808+1465829.833/
@@ -7326,7 +7326,7 @@
         -183911.698+1463854.132/
         -183839.000+1464530.000
     </Line>
-    <Line Name="TOWNSVILLE_CTA_C5" Pattern="Dashed">
+    <Line Name="TOWNSVILLE_CTA_C5" Pattern="Dotted">
         -182939.000+1464530.000/
         -183019.836+1465344.401/
         -183221.120+1470143.975/
@@ -7365,7 +7365,7 @@
         -183019.836+1463715.599/
         -182939.000+1464530.000
     </Line>
-    <Line Name="TOWNSVILLE_CTA_C6" Pattern="Dashed">
+    <Line Name="TOWNSVILLE_CTA_C6" Pattern="Dotted">
         -181939.000+1464530.000/
         -182028.862+1465533.683/
         -182256.957+1470519.312/
@@ -7404,7 +7404,7 @@
         -182028.862+1463526.317/
         -181939.000+1464530.000
     </Line>
-    <Line Name="TOWNSVILLE_CTA_C7" Pattern="Dashed">
+    <Line Name="TOWNSVILLE_CTA_C7" Pattern="Dotted">
         -180939.000+1464530.000/
         -181037.871+1465722.758/
         -181332.728+1470854.259/
@@ -7443,7 +7443,7 @@
         -181037.871+1463337.242/
         -180939.000+1464530.000
     </Line>
-    <Line Name="WILLIAMTOWN_CTA_C1" Pattern="Dashed">
+    <Line Name="WILLIAMTOWN_CTA_C1" Pattern="Dotted">
         -324722.000+1513730.000/
         -324708.000+1513658.000/
         -324554.733+1513706.046/
@@ -7505,7 +7505,7 @@
         -324754.262+1513818.611/
         -324722.000+1513730.000
     </Line>
-    <Line Name="WILLIAMTOWN_CTA_C2" Pattern="Dashed">
+    <Line Name="WILLIAMTOWN_CTA_C2" Pattern="Dotted">
         -324246.000+1513824.000/
         -323602.000+1512351.000/
         -323517.375+1512417.231/
@@ -7564,7 +7564,7 @@
         -324219.491+1513839.732/
         -324246.000+1513824.000
     </Line>
-    <Line Name="WILLIAMTOWN_CTA_C3" Pattern="Dashed">
+    <Line Name="WILLIAMTOWN_CTA_C3" Pattern="Dotted">
         -325524.000+1514723.000/
         -325824.000+1514619.000/
         -325810.117+1514529.937/
@@ -7606,7 +7606,7 @@
         -325523.751+1514722.582/
         -325524.000+1514723.000/
     </Line>
-    <Line Name="WILLIAMTOWN_CTA_C4" Pattern="Dashed">
+    <Line Name="WILLIAMTOWN_CTA_C4" Pattern="Dotted">
         -325824.000+1514619.000/
         -331151.000+1514133.000/
         -331119.125+1513945.972/
@@ -7627,7 +7627,7 @@
         -325810.117+1514529.937/
         -325824.000+1514619.000
     </Line>
-    <Line Name="WILLIAMTOWN_CTA_C5" Pattern="Dashed">
+    <Line Name="WILLIAMTOWN_CTA_C5" Pattern="Dotted">
         -324708.000+1513658.000/
         -324637.000+1512730.000/
         -324430.074+1512744.248/
@@ -7638,7 +7638,7 @@
         -324554.733+1513706.046/
         -324708.000+1513658.000
     </Line>
-    <Line Name="WILLIAMTOWN_CTA_C6" Pattern="Dashed">
+    <Line Name="WILLIAMTOWN_CTA_C6" Pattern="Dotted">
         -324036.000+1514008.000/
         -322301.000+1515408.000/
         -322312.683+1515507.449/
@@ -7669,7 +7669,7 @@
         -324045.362+1513958.328/
         -324036.000+1514008.000
     </Line>
-    <Line Name="WILLIAMTOWN_CTA_C7" Pattern="Dashed">
+    <Line Name="WILLIAMTOWN_CTA_C7" Pattern="Dotted">
         -330558.000+1515453.000/
         -331246.000+1515242.000/
         -331250.000+1514959.000/
@@ -7679,7 +7679,7 @@
         -330224.773+1514813.622/
         -330558.000+1515453.000
     </Line>
-    <Line Name="WILLIAMTOWN_CTA_C8" Pattern="Dashed">
+    <Line Name="WILLIAMTOWN_CTA_C8" Pattern="Dotted">
         -322725.000+1520709.000/
         -330558.000+1515453.000/
         -330224.773+1514813.622/
@@ -7697,7 +7697,7 @@
         -322610.090+1520447.631/
         -322725.000+1520709.000
     </Line>
-    <Line Name="WILLIAMTOWN_CTA_C9" Pattern="Dashed">
+    <Line Name="WILLIAMTOWN_CTA_C9" Pattern="Dotted">
         -331246.000+1515242.000/
         -322725.000+1520709.000/
         -322839.491+1520901.931/
@@ -7716,7 +7716,7 @@
         -331227.105+1515510.309/
         -331246.000+1515242.000
     </Line>
-    <Line Name="ALBURY_CTA_D1" Pattern="Dashed">
+    <Line Name="ALBURY_CTA_D1" Pattern="Dotted">
         -355305.000+1465758.000/
         -355315.004+1470019.461/
         -355344.713+1470236.653/
@@ -7755,7 +7755,7 @@
         -355315.004+1465536.539/
         -355305.000+1465758.000
     </Line>
-    <Line Name="ALBURY_CTA_D2" Pattern="Dashed">
+    <Line Name="ALBURY_CTA_D2" Pattern="Dotted">
         -354805.000+1465758.000/
         -354819.536+1470123.549/
         -354902.706+1470442.913/
@@ -7794,7 +7794,7 @@
         -354819.536+1465432.451/
         -354805.000+1465758.000
     </Line>
-    <Line Name="ALBURY_CTA_D3" Pattern="Dashed">
+    <Line Name="ALBURY_CTA_D3" Pattern="Dotted">
         -361213.000+1463524.000/
         -360940.000+1463928.000/
         -360931.900+1463920.681/
@@ -7840,7 +7840,7 @@
         -361403.087+1463629.603/
         -361213.000+1463524.000
     </Line>
-    <Line Name="ALICE_SPRINGS_CTA_D1" Pattern="Dashed">
+    <Line Name="ALICE_SPRINGS_CTA_D1" Pattern="Dotted">
         -233234.000+1335241.000/
         -233247.647+1335531.478/
         -233328.176+1335816.804/
@@ -7879,7 +7879,7 @@
         -233247.647+1334950.522/
         -233234.000+1335241.000
     </Line>
-    <Line Name="BALLINA_CTA_D1" Pattern="Dashed">
+    <Line Name="BALLINA_CTA_D1" Pattern="Dotted">
         -283953.000+1534105.000/
         -284501.000+1532119.000/
         -284555.135+1532053.177/
@@ -7902,7 +7902,7 @@
         -284050.163+1534232.530/
         -283953.000+1534105.000
     </Line>
-    <Line Name="BALLINA_CTA_D2" Pattern="Dashed">
+    <Line Name="BALLINA_CTA_D2" Pattern="Dotted">
         -283830.000+1534624.000/
         -284624.000+1531600.000/
         -284714.106+1531546.267/
@@ -7921,7 +7921,7 @@
         -283944.205+1534743.101/
         -283830.000+1534624.000
     </Line>
-    <Line Name="BALLINA_CTA_D3" Pattern="Dashed">
+    <Line Name="BALLINA_CTA_D3" Pattern="Dotted">
         -283713.000+1535115.000/
         -284739.000+1531108.000/
         -285000.078+1531055.175/
@@ -7938,7 +7938,7 @@
         -284000.564+1535329.411/
         -283713.000+1535115.000
     </Line>
-    <Line Name="BANKSTOWN_CTA_D1" Pattern="Dashed">
+    <Line Name="BANKSTOWN_CTA_D1" Pattern="Dotted">
         -335323.000+1505403.000/
         -335156.000+1505513.000/
         -335135.000+1505752.000/
@@ -7957,7 +7957,7 @@
         -335800.000+1505443.000/
         -335323.000+1505403.000
     </Line>
-    <Line Name="BROOME_CTA_D1" Pattern="Dashed">
+    <Line Name="BROOME_CTA_D1" Pattern="Dotted">
         -174349.000+1221405.000/
         -174400.836+1221627.202/
         -174435.984+1221845.099/
@@ -7996,7 +7996,7 @@
         -174400.836+1221142.798/
         -174349.000+1221405.000
     </Line>
-    <Line Name="BROOME_CTA_D2" Pattern="Dashed">
+    <Line Name="BROOME_CTA_D2" Pattern="Dotted">
         -173849.000+1221405.000/
         -173905.380+1221721.805/
         -173954.026+1222032.660/
@@ -8035,7 +8035,7 @@
         -173905.380+1221048.195/
         -173849.000+1221405.000
     </Line>
-    <Line Name="BROOME_CTA_D3" Pattern="Dashed">
+    <Line Name="BROOME_CTA_D3" Pattern="Dotted">
         -173149.000+1221405.000/
         -173211.736+1221838.165/
         -173319.256+1222303.087/
@@ -8074,7 +8074,7 @@
         -173211.736+1220931.835/
         -173149.000+1221405.000
     </Line>
-    <Line Name="COFFS_HARBOUR_CTA_D1" Pattern="Dashed">
+    <Line Name="COFFS_HARBOUR_CTA_D1" Pattern="Dotted">
         -300750.000+1530239.000/
         -300720.916+1530451.453/
         -300710.000+1530716.000/
@@ -8106,7 +8106,7 @@
         -301305.000+1530306.000/
         -300750.000+1530239.000
     </Line>
-    <Line Name="COFFS_HARBOUR_CTA_D2" Pattern="Dashed">
+    <Line Name="COFFS_HARBOUR_CTA_D2" Pattern="Dotted">
         -300303.000+1530054.000/
         -300225.452+1530351.396/
         -300210.000+1530716.000/
@@ -8144,7 +8144,7 @@
         -300750.000+1530239.000/
         -300303.000+1530054.000
     </Line>
-    <Line Name="COFFS_HARBOUR_CTA_D3" Pattern="Dashed">
+    <Line Name="COFFS_HARBOUR_CTA_D3" Pattern="Dotted">
         -295817.000+1525908.000/
         -295729.980+1530251.437/
         -295710.000+1530716.000/
@@ -8186,7 +8186,7 @@
         -300303.000+1530054.000/
         -295817.000+1525908.000
     </Line>
-    <Line Name="HAMILTON_IS_CTA_D1" Pattern="Dashed">
+    <Line Name="HAMILTON_IS_CTA_D1" Pattern="Dotted">
         -201934.000+1485110.000/
         -201845.000+1484806.000/
         -201759.078+1484819.962/
@@ -8233,7 +8233,7 @@
         -202001.374+1485102.908/
         -201934.000+1485110.000
     </Line>
-    <Line Name="HAMILTON_IS_CTA_D2" Pattern="Dashed">
+    <Line Name="HAMILTON_IS_CTA_D2" Pattern="Dotted">
         -201934.000+1485110.000/
         -201756.000+1484501.000/
         -201657.335+1484519.696/
@@ -8280,7 +8280,7 @@
         -202001.374+1485102.908/
         -201934.000+1485110.000
     </Line>
-    <Line Name="HAMILTON_IS_CTA_D3" Pattern="Dashed">
+    <Line Name="HAMILTON_IS_CTA_D3" Pattern="Dotted">
         -201934.000+1485110.000/
         -201708.000+1484157.000/
         -201555.540+1484219.470/
@@ -8327,7 +8327,7 @@
         -202001.374+1485102.908/
         -201934.000+1485110.000
     </Line>
-    <Line Name="HAMILTON_IS_CTA_D4" Pattern="Dashed">
+    <Line Name="HAMILTON_IS_CTA_D4" Pattern="Dotted">
         -201934.000+1485110.000/
         -201514.000+1483447.000/
         -201331.154+1483519.098/
@@ -8375,7 +8375,7 @@
         -202001.374+1485102.908/
         -201934.000+1485110.000
     </Line>
-    <Line Name="HOBART_CTA_D1" Pattern="Dashed">
+    <Line Name="HOBART_CTA_D1" Pattern="Dotted">
         -424840.000+1471848.000/
         -424826.000+1471701.000/
         -424703.403+1471730.947/
@@ -8408,7 +8408,7 @@
         -425158.000+1472133.000/
         -424840.000+1471848.000
     </Line>
-    <Line Name="HOBART_CTA_D2" Pattern="Dashed">
+    <Line Name="HOBART_CTA_D2" Pattern="Dotted">
         -424840.000+1471848.000/
         -424734.000+1471020.000/
         -424519.835+1471107.402/
@@ -8439,7 +8439,7 @@
         -425158.000+1472133.000/
         -424840.000+1471848.000
     </Line>
-    <Line Name="HOBART_CTA_D3" Pattern="Dashed">
+    <Line Name="HOBART_CTA_D3" Pattern="Dotted">
         -424640.000+1470330.000/
         -424341.000+1465904.000/
         -424212.517+1465937.919/
@@ -8472,7 +8472,7 @@
         -424840.000+1471848.000/
         -424640.000+1470330.000
     </Line>
-    <Line Name="KARRATHA_CTA_D1" Pattern="Dashed">
+    <Line Name="KARRATHA_CTA_D1" Pattern="Dotted">
         -203543.000+1163111.000/
         -203637.000+1163305.000/
         -203553.516+1163328.857/
@@ -8519,7 +8519,7 @@
         -203724.916+1163022.125/
         -203543.000+1163111.000
     </Line>
-    <Line Name="KARRATHA_CTA_D2" Pattern="Dashed">
+    <Line Name="KARRATHA_CTA_D2" Pattern="Dotted">
         -203140.000+1162236.000/
         -203449.000+1162916.000/
         -203353.201+1162947.035/
@@ -8566,7 +8566,7 @@
         -203419.154+1162120.455/
         -203140.000+1162236.000
     </Line>
-    <Line Name="KARRATHA_CTA_D3" Pattern="Dashed">
+    <Line Name="KARRATHA_CTA_D3" Pattern="Dotted">
         -202858.000+1161653.000/
         -203140.000+1162236.000/
         -203022.460+1162319.080/
@@ -8613,7 +8613,7 @@
         -203215.053+1161519.545/
         -202858.000+1161653.000
     </Line>
-    <Line Name="KARRATHA_CTA_D4" Pattern="Dashed">
+    <Line Name="KARRATHA_CTA_D4" Pattern="Dotted">
         -201154.000+1164626.000/
         -201222.163+1165210.163/
         -201345.805+1165743.970/
@@ -8652,7 +8652,7 @@
         -201222.163+1164041.837/
         -201154.000+1164626.000
     </Line>
-    <Line Name="LAUNCESTON_CTA_D1" Pattern="Dashed">
+    <Line Name="LAUNCESTON_CTA_D1" Pattern="Dotted">
         -413139.000+1470031.000/
         -413037.000+1465823.000/
         -412851.442+1465859.160/
@@ -8686,7 +8686,7 @@
         -414154.000+1470452.000/
         -413139.000+1470031.000
     </Line>
-    <Line Name="LAUNCESTON_CTA_D2" Pattern="Dashed">
+    <Line Name="LAUNCESTON_CTA_D2" Pattern="Dotted">
         -413139.000+1470031.000/
         -412746.000+1465230.000/
         -412707.916+1465243.402/
@@ -8713,7 +8713,7 @@
         -414154.000+1470452.000/
         -413139.000+1470031.000
     </Line>
-    <Line Name="LAUNCESTON_CTA_D3" Pattern="Dashed">
+    <Line Name="LAUNCESTON_CTA_D3" Pattern="Dotted">
         -413139.000+1470031.000/
         -412531.000+1464755.000/
         -412235.689+1464942.061/
@@ -8738,7 +8738,7 @@
         -414154.000+1470452.000/
         -413139.000+1470031.000
     </Line>
-    <Line Name="MACKAY_CTA_D1" Pattern="Dashed">
+    <Line Name="MACKAY_CTA_D1" Pattern="Dotted">
         -210904.000+1490458.000/
         -210752.000+1485946.000/
         -210636.906+1490010.187/
@@ -8781,7 +8781,7 @@
         -210920.369+1490454.848/
         -210904.000+1490458.000
     </Line>
-    <Line Name="MACKAY_CTA_D2" Pattern="Dashed">
+    <Line Name="MACKAY_CTA_D2" Pattern="Dotted">
         -210904.000+1490458.000/
         -210640.000+1485435.000/
         -210453.898+1485508.185/
@@ -8828,7 +8828,7 @@
         -210920.369+1490454.848/
         -210904.000+1490458.000
     </Line>
-    <Line Name="MACKAY_CTA_D3" Pattern="Dashed">
+    <Line Name="MACKAY_CTA_D3" Pattern="Dotted">
         -210904.000+1490458.000/
         -210513.000+1484821.000/
         -210250.093+1484905.937/
@@ -8875,7 +8875,7 @@
         -210920.369+1490454.848/
         -210904.000+1490458.000
     </Line>
-    <Line Name="ROCKHAMPTON_CTA_D1" Pattern="Dashed">
+    <Line Name="ROCKHAMPTON_CTA_D1" Pattern="Dotted">
         -231922.000+1501700.000/
         -231741.000+1501153.000/
         -231728.809+1501155.856/
@@ -8922,7 +8922,7 @@
         -232102.950+1501630.042/
         -231922.000+1501700.000
     </Line>
-    <Line Name="ROCKHAMPTON_CTA_D2" Pattern="Dashed">
+    <Line Name="ROCKHAMPTON_CTA_D2" Pattern="Dotted">
         -231741.000+1501153.000/
         -231640.000+1500849.000/
         -231626.897+1500851.855/
@@ -8969,7 +8969,7 @@
         -232010.362+1501108.355/
         -231741.000+1501153.000
     </Line>
-    <Line Name="ROCKHAMPTON_CTA_D3" Pattern="Dashed">
+    <Line Name="ROCKHAMPTON_CTA_D3" Pattern="Dotted">
         -231539.000+1500545.000/
         -231524.925+1500547.901/
         -231156.636+1500734.283/
@@ -9016,7 +9016,7 @@
         -231741.000+1501153.000/
         -231539.000+1500545.000
     </Line>
-    <Line Name="SUNSHINE_COAST_CTA_D1" Pattern="Dashed">
+    <Line Name="SUNSHINE_COAST_CTA_D1" Pattern="Dotted">
         -264709.000+1531004.000/
         -264250.000+1530721.000/
         -264256.613+1530643.648/
@@ -9084,7 +9084,7 @@
         -264615.380+1531208.219/
         -264709.000+1531004.000
     </Line>
-    <Line Name="SUNSHINE_COAST_CTA_D2" Pattern="Dashed">
+    <Line Name="SUNSHINE_COAST_CTA_D2" Pattern="Dotted">
         -263445.000+1532313.000/
         -263550.881+1532318.617/
         -263837.616+1532302.735/
@@ -9152,7 +9152,7 @@
         -262039.000+1531106.000/
         -263445.000+1532313.000
     </Line>
-    <Line Name="SUNSHINE_COAST_CTA_D3" Pattern="Dashed">
+    <Line Name="SUNSHINE_COAST_CTA_D3" Pattern="Dotted">
         -265255.000+1531710.000/
         -265212.000+1531314.000/
         -264250.000+1530721.000/
@@ -9220,7 +9220,7 @@
         -265110.527+1531949.571/
         -265255.000+1531710.000
     </Line>
-    <Line Name="TAMWORTH_CTA_D1" Pattern="Dashed">
+    <Line Name="TAMWORTH_CTA_D1" Pattern="Dotted">
         -312429.000+1510204.000/
         -311722.000+1505746.000/
         -311803.584+1505548.252/
@@ -9263,7 +9263,7 @@
         -312352.415+1510316.366/
         -312429.000+1510204.000
     </Line>
-    <Line Name="WESTERN_SYDNEY_CTA_D1" Pattern="Dashed">
+    <Line Name="WESTERN_SYDNEY_CTA_D1" Pattern="Dotted">
         -334638.000+1503750.000/
         -334659.000+1504226.000/
         -334334.000+1504307.000/
@@ -9322,7 +9322,7 @@
         -335043.000+1504020.000/
         -334638.000+1503750.000
     </Line>
-    <Line Name="WESTERN_SYDNEY_CTA_D2" Pattern="Dashed">
+    <Line Name="WESTERN_SYDNEY_CTA_D2" Pattern="Dotted">
         -333309.000+1510030.000/
         -333308.035+1510041.404/
         -333200.679+1510544.522/
@@ -9338,7 +9338,7 @@
         -333430.712+1510056.130/
         -333309.000+1510030.000
     </Line>
-    <Line Name="WESTERN_SYDNEY_CTA_D3" Pattern="Dashed">
+    <Line Name="WESTERN_SYDNEY_CTA_D3" Pattern="Dotted">
         -335557.000+1504332.000/
         -335519.000+1504425.000/
         -335218.000+1505032.000/
@@ -9348,7 +9348,7 @@
         -340551.000+1504936.000/
         -335557.000+1504332.000
     </Line>
-    <Line Name="ADELAIDE_CTA_E1" Pattern="Dashed">
+    <Line Name="ADELAIDE_CTA_E1" Pattern="Dotted">
         -353001.000+1364920.000/
         -351526.000+1373454.000/
         -352137.467+1373822.226/
@@ -9391,7 +9391,7 @@
         -352651.832+1364738.867/
         -353001.000+1364920.000
     </Line>
-    <Line Name="AVALON_CTA_E1" Pattern="Dashed">
+    <Line Name="AVALON_CTA_E1" Pattern="Dotted">
         -380836.000+1442149.000/
         -375454.000+1442429.000/
         -375450.897+1442441.909/
@@ -9416,7 +9416,7 @@
         -380917.583+1442304.790/
         -380836.000+1442149.000
     </Line>
-    <Line Name="AVALON_CTA_E2" Pattern="Dashed">
+    <Line Name="AVALON_CTA_E2" Pattern="Dotted">
         -381343.000+1442049.000/
         -375104.000+1442513.000/
         -375057.000+1442733.000/
@@ -9439,7 +9439,7 @@
         -381413.463+1442219.483/
         -381343.000+1442049.000
     </Line>
-    <Line Name="AYERS_ROCK_CTA_E1" Pattern="Dashed">
+    <Line Name="AYERS_ROCK_CTA_E1" Pattern="Dotted">
         -242110.000+1305832.000/
         -242155.273+1310803.861/
         -242409.741+1311718.682/
@@ -9478,7 +9478,7 @@
         -242155.273+1304900.139/
         -242110.000+1305832.000
     </Line>
-    <Line Name="AYERS_ROCK_CTA_E2" Pattern="Dashed">
+    <Line Name="AYERS_ROCK_CTA_E2" Pattern="Dotted">
         -241110.000+1305832.000/
         -241204.256+1310957.336/
         -241445.411+1312102.330/
@@ -9517,7 +9517,7 @@
         -241204.256+1304706.664/
         -241110.000+1305832.000
     </Line>
-    <Line Name="BROOME_CTA_E1" Pattern="Dashed">
+    <Line Name="BROOME_CTA_E1" Pattern="Dotted">
         -172549.000+1221405.000/
         -172617.177+1221943.540/
         -172740.858+1222511.880/
@@ -9556,7 +9556,7 @@
         -172617.177+1220826.460/
         -172549.000+1221405.000
     </Line>
-    <Line Name="BROOME_CTA_E2" Pattern="Dashed">
+    <Line Name="BROOME_CTA_E2" Pattern="Dotted">
         -172549.000+1221405.000/
         -172617.177+1221943.540/
         -172740.858+1222511.880/
@@ -9595,7 +9595,7 @@
         -172617.177+1220826.460/
         -172549.000+1221405.000
     </Line>
-    <Line Name="BROOME_CTA_E3" Pattern="Dashed">
+    <Line Name="BROOME_CTA_E3" Pattern="Dotted">
         -180844.000+1213400.000/
         -180604.000+1214302.000/
         -180209.346+1214158.597/
@@ -9638,7 +9638,7 @@
         -181025.833+1213431.327/
         -180844.000+1213400.000
     </Line>
-    <Line Name="BROOME_CTA_E4" Pattern="Dashed">
+    <Line Name="BROOME_CTA_E4" Pattern="Dotted">
         -181142.000+1212358.000/
         -180604.000+1214302.000/
         -180209.346+1214158.597/
@@ -9681,7 +9681,7 @@
         -181348.779+1212436.949/
         -181142.000+1212358.000
     </Line>
-    <Line Name="BROOME_CTA_E5" Pattern="Dashed">
+    <Line Name="BROOME_CTA_E5" Pattern="Dotted">
         -181439.000+1211355.000/
         -180604.000+1214302.000/
         -180209.346+1214158.597/
@@ -9724,7 +9724,7 @@
         -181711.215+1211442.187/
         -181439.000+1211355.000
     </Line>
-    <Line Name="CONTINENTAL_AUSTRALIA_CTA_E1" Pattern="Dashed">
+    <Line Name="CONTINENTAL_AUSTRALIA_CTA_E1" Pattern="Dotted">
         -215000.000+1113000.000/
         -193036.000+1133123.000/
         -184759.000+1153344.000/
@@ -9847,7 +9847,7 @@
         -311548.000+1125625.000/
         -215000.000+1113000.000
     </Line>
-    <Line Name="DARWIN_CTA_E1" Pattern="Dashed">
+    <Line Name="DARWIN_CTA_E1" Pattern="Dotted">
         -131252.000+1303742.000/
         -130327.000+1304117.000/
         -130258.896+1304020.408/
@@ -9918,7 +9918,7 @@
         -131222.502+1303649.100/
         -131252.000+1303742.000
     </Line>
-    <Line Name="DARWIN_CTA_E2" Pattern="Dashed">
+    <Line Name="DARWIN_CTA_E2" Pattern="Dotted">
         -131252.000+1303742.000/
         -135031.000+1302320.000/
         -135401.471+1303817.117/
@@ -9934,7 +9934,7 @@
         -131438.275+1304527.840/
         -131252.000+1303742.000
     </Line>
-    <Line Name="DARWIN_CTA_E3" Pattern="Dashed">
+    <Line Name="DARWIN_CTA_E3" Pattern="Dotted">
         -131252.000+1303742.000/
         -135031.000+1302320.000/
         -134956.440+1302241.121/
@@ -10004,7 +10004,7 @@
         -131222.502+1303649.100/
         -131252.000+1303742.000
     </Line>
-    <Line Name="EAST_COAST_CTA_E1" Pattern="Dashed">
+    <Line Name="EAST_COAST_CTA_E1" Pattern="Dotted">
         -341702.000+1482730.000/
         -335940.000+1493450.000/
         -340954.884+1493543.762/
@@ -10149,7 +10149,7 @@
         -342303.339+1481713.781/
         -341702.000+1482730.000
     </Line>
-    <Line Name="EAST_COAST_CTA_E2" Pattern="Dashed">
+    <Line Name="EAST_COAST_CTA_E2" Pattern="Dotted">
         -224731.000+1473214.000/
         -204343.000+1470135.000/
         -204439.000+1464530.000/
@@ -10320,7 +10320,7 @@
         -232000.000+1480000.000/
         -224731.000+1473214.000
     </Line>
-    <Line Name="KARRATHA_CTA_E1" Pattern="Dashed">
+    <Line Name="KARRATHA_CTA_E1" Pattern="Dotted">
         -201154.000+1164626.000/
         -201222.163+1165210.163/
         -201345.805+1165743.970/
@@ -10359,7 +10359,7 @@
         -201222.163+1164041.837/
         -201154.000+1164626.000
     </Line>
-    <Line Name="KARRATHA_CTA_E2" Pattern="Dashed">
+    <Line Name="KARRATHA_CTA_E2" Pattern="Dotted">
         -202454.000+1160820.000/
         -202858.000+1161653.000/
         -202721.635+1161746.784/
@@ -10402,7 +10402,7 @@
         -202908.512+1160618.485/
         -202454.000+1160820.000
     </Line>
-    <Line Name="KARRATHA_CTA_E3" Pattern="Dashed">
+    <Line Name="KARRATHA_CTA_E3" Pattern="Dotted">
         -202023.000+1155850.000/
         -202858.000+1161653.000/
         -202721.635+1161746.784/
@@ -10445,7 +10445,7 @@
         -202540.700+1155617.737/
         -202023.000+1155850.000
     </Line>
-    <Line Name="KARRATHA_CTA_E4" Pattern="Dashed">
+    <Line Name="KARRATHA_CTA_E4" Pattern="Dotted">
         -201551.000+1154920.000/
         -202858.000+1161653.000/
         -202721.635+1161746.784/
@@ -10488,7 +10488,7 @@
         -202212.316+1154617.440/
         -201551.000+1154920.000
     </Line>
-    <Line Name="PERTH_CTA_E" Pattern="Dashed">
+    <Line Name="PERTH_CTA_E" Pattern="Dotted">
         -330337.000+1144613.000/
         -324514.000+1150624.000/
         -323411.000+1151826.000/
@@ -10551,7 +10551,7 @@
         -325406.679+1143527.190/
         -330337.000+1144613.000
     </Line>
-    <Line Name="WILLIAMTOWN_CTA_E1" Pattern="Dashed">
+    <Line Name="WILLIAMTOWN_CTA_E1" Pattern="Dotted">
         -323334.000+1511842.000/
         -323246.223+1511909.742/
         -322830.032+1512244.535/
@@ -10588,7 +10588,7 @@
         -323602.000+1512351.000/
         -323334.000+1511842.000
     </Line>
-    <Line Name="WILLIAMTOWN_CTA_E2" Pattern="Dashed">
+    <Line Name="WILLIAMTOWN_CTA_E2" Pattern="Dotted">
         -323334.000+1511842.000/
         -323246.223+1511909.742/
         -322830.032+1512244.535/
