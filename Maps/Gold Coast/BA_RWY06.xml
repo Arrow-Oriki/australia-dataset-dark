@@ -1,12 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Maps>
-  <Map Type="System" Name="BA_RWY06" Priority="1" Center="-28.833889+153.562500">
-    <!--YBNA-->
-    <Runway Name="06/24">
+
+  <Map Type="System" Name="BA_RWY06_Centreline" Priority="1" Center="-28.833889+153.562500" CustomColourName="Centreline">
+<Runway Name="06/24">
       <Threshold Name="06" Position="-28.835736+153.551808" ExtendedCentrelineTrack="253.48" ExtendedCentrelineLength="15" ExtendedCentrelineTickInterval="5" />
       <Threshold Name="24" Position="-28.830864+153.570472" />
     </Runway>
-    <!--SIDs-->
+  </Map>
+  <Map Type="System" Name="BA_RWY06_SIDs" Priority="1" Center="-28.833889+153.562500" CustomColourName="SIDs">
     <Line>
       <!--Rwy06 BNA1-->
       -284951.110+1533413.700/
@@ -37,7 +38,8 @@
       NA520/
       IDNER
     </Line>
-    <!--STARs-->
+  </Map>
+  <Map Type="System" Name="BA_RWY06_STARs" Priority="1" Center="-28.833889+153.562500" CustomColourName="STARs">
     <Line>
       <!--Rwy06 UPSE1A-->
       UPSEL/
@@ -62,15 +64,17 @@
       NA524/
       OPESO
     </Line>
-    <Symbol Type="HollowTriangle">
+  </Map>
+  <Map Type="System" Name="BA_RWY06_Symbols" Priority="1" Center="-28.833889+153.562500" CustomColourName="Airways_Symbols">
+<Symbol Type="HollowTriangle">
       <Point>DAPRA</Point>
       <Point>OPESO</Point>
     </Symbol>
-    <Symbol Type="SolidStar">
+<Symbol Type="SolidStar">
       <Point>EXUVI</Point>
       <Point>BIVIT</Point>
     </Symbol>
-    <Symbol Type="HollowStar">
+<Symbol Type="HollowStar">
       <Point>BUVAM</Point>
       <Point>UPVUK</Point>
       <Point>UXIPI</Point>
@@ -88,8 +92,8 @@
       <Point>NA524</Point>
     </Symbol>
   </Map>
-  <Map Type="System" Name="BA_RWY06_NAMES" Priority="2" Center="-28.833889+153.562500">
-    <Label>
+  <Map Type="System" Name="BA_RWY06_Names" Priority="2" Center="-28.833889+153.562500" CustomColourName="Names">
+<Label>
       <Point>EXUVI</Point>
       <Point>BUVAM</Point>
       <Point>BIVIT</Point>

@@ -1,12 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Maps>
-  <Map Type="System" Name="HB_RWY12" Priority="1" Center="-42.836111+147.510278">
-    <!--YMHB-->
-    <Runway Name="12/30">
+
+  <Map Type="System" Name="HB_RWY12_Centreline" Priority="1" Center="-42.836111+147.510278" CustomColourName="Centreline">
+<Runway Name="12/30">
       <Threshold Name="12" Position="-42.828969+147.502053" ExtendedCentrelineTrack="315.02" ExtendedCentrelineLength="17" ExtendedCentrelineTickInterval="1" />
       <Threshold Name="30" Position="-42.845581+147.524603" />
     </Runway>
-    <!--SIDs-->
+  </Map>
+  <Map Type="System" Name="HB_RWY12_SIDs" Priority="1" Center="-42.836111+147.510278" CustomColourName="SIDs">
     <Line>
       <!--Rwy12 KANLI3-->
       -425044.090+1473128.570/
@@ -41,7 +42,8 @@
       NUVTA/
       RIBLI
     </Line>
-    <!--STARs-->
+  </Map>
+  <Map Type="System" Name="HB_RWY12_STARs" Priority="1" Center="-42.836111+147.510278" CustomColourName="STARs">
     <Line>
       <!--Rwy12 IPLE7A-->
       IPLET/
@@ -67,14 +69,16 @@
       IKOBI/
       BUSKA
     </Line>
-    <Symbol Type="HollowTriangle">
+  </Map>
+  <Map Type="System" Name="HB_RWY12_Symbols" Priority="1" Center="-42.836111+147.510278" CustomColourName="Airways_Symbols">
+<Symbol Type="HollowTriangle">
       <Point>BUSKA</Point>
       <Point>VETOR</Point>
     </Symbol>
-    <Symbol Type="SolidStar">
+<Symbol Type="SolidStar">
       <Point>OREBA</Point>
     </Symbol>
-    <Symbol Type="HollowStar">
+<Symbol Type="HollowStar">
       <Point>ISTIG</Point>
       <Point>OMKUL</Point>
       <Point>GIVOT</Point>
@@ -103,8 +107,8 @@
       <Point>IKOBI</Point>
     </Symbol>
   </Map>
-  <Map Type="System" Name="HB_RWY12_NAMES" Priority="2" Center="-42.836111+147.510278">
-    <Label>
+  <Map Type="System" Name="HB_RWY12_Names" Priority="2" Center="-42.836111+147.510278" CustomColourName="Names">
+<Label>
       <Point>OREBA</Point>
       <Point>ISTIG</Point>
       <Point>OMKUL</Point>
