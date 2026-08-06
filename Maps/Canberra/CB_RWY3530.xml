@@ -1,16 +1,17 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Maps>
-  <Map Type="System" Name="CB_RWY3530" Priority="1" Center="-35.306944+149.195000">
-    <!--YSCB-->
-    <Runway Name="12/30">
+
+  <Map Type="System" Name="CB_RWY3530_Centreline" Priority="1" Center="-35.306944+149.195000" CustomColourName="Centreline">
+<Runway Name="12/30">
       <Threshold Name="12" Position="-35.302767+149.188219" />
       <Threshold Name="30" Position="-35.309997+149.198761" ExtendedCentrelineTrack="129.92" ExtendedCentrelineLength="10" ExtendedCentrelineTickInterval="5" />
     </Runway>
-    <Runway Name="17/35">
+<Runway Name="17/35">
       <Threshold Name="17" Position="-35.290628+149.194442" />
       <Threshold Name="35" Position="-35.314808+149.194444" ExtendedCentrelineTrack="179.99" ExtendedCentrelineLength="15" ExtendedCentrelineTickInterval="1" />
     </Runway>
-    <!--SIDs-->
+  </Map>
+  <Map Type="System" Name="CB_RWY3530_SIDs" Priority="1" Center="-35.306944+149.195000" CustomColourName="SIDs">
     <Line>
       <!--Rwy35 AVBEG3-->
       -351726.260+1491139.990/
@@ -90,7 +91,8 @@
       MAJOR/
       WG VOR
     </Line>
-    <!--STARs-->
+  </Map>
+  <Map Type="System" Name="CB_RWY3530_STARs" Priority="1" Center="-35.306944+149.195000" CustomColourName="STARs">
     <Line>
       <!--Rwy30 BUNG5V-->
       BUNGO/
@@ -198,7 +200,9 @@
       ANREP/
       KALKA
     </Line>
-    <Symbol Type="HollowTriangle">
+  </Map>
+  <Map Type="System" Name="CB_RWY3530_Symbols" Priority="1" Center="-35.306944+149.195000" CustomColourName="Airways_Symbols">
+<Symbol Type="HollowTriangle">
       <Point>ENDOR</Point>
       <Point>MENZI</Point>
       <Point>PILOS</Point>
@@ -206,13 +210,13 @@
       <Point>BIBRU</Point>
       <Point>KALKA</Point>
     </Symbol>
-    <Symbol Type="SolidStar">
+<Symbol Type="SolidStar">
       <Point>GUTMO</Point>
     </Symbol>
-    <Symbol Type="Circle">
+<Symbol Type="Circle">
       <Point>WG VOR</Point>
     </Symbol>
-    <Symbol Type="HollowStar">
+<Symbol Type="HollowStar">
       <Point>VICKI</Point>
       <Point>AVBEG</Point>
       <Point>CULIN</Point>
@@ -253,8 +257,8 @@
       <Point>ANREP</Point>
     </Symbol>
   </Map>
-  <Map Type="System" Name="CB_RWY3530_NAMES" Priority="2" Center="-35.306944+149.195000">
-    <Label>
+  <Map Type="System" Name="CB_RWY3530_Names" Priority="2" Center="-35.306944+149.195000" CustomColourName="Names">
+<Label>
       <Point>VICKI</Point>
       <Point>AVBEG</Point>
       <Point>CULIN</Point>
