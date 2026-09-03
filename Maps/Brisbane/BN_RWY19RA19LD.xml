@@ -1,16 +1,17 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Maps>
-  <Map Type="System" Name="BN_RWY19RA19LD" Priority="1" Center="-27.384167+153.117500">
-    <!--YBBN-->
-    <Runway Name="01R/19L">
+
+  <Map Type="System" Name="BN_RWY19RA19LD_Centreline" Priority="1" Center="-27.384167+153.117500" CustomColourName="Centreline">
+<Runway Name="01R/19L">
       <Threshold Name="01R" Position="-27.402797+153.118219" />
       <Threshold Name="19L" Position="-27.374664+153.134306" />
     </Runway>
-    <Runway Name="01L/19R">
+<Runway Name="01L/19R">
       <Threshold Name="01L" Position="-27.383069+153.106803" />
       <Threshold Name="19R" Position="-27.356544+153.121969" ExtendedCentrelineTrack="27.05" ExtendedCentrelineLength="18" ExtendedCentrelineTickInterval="2" />
     </Runway>
-    <!--SIDs-->
+  </Map>
+  <Map Type="System" Name="BN_RWY19RA19LD_SIDs" Priority="1" Center="-27.384167+153.117500" CustomColourName="SIDs">
     <Line>
       <!--Rwy19L BIXAD2-->
       -272410.070+1530705.590/
@@ -51,7 +52,8 @@
       IGMAS/
       WACKO
     </Line>
-    <!--STARs-->
+  </Map>
+  <Map Type="System" Name="BN_RWY19RA19LD_STARs" Priority="1" Center="-27.384167+153.117500" CustomColourName="STARs">
     <Line>
       <!--Rwy19R ISPON2.BLAKA-->
       BLAKA/
@@ -143,18 +145,20 @@
     <Line>
       <!--Rwy19R WODY3V-->
     </Line>
-    <Symbol Type="HollowTriangle">
+  </Map>
+  <Map Type="System" Name="BN_RWY19RA19LD_Symbols" Priority="1" Center="-27.384167+153.117500" CustomColourName="Airways_Symbols">
+<Symbol Type="HollowTriangle">
       <Point>OSOKO</Point>
       <Point>TOLAX</Point>
       <Point>LUVNA</Point>
       <Point>PAMGO</Point>
     </Symbol>
-    <Symbol Type="SolidStar">
+<Symbol Type="SolidStar">
       <Point>CITEE</Point>
       <Point>TOGIN</Point>
       <Point>BOSVU</Point>
     </Symbol>
-    <Symbol Type="HollowStar">
+<Symbol Type="HollowStar">
       <Point>ALBUB</Point>
       <Point>AMBLE</Point>
       <Point>DEBAY</Point>
@@ -214,8 +218,8 @@
       <Point>TEGIL</Point>
     </Symbol>
   </Map>
-  <Map Type="System" Name="BN_RWY19RA19LD_NAMES" Priority="2" Center="-27.384167+153.117500">
-    <Label>
+  <Map Type="System" Name="BN_RWY19RA19LD_Names" Priority="2" Center="-27.384167+153.117500" CustomColourName="Names">
+<Label>
       <Point>CITEE</Point>
       <Point>TOGIN</Point>
       <Point>ALBUB</Point>

@@ -1,227 +1,164 @@
-# Eurocat Australia Dataset
-This is the default profile dataset for vatSys.
+# vatSys Australia Dataset — Dark Theme
 
-## Aeronautical Information Management
-Scheduled AIRAC updates to the dataset occur once every three months according to the [Airservices Document Amendment Calendar](https://www.airservicesaustralia.com/industry-info/aeronautical-information-management/document-amendment-calendar/).
+This repository contains an **automatically generated dark theme variant**
+of the official **vatSys Australia dataset**.
 
-The VATPAC AIS Team may issue intermediate AIRAC Updates as required.
+> ⚠️ This is **not** the upstream repository.  
+> It exists solely to provide a themed derivative with automated releases.
 
-### Community Contributions
-The majority of files in the dataset are prepared using third-party software which overwrites manual changes each update. For this reason, these files can not be directly edited by members outside of the AIS team. If you notice an error have a suggestion for a change, it would be greatly appreciated if you could submit your comments via the [VATPAC Helpdesk](https://helpdesk.vatpac.org).
+---
 
-The following files are **not** updated in this way, meaning that community members may fork the repo and make direct edits to these files.
+## 🎨 Theme Overview
 
-```
-Except for Airspace.xml and RestrictedAreas.xml all other files in the root folder of the profile dataset are manually maintained and not updated as part of a vatSys export.
+- **Theme:** Dark
+- **Generated:** 2026-09-03
+- **Upstream Release:** 2609a
+- **Dark Version Format:** `YYMMx-dark` (e.g. `2609a-dark`)
 
-In the Maps folder the following files are manually maintained and not updated as part of a vatSys export:
-a) COAST_ALL.xml 
-b) FIR_BOUNDARIES.xml 
-c) ALL_CTA.xml 
-d) ALL_SECTORS.xml 
-e) ASMGCS_TAXI_ALL.xml 
-f) BAY_NUMBERS.xml
-g) Within each Airport folder, XX RTCC.xml, ASMGCS_XXXX.xml and XX_VOR.xml
-```
+![ASD Dark Theme Preview](.github/images/ASD_Scope.jpg)
+![GND Dark Theme Preview](.github/images/GND_Scope.jpg)
 
-Non-AIS Staff/Community members may contribute to the dataset to edit the above mentioned files by making a pull request to the relevant AIRAC draft branch. These requests must be submitted **two weeks** before the designated AIRAC Effective Date to be considered for integration.
+---
 
-Pull requests to the master branch will not be approved.
+## 📥 Installation
 
-**Note:** Major changes (E.g. TCU/ENR/Aerodrome changes) must be discussed with the AIS team directly as an [issue](https://github.com/vatSys/australia-dataset/issues) before commencing work on the change.
+1. Download the latest **Dark Theme** ZIP from the **Releases** page.
+2. Extract the archive.
+3. Copy the extracted profile contents into: Documents\ vatSys Files\ Profiles\ Australia - Dark
+4. Launch **vatSys**
+5. Select **Australia – Dark** from the profile list
 
-#### Custom Map Layers
-For a map to be considered for inclusion into the Australia or Pacific profile:
-- It must be compatible with the AIS AIRAC maintenance process.
-  - ie, it can't need any Airspace.xml or TCU.xml changes
-- It must not duplicate, or make redundant, any existing AIS map layer;
-- It must be reasonably expected to be useful to the provision of ATS within VATPAC airspace;
-- It must be designed to replicate operations as they are simulated online - not necessarily as they exist in the real world;
-- It must be available for use by all appropriately credentialled VATPAC members, and not for exclusive use by members of any third-party organisation or group;
-- It must not contain any personal information not relevant to the functionality of the map;
-- It should use a colour/design scheme that will not be confused with an existing AIS map layer;
-- It must be approved by both the AIS Manager and ATS Director.
+> ℹ️ Restart vatSys if it was running during installation.
 
-If you are considering contributing a map layer and are unsure how these requirements would apply, please reach out to the AIS team directly by raising an [issue](https://github.com/vatSys/australia-dataset/issues) before commencing work on the change.
+---
 
+## 🔄 How This Repository Works
 
-# Data Preparation
+This repository is **fully automated** and follows a strict separation of concerns:
 
-**`Profile.xml` must be updated for each release**
+### ✔ Upstream Data
+- Sourced directly from **vatSys/australia-dataset**
+- No manual edits are made to upstream data
+- New upstream tags are detected automatically
 
-## Data Definition Hierarchy
+### ✔ Automation & Tooling
+- All automation lives in the `.github/` directory
+- Patch scripts are **authoritative** and preserved across syncs
+- Workflow files are **never modified by automation**
 
-The definition of all WAYPOINT, NAVAID, AIRPORT, SID & STAR names referenced by vatSys XML files are searched for in the following order:
+### ✔ Generated Output
+- A working tree is created from the upstream release
+- Patch scripts are applied deterministically
+- A tagged dark-themed release is produced
+- A ZIP is generated and uploaded
 
-1. Airspace.xml
-2. Navigraph Data
+If a themed release already exists for a given upstream tag, the workflow exits safely.
 
-## Lat Long Format
+---
 
-vatSys accepts coordinates in any valid [ISO 6709 format](https://en.wikipedia.org/wiki/ISO_6709).
+## 🛠 Patch Scripts
 
-```
-Latitude and Longitude in Degrees:
-    ±DD.DDDD±DDD.DDDD         (eg +12.345-098.765)
-Latitude and Longitude in Degrees and Minutes:
-    ±DDMM.MMMM±DDDMM.MMMM     (eg +1234.56-09854.321)
-Latitude and Longitude in Degrees, Minutes and Seconds:
-    ±DDMMSS.SSSS±DDDMMSS.SSSS (eg +123456.7-0985432.1)
-Latitude, Longitude (in Degrees) and Altitude:
-    ±DD.DDDD±DDD.DDDD±AAA.AAA         (eg +12.345-098.765+15.9)
-Latitude, Longitude (in Degrees and Minutes) and Altitude:
-    ±DDMM.MMMM±DDDMM.MMMM±AAA.AAA     (eg +1234.56-09854.321+15.9)
-Latitude, Longitude (in Degrees, Minutes and Seconds) and Altitude:
-    ±DDMMSS.SSSS±DDDMMSS.SSSS±AAA.AAA (eg +123456.7-0985432.1+15.9)
-```
+Patch scripts are written in Python and operate directly on XML map files.
 
-## Chaining Points Together
+### Included Scripts
 
-Multiple points may be chained by adding each point on a new line followed by the `/` character.
+1. **`patch_readme.py`**  
+Regenerates this README dynamically based on the upstream release.
 
-```
-ELBIS/
-IKUMA/
-IDOTO/
-GUNAM/
-NIKOM/
-CIN/
-POKOS/
-VALRA/
-+12.345-098.765/
-+15.345-123.765
-```
+2. **`patch_colours.py`**  
+Applies dark-theme colour definitions consistently.
 
-## Airspace.XML Instructions
+3. **`patch_profile.py`**  
+Updates profile metadata for dark-theme identification.
 
-### SystemRunways
+4. **`patch_coast.py`**  
+Adds `CustomColourName="Coast"` to applicable map files.
 
-This section 'maps' the runway selectable by the controller in the strip or label of an aircraft to a SID or STAR defined in data for a particular runway (the `DataRunway`). 
+5. **`patch_ASMGCS.py`**  
+Normalises ASMGCS map colour usage.
 
-For every controlled airport in australia... we need to add the `airport->runways->sidstars`
+6. **`patch_ALL_CTA.py`**  
+Applies CTA colouring and line-style corrections.
 
-```xml
-<SystemRunways>
-	<Airport Name="YBCG">
-		<Runway Name="14" DataRunway="14">
-			<SID Name="APAGI\d" Type="Jet"/>
-			<SID Name="CUDGN\d" />
-			<SID Name="CG\d" Default="True" />
-			<STAR Name="[A-Z]{4}\dA" ApproachName="ILSZ"/>
-			<STAR Name="[A-Z]{4}\dY" ApproachName="RNVY"/>
-		</Runway>
-		<Runway Name="32" DataRunway="32">
-			<SID Name="APAGI\d" Type="Jet"/>
-			<SID Name="BURLI\d" />
-			<SID Name="CG\d" Default="True" />
-			<STAR Name="[A-Z]{4}\dA" ApproachName="RNVZ"/>
-			<STAR Name="[A-Z]{4}\dY" ApproachName="RNVY"/>
-		</Runway>
-		<Runway Name="14V" DataRunway="14">
-			<STAR Name="[A-Z]{4}\dV" />
-		</Runway>
-		<Runway Name="32V" DataRunway="32">
-			<STAR Name="[A-Z]{4}\dV" />
-		</Runway>
-	</Airport>
-</SystemRunways>
-```
+7. **`patch_TMA_LL.py`, `patch_ALL_RTES_PTS.py`, `patch_RWY_files.py`**  
+Apply targeted fixes to airspace, routes, and runway map data.
 
-#### What does this all mean?
-- The `Name` attribute of `SID` and `STAR` elements accepts Regex search patterns;
-- eg. If you see the code `\d` it means any number, so if the APAGI4 becomes APAGI5 the code doesn't need to change.
-- eg. `[A-Z]{4}\dA` means the first 4 characters are anything between A-Z, then look for any number then (in this case) Alpha charts. This means the BLAK3A arrival can change to BLAK4A arrival and the code doesn't need to change.
-- By doing this `[A-Z]{4}\dA` and `ApproachName="ILSZ"` we have assigned all Alpha STARs the ILSZ approach and `[A-Z]{4}\dY` all Yankee STARs to the `ApproachName="RNVY"` RNAV Yankee approach.
-- We set the default SID to the airport's radar departure and we set any visual STAR's under a separate runway called `[runwayid]V` like 14V. We do this by calling all STARs that end in any number and V for Victor/visual using `[A-Z]{4}\dV`.
-- The SIDs are written out individually since some are jet and some are non jet.
-- **Runway ID cannot be more than 3 characters**, so this means for any parallel runways the visual approach is not a seperate runway entry. Applicable to Sydney and Brisbane (#soon).
+> ⚠️ All scripts overwrite files in-place and are intended for automated use.
 
-### SIDSTARs
+---
 
-This section defines the routes of SIDs, STARs, Approaches and their Transitions.
+## 🚀 Release Process (Automation)
 
-SIDs and STARs should be defined for controlled airports whenever you wish to remove reliance on Navigraph defined data.
+Each release follows this process:
 
-```xml
-<SIDSTARs>
-	<SID Name="TESTA1" Airport="AAAA" Runways="18,36">
-        <Route Runway="36">ROUTE POINT</Route>
-        <Route Runway="18">ANTHR RALTO</Route>
-        <Route>TESTA</Route>
-        <Transition Name="ABCDE">FINSH ABCDE</Transition>
-    </SID>
-	<STAR Name="TESTA1" Airport="AAAA" Runways="18,36">
-		<Transition Name="ABCDE">ABCDE FINSH</Transition>
-		<Route>TESTA</Route>
-		<Route Runway="36">POINT ROUTE</Route>
-		<Route Runway="18">RALTO ANTHR</Route>
-	</STAR>
-	<Approach Name="RNVZ" Airport="AAAA" Runway="18">
-		<Transition Name="ABCDE">ANTHR</Transition>
-		<Route>FAFFF AA18T</Route>
-	</Approach>
-</SIDSTARs>
-```
+1. Detect latest upstream tag
+2. Check if `2609a-dark` already exists
+3. Rebase working tree onto upstream data
+4. Restore `.github/` tooling
+5. Apply all patch scripts
+6. Commit **data-only changes**
+7. Create a dark-theme tag
+8. Build and upload ZIP asset
+9. Publish GitHub Release
+10. Upload payload to public hosting (FTP)
 
-#### What does this all mean?
-SIDs and STARs consist of `Route` elements that are runway or non runway specific. For a `SID`, the non-runway specific route will always follow the runway specific route. For a `STAR`, the reverse is true. Transitions will be applied whenever the transition end point coincides with a point on the flight planned route.
+This ensures:
+- Reproducible output
+- No workflow self-modification
+- No accidental upstream drift
 
-Approaches link a STAR to a runway. Transitions will be applied if they conincide with the STAR end point. Approaches are used only if defined in `SystemRunways` and are not manually selectable.
+---
 
-### Airways
-Airways may be defined whenever you wish to remove reliance on Navigraph defined data. Airways are always treated as valid in both directions.
+## ⬇️ Downloads
 
-```xml
-<Airways>
-    <Airway Name="A216">
-        APUKA/
-        MEMIG/
-        LOCKA/
-        CS
-    </Airway>
-</Airways>
-```
+### GitHub Releases (Recommended)
 
-### Intersections
+Each release includes:
+- A pre-packaged ZIP
+- One-to-one mapping with upstream versions
+- Ready-to-install vatSys profile
 
-Intersections (Fixes & Navaids) may be defined whenever you wish to remove reliance on Navigraph defined data.
+Once installed, the profile can update automatically via public hosting.
 
-```xml
-<Intersections>
-    <Point Name="ABARB" Type="Fix">-325106.400+1545604.900</Point>
-	<Point Name="WP" Type="Navaid" NavaidType="VOR" Frequency="112.800">-124024.800+1415520.900</Point>
-</Intersections>	
-```
+---
 
-Duplicates are generally accepted. vatSys will attempt to choose the nearest relevant intersection when parsing to resolve.
+## 📦 Repository Contents
 
-#### Intersection Types
-```
-Types
-{
-	Fix,
-	Navaid,
-	Airport,
-	Unknown
-}
-```
-#### Navaid Intersection Types
-```
-NavaidTypes
-{
-	None,
-	VOR,
-	NDB,
-	TAC
-}
-```
-### Airports
+- Dark-themed dataset files
+- Profile configuration
+- Automation tooling and patch scripts
+- Release packaging logic
 
-Airports may be defined whenever you wish to remove reliance on Navigraph defined data.
+---
 
-```xml
-<Airport ICAO="YABA" Position="-345636.000+1174832.000" Elevation="233">
-		<Runway Name="14" Position="-345639.000+1174835.000">
-		<Runway Name="32" Position="-345642.000+1174838.000">
-</Airport>
-```
+## ⚖️ Attribution
+
+- Original dataset © vatSys Australia contributors
+- Theme modifications and automation maintained independently
+- This project is **not affiliated with or endorsed by vatSys, VATSIM, or VATPAC**
+
+---
+
+## ⚠️ Disclaimer & Limitation of Liability
+
+This project is provided **as-is**, without warranty of any kind.
+
+By using this dataset, you acknowledge that:
+
+- Use is entirely **at your own risk**
+- No liability is accepted for errors or omissions
+- No guarantee of fitness for any purpose is provided
+- Automated updates may change files without notice
+
+This applies to the dataset, scripts, automation, and generated releases.
+
+---
+
+## 🧩 Issues & Support
+
+For issues related to:
+- Dark theme appearance
+- Automation behaviour
+- Patch scripts
+
+Please open an issue **in this repository**, not upstream.

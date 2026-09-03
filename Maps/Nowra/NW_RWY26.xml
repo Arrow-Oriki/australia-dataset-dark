@@ -1,12 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Maps>
-  <Map Type="System" Name="NW_RWY26" Priority="1" Center="-34.948889+150.536944">
-    <!--YSNW-->
-    <Runway Name="08/26">
+
+  <Map Type="System" Name="NW_RWY26_Centreline" Priority="1" Center="-34.948889+150.536944" CustomColourName="Centreline">
+<Runway Name="08/26">
       <Threshold Name="08" Position="-34.947867+150.526597" />
       <Threshold Name="26" Position="-34.949247+150.548464" ExtendedCentrelineTrack="94.39" ExtendedCentrelineLength="5" ExtendedCentrelineTickInterval="5" />
     </Runway>
-    <!--SIDs-->
+  </Map>
+  <Map Type="System" Name="NW_RWY26_SIDs" Priority="1" Center="-34.948889+150.536944" CustomColourName="SIDs">
     <Line>
       <!--Rwy26 ABAS5A-->
       -345652.320+1503135.750/
@@ -69,22 +70,23 @@
       -345324.000+1503416.000/
       WOL NDB
     </Line>
-    <!--STARs-->
-    <Symbol Type="Circle">
+  </Map>
+  <Map Type="System" Name="NW_RWY26_Symbols" Priority="1" Center="-34.948889+150.536944" CustomColourName="Airways_Symbols">
+<Symbol Type="Circle">
       <Point>CB VOR</Point>
       <Point>COM NDB</Point>
       <Point>GLB NDB</Point>
       <Point>WOL NDB</Point>
     </Symbol>
-    <Symbol Type="HollowStar">
+<Symbol Type="HollowStar">
       <Point>ABASS</Point>
       <Point>AKMIR</Point>
       <Point>TONTO</Point>
       <Point>URBOB</Point>
     </Symbol>
   </Map>
-  <Map Type="System" Name="NW_RWY26_NAMES" Priority="2" Center="-34.948889+150.536944">
-    <Label>
+  <Map Type="System" Name="NW_RWY26_Names" Priority="2" Center="-34.948889+150.536944" CustomColourName="Names">
+<Label>
       <Point>ABASS</Point>
       <Point>AKMIR</Point>
       <Point>CB VOR</Point>

@@ -1,16 +1,17 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Maps>
-  <Map Type="System" Name="PH_RWY-SW PLAN" Priority="1" Center="-31.940278+115.966944">
-    <!--YPPH-->
-    <Runway Name="03/21">
+
+  <Map Type="System" Name="PH_RWY-SW PLAN_Centreline" Priority="1" Center="-31.940278+115.966944" CustomColourName="Centreline">
+<Runway Name="03/21">
       <Threshold Name="03" Position="-31.958739+115.959683" />
       <Threshold Name="21" Position="-31.928594+115.968464" ExtendedCentrelineTrack="13.95" ExtendedCentrelineLength="10" ExtendedCentrelineTickInterval="1" />
     </Runway>
-    <Runway Name="06/24">
+<Runway Name="06/24">
       <Threshold Name="06" Position="-31.940989+115.959203" />
       <Threshold Name="24" Position="-31.930908+115.978792" ExtendedCentrelineTrack="58.9" ExtendedCentrelineLength="10" ExtendedCentrelineTickInterval="1" />
     </Runway>
-    <!--SIDs-->
+  </Map>
+  <Map Type="System" Name="PH_RWY-SW PLAN_SIDs" Priority="1" Center="-31.940278+115.966944" CustomColourName="SIDs">
     <Line>
       <!--Rwy21 AMANA5-->
       -315731.460+1155734.860/
@@ -101,7 +102,8 @@
       BURGU/
       YNRV
     </Line>
-    <!--STARs-->
+  </Map>
+  <Map Type="System" Name="PH_RWY-SW PLAN_STARs" Priority="1" Center="-31.940278+115.966944" CustomColourName="STARs">
     <Line>
       <!--Rwy21 IPMO2A.KAGMI-->
       KAGMI/
@@ -186,14 +188,16 @@
     <Line>
       <!--Rwy24 SOLU3A-->
     </Line>
-    <Symbol Type="HollowTriangle">
+  </Map>
+  <Map Type="System" Name="PH_RWY-SW PLAN_Symbols" Priority="1" Center="-31.940278+115.966944" CustomColourName="Airways_Symbols">
+<Symbol Type="HollowTriangle">
       <Point>WOOFY</Point>
       <Point>HAIGH</Point>
       <Point>MOCUR</Point>
       <Point>SPUDO</Point>
       <Point>KOORI</Point>
     </Symbol>
-    <Symbol Type="HollowStar">
+<Symbol Type="HollowStar">
       <Point>AVBAD</Point>
       <Point>BAMIL</Point>
       <Point>DADSI</Point>
@@ -261,8 +265,8 @@
       <Point>UPNIS</Point>
     </Symbol>
   </Map>
-  <Map Type="System" Name="PH_RWY-SW PLAN_NAMES" Priority="2" Center="-31.940278+115.966944">
-    <Label>
+  <Map Type="System" Name="PH_RWY-SW PLAN_Names" Priority="2" Center="-31.940278+115.966944" CustomColourName="Names">
+<Label>
       <Point>AVBAD</Point>
       <Point>BAMIL</Point>
       <Point>DADSI</Point>
