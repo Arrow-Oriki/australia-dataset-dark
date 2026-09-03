@@ -1,16 +1,17 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Maps>
-  <Map Type="System" Name="ML_RWY09A16D" Priority="1" Center="-37.673333+144.843333">
-    <!--YMML-->
-    <Runway Name="09/27">
+
+  <Map Type="System" Name="ML_RWY09A16D_Centreline" Priority="1" Center="-37.673333+144.843333" CustomColourName="Centreline">
+<Runway Name="09/27">
       <Threshold Name="09" Position="-37.660750+144.822253" ExtendedCentrelineTrack="274.18" ExtendedCentrelineLength="11" ExtendedCentrelineTickInterval="1" />
       <Threshold Name="27" Position="-37.662256+144.848092" />
     </Runway>
-    <Runway Name="16/34">
+<Runway Name="16/34">
       <Threshold Name="16" Position="-37.653181+144.834914" />
       <Threshold Name="34" Position="-37.685778+144.841000" />
     </Runway>
-    <!--SIDs-->
+  </Map>
+  <Map Type="System" Name="ML_RWY09A16D_SIDs" Priority="1" Center="-37.673333+144.843333" CustomColourName="SIDs">
     <Line>
       <!--Rwy16 CORRS1-->
       -374108.800+1445027.600/
@@ -75,7 +76,8 @@
       YARRA/
       SUNTI
     </Line>
-    <!--STARs-->
+  </Map>
+  <Map Type="System" Name="ML_RWY09A16D_STARs" Priority="1" Center="-37.673333+144.843333" CustomColourName="STARs">
     <Line>
       <!--Rwy09 ALAX1A-->
       ALAXO/
@@ -141,16 +143,36 @@
       AGTEV/
       BELTA
     </Line>
-    <Symbol Type="HollowTriangle">
+    <Line Name="(ML) RWY09A16D_MAE" Width="2.7" Pattern="Dotted">
+      -372029.000+1451938.000/-372139.000+1451348.000/-372228.000+1450947.000/-373309.000+1445747.000/-373328.000+1450049.000/-374330.900+1450642.700/-374726.000+1452701.000
+    </Line>
+    <Line Name="(ML) RWY09A16D_MAE_ARBEY" Width="2.7" Pattern="Dotted">
+      -370949.000+1444728.000/-371944.000+1444844.000
+    </Line>
+    <Line Name="(ML) RWY09A16D_MDS" Width="2.7" Pattern="Dotted">
+      -374330.900+1450642.700/-374352.146+1445404.608/-373941.000+1445011.000/-374705.000+1445135.000/-374514.000+1444136.000/-374032.000+1443142.000/-373341.000+1441327.000
+    </Line>
+    <Line Name="(ML) RWY09A16D_MDN" Width="2.7" Pattern="Dotted">
+      -373812.000+1442525.000/-373605.513+1442539.577/-373243.703+1442648.982/-372934.487+1442841.402/-372643.581+1443113.352/-372416.140+1443420.183/-372216.600+1443756.219/-372048.556+1444154.931/-372010.298+1444416.106/-371044.822+1444033.511
+    </Line>
+    <Line Name="(ML) RWY09A16D_MDN-STEP" Width="2.7" Pattern="Dotted">
+      -373309.000+1445747.000/-373300.000+1445612.000/-373225.000+1444943.000/-373252.897+1444708.936/-373328.200+1444533.252/-373416.121+1444406.725/-373515.209+1444251.978/-373443.000+1443451.000/-372850.000+1442920.000
+    </Line>
+    <Line Name="(ML) RWY09A16D_MDN(S)-N" Width="2.7" Pattern="Dotted">
+      -374102.000+1445026.000/-373955.000+1443203.000/-374032.000+1443142.000
+    </Line>
+  </Map>
+  <Map Type="System" Name="ML_RWY09A16D_Symbols" Priority="1" Center="-37.673333+144.843333" CustomColourName="Airways_Symbols">
+<Symbol Type="HollowTriangle">
       <Point>GUPUG</Point>
     </Symbol>
-    <Symbol Type="SolidStar">
+<Symbol Type="SolidStar">
       <Point>HORSH</Point>
     </Symbol>
-    <Symbol Type="Circle">
+<Symbol Type="Circle">
       <Point>MNG VOR</Point>
     </Symbol>
-    <Symbol Type="HollowStar">
+<Symbol Type="HollowStar">
       <Point>YARRA</Point>
       <Point>CORRS</Point>
       <Point>OLSUN</Point>
@@ -201,26 +223,29 @@
       <Point>OMBAT</Point>
       <Point>AGTEV</Point>
     </Symbol>
-    <!--(ML) RWY09A16D Airspace-->
-    <Line Name="(ML) RWY09A16D_MAE" Width="2.7" Pattern="Dotted">
+  </Map>
+  <Map Type="System" Name="ML_RWY09A16D_Airspace" Priority="1" Center="-37.673333+144.843333" CustomColourName="Airspace">
+<Line Name="(ML) RWY09A16D_MAE" Width="2.7" Pattern="Dotted">
       -372029.000+1451938.000/-372139.000+1451348.000/-372228.000+1450947.000/-373309.000+1445747.000/-373328.000+1450049.000/-374330.900+1450642.700/-374726.000+1452701.000
     </Line>
-    <Line Name="(ML) RWY09A16D_MAE_ARBEY" Width="2.7" Pattern="Dotted">
+<Line Name="(ML) RWY09A16D_MAE_ARBEY" Width="2.7" Pattern="Dotted">
       -370949.000+1444728.000/-371944.000+1444844.000
     </Line>
-    <Line Name="(ML) RWY09A16D_MDS" Width="2.7" Pattern="Dotted">
+<Line Name="(ML) RWY09A16D_MDS" Width="2.7" Pattern="Dotted">
       -374330.900+1450642.700/-374352.146+1445404.608/-373941.000+1445011.000/-374705.000+1445135.000/-374514.000+1444136.000/-374032.000+1443142.000/-373341.000+1441327.000
     </Line>
-    <Line Name="(ML) RWY09A16D_MDN" Width="2.7" Pattern="Dotted">
+<Line Name="(ML) RWY09A16D_MDN" Width="2.7" Pattern="Dotted">
       -373812.000+1442525.000/-373605.513+1442539.577/-373243.703+1442648.982/-372934.487+1442841.402/-372643.581+1443113.352/-372416.140+1443420.183/-372216.600+1443756.219/-372048.556+1444154.931/-372010.298+1444416.106/-371044.822+1444033.511
     </Line>
-    <Line Name="(ML) RWY09A16D_MDN-STEP" Width="2.7" Pattern="Dotted">
+<Line Name="(ML) RWY09A16D_MDN-STEP" Width="2.7" Pattern="Dotted">
       -373309.000+1445747.000/-373300.000+1445612.000/-373225.000+1444943.000/-373252.897+1444708.936/-373328.200+1444533.252/-373416.121+1444406.725/-373515.209+1444251.978/-373443.000+1443451.000/-372850.000+1442920.000
     </Line>
-    <Line Name="(ML) RWY09A16D_MDN(S)-N" Width="2.7" Pattern="Dotted">
+<Line Name="(ML) RWY09A16D_MDN(S)-N" Width="2.7" Pattern="Dotted">
       -374102.000+1445026.000/-373955.000+1443203.000/-374032.000+1443142.000
     </Line>
-    <Label HasLeader="false" Alignment="Center" VerticalAlignment="Middle">
+  </Map>
+  <Map Type="System" Name="ML_RWY09A16D_Names" Priority="2" Center="-37.673333+144.843333" CustomColourName="Names">
+<Label HasLeader="false" Alignment="Center" VerticalAlignment="Middle">
       <!--(ML) RWY09A16D Labels-->
       <Point Name="MAE">-37.191389+144.758889</Point>
       <Point Name="MAE">-37.660000+145.371667</Point>
@@ -230,9 +255,7 @@
       <Point Name="MDN/MAE">-37.626944+144.915556</Point>
       <Point Name="MDS">-38.037778+144.683889</Point>
     </Label>
-  </Map>
-  <Map Type="System" Name="ML_RWY09A16D_NAMES" Priority="2" Center="-37.673333+144.843333">
-    <Label>
+<Label>
       <Point>YARRA</Point>
       <Point>CORRS</Point>
       <Point>HORSH</Point>

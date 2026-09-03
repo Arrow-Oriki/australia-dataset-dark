@@ -1,12 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Maps>
-  <Map Type="System" Name="WS_RWY05NIGHT" Priority="1" Center="-33.890833+150.718333">
-    <!--YSWS-->
-    <Runway Name="05/23">
+
+  <Map Type="System" Name="WS_RWY05NIGHT_Centreline" Priority="1" Center="-33.890833+150.718333" CustomColourName="Centreline">
+<Runway Name="05/23">
       <Threshold Name="05" Position="-33.891850+150.695731" ExtendedCentrelineTrack="239.72" ExtendedCentrelineLength="15" ExtendedCentrelineTickInterval="1" />
       <Threshold Name="23" Position="-33.875036+150.730267" />
     </Runway>
-    <!--SIDs-->
+  </Map>
+  <Map Type="System" Name="WS_RWY05NIGHT_SIDs" Priority="1" Center="-33.890833+150.718333" CustomColourName="SIDs">
     <Line>
       <!--Rwy05 BENB1N-->
       -335230.130+1504348.960/
@@ -107,7 +108,8 @@
       TEEVE/
       PKS VOR
     </Line>
-    <!--STARs-->
+  </Map>
+  <Map Type="System" Name="WS_RWY05NIGHT_STARs" Priority="1" Center="-33.890833+150.718333" CustomColourName="STARs">
     <Line>
       <!--Rwy05 BIKU1A-->
       BIKUS/
@@ -145,15 +147,26 @@
       KEXIP/
       OMBEN
     </Line>
-    <Symbol Type="HollowTriangle">
+    <Line Name="(WS) RWY05NIGHT_RICHMOND_APPROACH" Width="2.7" Pattern="Dotted">
+      -331422.000+1505212.000/-333139.000+1505948.000/-333309.000+1510030.000/-333430.712+1510056.130/-333625.298+1510108.457/-333819.927+1510056.706/-334011.113+1510021.208/-334104.000+1505953.000/-334401.000+1505535.000/-334505.000+1505400.000/-334257.000+1503844.000/-334211.000+1503641.000/-334114.000+1503427.000/-333208.000+1502909.000/-332512.000+1502508.000
+    </Line>
+    <Line Name="(WS) RWY05NIGHT_WALTON_APPROACH" Width="2.7" Pattern="Dotted">
+      -334505.000+1505400.000/-335342.000+1510004.000/-335619.000+1505921.000/-335800.000+1505443.000/-340522.000+1502837.000/-340805.800+1501829.800/-340739.000+1501216.000
+    </Line>
+    <Line Name="(WS) RWY05NIGHT_WALTON_APPROACH-SAS SHELF" Width="2.7" Pattern="Dotted">
+      -340522.000+1502837.000/-341653.000+1503146.000/-342025.000+1502454.000
+    </Line>
+  </Map>
+  <Map Type="System" Name="WS_RWY05NIGHT_Symbols" Priority="1" Center="-33.890833+150.718333" CustomColourName="Airways_Symbols">
+<Symbol Type="HollowTriangle">
       <Point>NUGSO</Point>
       <Point>GUSDO</Point>
     </Symbol>
-    <Symbol Type="Circle">
+<Symbol Type="Circle">
       <Point>NWA NDB</Point>
       <Point>PKS VOR</Point>
     </Symbol>
-    <Symbol Type="HollowStar">
+<Symbol Type="HollowStar">
       <Point>NB504</Point>
       <Point>NB508</Point>
       <Point>BENBU</Point>
@@ -198,19 +211,20 @@
       <Point>OGIXO</Point>
       <Point>KEXIP</Point>
     </Symbol>
-    <!--(WS) RWY05NIGHT Airspace-->
-    <Line Name="(WS) RWY05NIGHT_RICHMOND_APPROACH" Width="2.7" Pattern="Dotted">
+  </Map>
+  <Map Type="System" Name="WS_RWY05NIGHT_Airspace" Priority="1" Center="-33.890833+150.718333" CustomColourName="Airspace">
+<Line Name="(WS) RWY05NIGHT_RICHMOND_APPROACH" Width="2.7" Pattern="Dotted">
       -331422.000+1505212.000/-333139.000+1505948.000/-333309.000+1510030.000/-333430.712+1510056.130/-333625.298+1510108.457/-333819.927+1510056.706/-334011.113+1510021.208/-334104.000+1505953.000/-334401.000+1505535.000/-334505.000+1505400.000/-334257.000+1503844.000/-334211.000+1503641.000/-334114.000+1503427.000/-333208.000+1502909.000/-332512.000+1502508.000
     </Line>
-    <Line Name="(WS) RWY05NIGHT_WALTON_APPROACH" Width="2.7" Pattern="Dotted">
+<Line Name="(WS) RWY05NIGHT_WALTON_APPROACH" Width="2.7" Pattern="Dotted">
       -334505.000+1505400.000/-335342.000+1510004.000/-335619.000+1505921.000/-335800.000+1505443.000/-340522.000+1502837.000/-340805.800+1501829.800/-340739.000+1501216.000
     </Line>
-    <Line Name="(WS) RWY05NIGHT_WALTON_APPROACH-SAS SHELF" Width="2.7" Pattern="Dotted">
+<Line Name="(WS) RWY05NIGHT_WALTON_APPROACH-SAS SHELF" Width="2.7" Pattern="Dotted">
       -340522.000+1502837.000/-341653.000+1503146.000/-342025.000+1502454.000
     </Line>
   </Map>
-  <Map Type="System" Name="WS_RWY05NIGHT_NAMES" Priority="2" Center="-33.890833+150.718333">
-    <Label>
+  <Map Type="System" Name="WS_RWY05NIGHT_Names" Priority="2" Center="-33.890833+150.718333" CustomColourName="Names">
+<Label>
       <Point>NB504</Point>
       <Point>NB508</Point>
       <Point>BENBU</Point>

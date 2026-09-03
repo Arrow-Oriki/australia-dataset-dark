@@ -1,12 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Maps>
-  <Map Type="System" Name="HB_RWY30" Priority="1" Center="-42.836111+147.510278">
-    <!--YMHB-->
-    <Runway Name="12/30">
+
+  <Map Type="System" Name="HB_RWY30_Centreline" Priority="1" Center="-42.836111+147.510278" CustomColourName="Centreline">
+<Runway Name="12/30">
       <Threshold Name="12" Position="-42.828969+147.502053" />
       <Threshold Name="30" Position="-42.845581+147.524603" ExtendedCentrelineTrack="135.03" ExtendedCentrelineLength="15" ExtendedCentrelineTickInterval="1" />
     </Runway>
-    <!--SIDs-->
+  </Map>
+  <Map Type="System" Name="HB_RWY30_SIDs" Priority="1" Center="-42.836111+147.510278" CustomColourName="SIDs">
     <Line>
       <!--Rwy30 KANLI3-->
       -424944.290+1473007.390/
@@ -28,7 +29,8 @@
       IKETU/
       RIBLI
     </Line>
-    <!--STARs-->
+  </Map>
+  <Map Type="System" Name="HB_RWY30_STARs" Priority="1" Center="-42.836111+147.510278" CustomColourName="STARs">
     <Line>
       <!--Rwy30 IPLE8A-->
       IPLET/
@@ -62,14 +64,16 @@
     <Line>
       <!--Rwy30 MORG4W-->
     </Line>
-    <Symbol Type="HollowTriangle">
+  </Map>
+  <Map Type="System" Name="HB_RWY30_Symbols" Priority="1" Center="-42.836111+147.510278" CustomColourName="Airways_Symbols">
+<Symbol Type="HollowTriangle">
       <Point>PIDOS</Point>
       <Point>BAVUR</Point>
     </Symbol>
-    <Symbol Type="SolidStar">
+<Symbol Type="SolidStar">
       <Point>TOKAX</Point>
     </Symbol>
-    <Symbol Type="HollowStar">
+<Symbol Type="HollowStar">
       <Point>NOPET</Point>
       <Point>RUNAG</Point>
       <Point>KANLI</Point>
@@ -88,8 +92,8 @@
       <Point>OBDEB</Point>
     </Symbol>
   </Map>
-  <Map Type="System" Name="HB_RWY30_NAMES" Priority="2" Center="-42.836111+147.510278">
-    <Label>
+  <Map Type="System" Name="HB_RWY30_Names" Priority="2" Center="-42.836111+147.510278" CustomColourName="Names">
+<Label>
       <Point>TOKAX</Point>
       <Point>NOPET</Point>
       <Point>RUNAG</Point>
