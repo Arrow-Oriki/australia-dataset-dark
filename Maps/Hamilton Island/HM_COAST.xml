@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Maps>
-  <Map Type="System" Name="HM_COAST" Priority="3" Centre="-20.358056+148.951667">
+  <Map Type="System" Name="HM_COAST" Priority="3" Centre="-20.358056+148.951667" CustomColourName="Coast">
     <Line Name="Coastline">
       -19.518333+147.528722/
       -19.524167+147.53625/

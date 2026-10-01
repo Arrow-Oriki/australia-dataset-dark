@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Maps>
-  <Map Type="System" Name="AD_COAST" Priority="3" Center="-34.947+138.525">
+  <Map Type="System" Name="AD_COAST" Priority="3" Center="-34.947+138.525" CustomColourName="Coast">
     <Line>
       -38.482083+145.014139/
       -38.489611+144.985861/

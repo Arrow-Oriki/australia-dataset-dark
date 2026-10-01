@@ -1,12 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Maps>
-  <Map Type="System" Name="MK_RWY14A32D" Priority="1" Center="-21.171389+149.179722">
-    <!--YBMK-->
-    <Runway Name="14/32">
+
+  <Map Type="System" Name="MK_RWY14A32D_Centreline" Priority="1" Center="-21.171389+149.179722" CustomColourName="Centreline">
+<Runway Name="14/32">
       <Threshold Name="14" Position="-21.163175+149.177478" ExtendedCentrelineTrack="327.7" ExtendedCentrelineLength="15" ExtendedCentrelineTickInterval="1" />
       <Threshold Name="32" Position="-21.178306+149.187675" />
     </Runway>
-    <!--SIDs-->
+  </Map>
+  <Map Type="System" Name="MK_RWY14A32D_SIDs" Priority="1" Center="-21.171389+149.179722" CustomColourName="SIDs">
     <Line>
       <!--Rwy32 CLIFT3-->
       -210947.430+1491038.920/
@@ -26,7 +27,8 @@
       RUVAL/
       MUNAR
     </Line>
-    <!--STARs-->
+  </Map>
+  <Map Type="System" Name="MK_RWY14A32D_STARs" Priority="1" Center="-21.171389+149.179722" CustomColourName="STARs">
     <Line>
       <!--Rwy14 DAGSI1-->
       DAGSI/
@@ -39,14 +41,16 @@
       SADID/
       LUMVA
     </Line>
-    <Symbol Type="HollowTriangle">
+  </Map>
+  <Map Type="System" Name="MK_RWY14A32D_Symbols" Priority="1" Center="-21.171389+149.179722" CustomColourName="Airways_Symbols">
+<Symbol Type="HollowTriangle">
       <Point>LEDUS</Point>
       <Point>LUMVA</Point>
     </Symbol>
-    <Symbol Type="SolidStar">
+<Symbol Type="SolidStar">
       <Point>AVKIK</Point>
     </Symbol>
-    <Symbol Type="HollowStar">
+<Symbol Type="HollowStar">
       <Point>CLIFT</Point>
       <Point>RUVAL</Point>
       <Point>MUNAR</Point>
@@ -56,8 +60,8 @@
       <Point>SADID</Point>
     </Symbol>
   </Map>
-  <Map Type="System" Name="MK_RWY14A32D_NAMES" Priority="2" Center="-21.171389+149.179722">
-    <Label>
+  <Map Type="System" Name="MK_RWY14A32D_Names" Priority="2" Center="-21.171389+149.179722" CustomColourName="Names">
+<Label>
       <Point>CLIFT</Point>
       <Point>AVKIK</Point>
       <Point>RUVAL</Point>
