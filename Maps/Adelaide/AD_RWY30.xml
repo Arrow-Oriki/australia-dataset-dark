@@ -1,13 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Maps>
-  <Map Type="System" Name="AD_RWY30" Priority="1" Center="-34.945000+138.530556">
-    <!--YPAD-->
-    <Runway Name="12/30">
+
+  <Map Type="System" Name="AD_RWY30_Centreline" Priority="1" Center="-34.945000+138.530556" CustomColourName="Centreline">
+<Runway Name="12/30">
       <Threshold Name="12" Position="-34.941158+138.521917" />
       <Threshold Name="30" Position="-34.949381+138.536997" ExtendedCentrelineTrack="123.51" ExtendedCentrelineLength="10" ExtendedCentrelineTickInterval="1" />
     </Runway>
-    <!--SIDs-->
-    <!--STARs-->
+  </Map>
+  <Map Type="System" Name="AD_RWY30_STARs" Priority="1" Center="-34.945000+138.530556" CustomColourName="STARs">
     <Line>
       <!--Rwy30 ATPIP3-->
       ATPIP/
@@ -28,7 +28,9 @@
       SURGN/
       GRIGS
     </Line>
-    <Symbol Type="HollowStar">
+  </Map>
+  <Map Type="System" Name="AD_RWY30_Symbols" Priority="1" Center="-34.945000+138.530556" CustomColourName="Airways_Symbols">
+<Symbol Type="HollowStar">
       <Point>ATPIP</Point>
       <Point>KASBU</Point>
       <Point>BEVSO</Point>
@@ -38,8 +40,8 @@
       <Point>KAKLU</Point>
     </Symbol>
   </Map>
-  <Map Type="System" Name="AD_RWY30_NAMES" Priority="2" Center="-34.945000+138.530556">
-    <Label>
+  <Map Type="System" Name="AD_RWY30_Names" Priority="2" Center="-34.945000+138.530556" CustomColourName="Names">
+<Label>
       <Point>ATPIP</Point>
       <Point>KASBU</Point>
       <Point>BEVSO</Point>
