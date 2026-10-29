@@ -1,16 +1,14 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Maps>
-  <Map Type="System" Name="EN_RWY35" Priority="1" Center="-37.728056+144.901944">
-    <!--YMEN-->
-    <Runway Name="17/35">
+
+  <Map Type="System" Name="EN_RWY35_Centreline" Priority="1" Center="-37.728056+144.901944" CustomColourName="Centreline">
+<Runway Name="17/35">
       <Threshold Name="17" Position="-37.720414+144.900761" />
       <Threshold Name="35" Position="-37.733944+144.901411" ExtendedCentrelineTrack="177.82" ExtendedCentrelineLength="5" ExtendedCentrelineTickInterval="5" />
     </Runway>
-    <!--SIDs-->
-    <!--STARs-->
   </Map>
-  <Map Type="System" Name="EN_RWY35_NAMES" Priority="2" Center="-37.728056+144.901944">
-    <Label>
+  <Map Type="System" Name="EN_RWY35_Names" Priority="2" Center="-37.728056+144.901944" CustomColourName="Names">
+<Label>
       <Point>NONIX</Point>
       <Point>KACEY</Point>
       <Point>NATYA</Point>

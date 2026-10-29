@@ -1,12 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Maps>
-  <Map Type="System" Name="AV_RWY36" Priority="1" Center="-38.039444+144.469444">
-    <!--YMAV-->
-    <Runway Name="18/36">
+
+  <Map Type="System" Name="AV_RWY36_Centreline" Priority="1" Center="-38.039444+144.469444" CustomColourName="Centreline">
+<Runway Name="18/36">
       <Threshold Name="18" Position="-38.027222+144.469431" />
       <Threshold Name="36" Position="-38.054439+144.464844" ExtendedCentrelineTrack="187.59" ExtendedCentrelineLength="10" ExtendedCentrelineTickInterval="5" />
     </Runway>
-    <!--SIDs-->
+  </Map>
+  <Map Type="System" Name="AV_RWY36_SIDs" Priority="1" Center="-38.039444+144.469444" CustomColourName="SIDs">
     <Line>
       <!--Rwy36 JUSTY3-->
       -380138.000+1442809.950/
@@ -14,7 +15,8 @@
       JUSTY/
       ML VOR
     </Line>
-    <!--STARs-->
+  </Map>
+  <Map Type="System" Name="AV_RWY36_STARs" Priority="1" Center="-38.039444+144.469444" CustomColourName="STARs">
     <Line>
       <!--Rwy36 JAYBI6.DORSU-->
       DORSU/
@@ -37,13 +39,15 @@
       ISPAM/
       MAKAT
     </Line>
-    <Symbol Type="HollowTriangle">
+  </Map>
+  <Map Type="System" Name="AV_RWY36_Symbols" Priority="1" Center="-38.039444+144.469444" CustomColourName="Airways_Symbols">
+<Symbol Type="HollowTriangle">
       <Point>MAKAT</Point>
     </Symbol>
-    <Symbol Type="Circle">
+<Symbol Type="Circle">
       <Point>ML VOR</Point>
     </Symbol>
-    <Symbol Type="HollowStar">
+<Symbol Type="HollowStar">
       <Point>JUSTY</Point>
       <Point>JAYBI</Point>
       <Point>ISPAM</Point>
@@ -52,8 +56,8 @@
       <Point>METES</Point>
     </Symbol>
   </Map>
-  <Map Type="System" Name="AV_RWY36_NAMES" Priority="2" Center="-38.039444+144.469444">
-    <Label>
+  <Map Type="System" Name="AV_RWY36_Names" Priority="2" Center="-38.039444+144.469444" CustomColourName="Names">
+<Label>
       <Point>JUSTY</Point>
       <Point>ML VOR</Point>
       <Point>DORSU</Point>

@@ -1,12 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Maps>
-  <Map Type="System" Name="PE_RWY23" Priority="1" Center="-31.667778+116.015000">
-    <!--YPEA-->
-    <Runway Name="05/23">
+
+  <Map Type="System" Name="PE_RWY23_Centreline" Priority="1" Center="-31.667778+116.015000" CustomColourName="Centreline">
+<Runway Name="05/23">
       <Threshold Name="05" Position="-31.672319+116.008692" />
       <Threshold Name="23" Position="-31.661486+116.021242" ExtendedCentrelineTrack="44.74" ExtendedCentrelineLength="5" ExtendedCentrelineTickInterval="5" />
     </Runway>
-    <!--SIDs-->
+  </Map>
+  <Map Type="System" Name="PE_RWY23_SIDs" Priority="1" Center="-31.667778+116.015000" CustomColourName="SIDs">
     <Line>
       <!--Rwy23 ALKIM7-->
       -314020.350+1160031.290/
@@ -47,7 +48,8 @@
       -313634.000+1160035.000/
       -312530.000+1155918.000
     </Line>
-    <!--STARs-->
+  </Map>
+  <Map Type="System" Name="PE_RWY23_STARs" Priority="1" Center="-31.667778+116.015000" CustomColourName="STARs">
     <Line>
       <!--Rwy23 PEA4G.KABLI-->
       KABLI/
@@ -96,7 +98,9 @@
       WUNGO/
       HARMN
     </Line>
-    <Symbol Type="HollowStar">
+  </Map>
+  <Map Type="System" Name="PE_RWY23_Symbols" Priority="1" Center="-31.667778+116.015000" CustomColourName="Airways_Symbols">
+<Symbol Type="HollowStar">
       <Point>GOSNL</Point>
       <Point>KABLI</Point>
       <Point>KYEMA</Point>
@@ -113,8 +117,8 @@
       <Point>DAYLR</Point>
     </Symbol>
   </Map>
-  <Map Type="System" Name="PE_RWY23_NAMES" Priority="2" Center="-31.667778+116.015000">
-    <Label>
+  <Map Type="System" Name="PE_RWY23_Names" Priority="2" Center="-31.667778+116.015000" CustomColourName="Names">
+<Label>
       <Point>KABLI</Point>
       <Point>KYEMA</Point>
       <Point>GOSNL</Point>
