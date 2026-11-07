@@ -1,12 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Maps>
-  <Map Type="System" Name="JT_RWY30" Priority="1" Center="-32.097500+115.881111">
-    <!--YPJT-->
-    <Runway Name="12/30">
+
+  <Map Type="System" Name="JT_RWY30_Centreline" Priority="1" Center="-32.097500+115.881111" CustomColourName="Centreline">
+<Runway Name="12/30">
       <Threshold Name="12" Position="-32.099947+115.872486" />
       <Threshold Name="30" Position="-32.105581+115.887022" ExtendedCentrelineTrack="114.48" ExtendedCentrelineLength="3" ExtendedCentrelineTickInterval="3" />
     </Runway>
-    <!--SIDs-->
+  </Map>
+  <Map Type="System" Name="JT_RWY30_SIDs" Priority="1" Center="-32.097500+115.881111" CustomColourName="SIDs">
     <Line>
       <!--Rwy30 ISPET2-->
       -320559.810+1155220.950/
@@ -31,7 +32,8 @@
       -320600.576+1154957.359/
       TONEG
     </Line>
-    <!--STARs-->
+  </Map>
+  <Map Type="System" Name="JT_RWY30_STARs" Priority="1" Center="-32.097500+115.881111" CustomColourName="STARs">
     <Line>
       <!--Rwy30 JT4G.KABLI-->
       KABLI/
@@ -88,10 +90,12 @@
       HARMN/
       PH VOR
     </Line>
-    <Symbol Type="HollowTriangle">
+  </Map>
+  <Map Type="System" Name="JT_RWY30_Symbols" Priority="1" Center="-32.097500+115.881111" CustomColourName="Airways_Symbols">
+<Symbol Type="HollowTriangle">
       <Point>PH VOR</Point>
     </Symbol>
-    <Symbol Type="HollowStar">
+<Symbol Type="HollowStar">
       <Point>ISPET</Point>
       <Point>SCARP</Point>
       <Point>TONEG</Point>
@@ -115,8 +119,8 @@
       <Point>DAYLR</Point>
     </Symbol>
   </Map>
-  <Map Type="System" Name="JT_RWY30_NAMES" Priority="2" Center="-32.097500+115.881111">
-    <Label>
+  <Map Type="System" Name="JT_RWY30_Names" Priority="2" Center="-32.097500+115.881111" CustomColourName="Names">
+<Label>
       <Point>ISPET</Point>
       <Point>SCARP</Point>
       <Point>TONEG</Point>
