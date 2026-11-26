@@ -1,12 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Maps>
-  <Map Type="System" Name="TN_RWY32" Priority="1" Center="-14.521111+132.377778">
-    <!--YPTN-->
-    <Runway Name="14/32">
+
+  <Map Type="System" Name="TN_RWY32_Centreline" Priority="1" Center="-14.521111+132.377778" CustomColourName="Centreline">
+<Runway Name="14/32">
       <Threshold Name="14" Position="-14.508031+132.365147" />
       <Threshold Name="32" Position="-14.530861+132.385592" ExtendedCentrelineTrack="138.9" ExtendedCentrelineLength="15" ExtendedCentrelineTickInterval="1" />
     </Runway>
-    <!--SIDs-->
+  </Map>
+  <Map Type="System" Name="TN_RWY32_SIDs" Priority="1" Center="-14.521111+132.377778" CustomColourName="SIDs">
     <Line>
       <!--Rwy32 DAPMA2-->
       -143028.910+1322154.530/
@@ -63,11 +64,12 @@
       -143410.285+1322432.006/
       MILIV
     </Line>
-    <!--STARs-->
-    <Symbol Type="Circle">
+  </Map>
+  <Map Type="System" Name="TN_RWY32_Symbols" Priority="1" Center="-14.521111+132.377778" CustomColourName="Airways_Symbols">
+<Symbol Type="Circle">
       <Point>DN VOR</Point>
     </Symbol>
-    <Symbol Type="HollowStar">
+<Symbol Type="HollowStar">
       <Point>DAPMA</Point>
       <Point>DOSAM</Point>
       <Point>GREGA</Point>
@@ -76,8 +78,8 @@
       <Point>MILIV</Point>
     </Symbol>
   </Map>
-  <Map Type="System" Name="TN_RWY32_NAMES" Priority="2" Center="-14.521111+132.377778">
-    <Label>
+  <Map Type="System" Name="TN_RWY32_Names" Priority="2" Center="-14.521111+132.377778" CustomColourName="Names">
+<Label>
       <Point>DAPMA</Point>
       <Point>DN VOR</Point>
       <Point>DOSAM</Point>

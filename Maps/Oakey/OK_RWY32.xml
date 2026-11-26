@@ -1,16 +1,14 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Maps>
-  <Map Type="System" Name="OK_RWY32" Priority="1" Center="-27.411389+151.735278">
-    <!--YBOK-->
-    <Runway Name="14/32">
+
+  <Map Type="System" Name="OK_RWY32_Centreline" Priority="1" Center="-27.411389+151.735278" CustomColourName="Centreline">
+<Runway Name="14/32">
       <Threshold Name="14" Position="-27.402669+151.737094" />
       <Threshold Name="32" Position="-27.414881+151.746639" ExtendedCentrelineTrack="145.1" ExtendedCentrelineLength="5" ExtendedCentrelineTickInterval="5" />
     </Runway>
-    <!--SIDs-->
-    <!--STARs-->
   </Map>
-  <Map Type="System" Name="OK_RWY32_NAMES" Priority="2" Center="-27.411389+151.735278">
-    <Label>
+  <Map Type="System" Name="OK_RWY32_Names" Priority="2" Center="-27.411389+151.735278" CustomColourName="Names">
+<Label>
       <Point>SU VOR</Point>
       <Point>SURPO</Point>
       <Point>IVL NDB</Point>

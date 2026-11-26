@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Maps>
-  <Map Type="System" Name="YCBG_RWY" Priority="1" Center="-42.836111+147.510278">
-    <!--YCBG-->
-    <Runway Name="12/30">
+
+  <Map Type="System" Name="YCBG_RWY_Centreline" Priority="1" Center="-42.836111+147.510278" CustomColourName="Centreline">
+<Runway Name="12/30">
       <Threshold Name="12" Position="-424920.70+1472824.83" />
       <Threshold Name="30" Position="-424943.47+1472854.13" />
     </Runway>
-    <Runway Name="09/27">
+<Runway Name="09/27">
       <Threshold Name="09" Position="-424941.42+1472833.63" />
       <Threshold Name="27" Position="-424946.57+1472859.97" />
     </Runway>

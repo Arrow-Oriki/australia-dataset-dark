@@ -1,12 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Maps>
-  <Map Type="System" Name="MK_RWY14D32A" Priority="1" Center="-21.171389+149.179722">
-    <!--YBMK-->
-    <Runway Name="14/32">
+
+  <Map Type="System" Name="MK_RWY14D32A_Centreline" Priority="1" Center="-21.171389+149.179722" CustomColourName="Centreline">
+<Runway Name="14/32">
       <Threshold Name="14" Position="-21.163175+149.177478" />
       <Threshold Name="32" Position="-21.178306+149.187675" ExtendedCentrelineTrack="147.7" ExtendedCentrelineLength="15" ExtendedCentrelineTickInterval="1" />
     </Runway>
-    <!--SIDs-->
+  </Map>
+  <Map Type="System" Name="MK_RWY14D32A_SIDs" Priority="1" Center="-21.171389+149.179722" CustomColourName="SIDs">
     <Line>
       <!--Rwy14 CLIFT3-->
       -211041.900+1491115.630/
@@ -24,7 +25,8 @@
       -211352.157+1491323.438/
       MUNAR
     </Line>
-    <!--STARs-->
+  </Map>
+  <Map Type="System" Name="MK_RWY14D32A_STARs" Priority="1" Center="-21.171389+149.179722" CustomColourName="STARs">
     <Line>
       <!--Rwy32 DAGSI1-->
       DAGSI/
@@ -37,14 +39,16 @@
       WELKE/
       BAVAM
     </Line>
-    <Symbol Type="HollowTriangle">
+  </Map>
+  <Map Type="System" Name="MK_RWY14D32A_Symbols" Priority="1" Center="-21.171389+149.179722" CustomColourName="Airways_Symbols">
+<Symbol Type="HollowTriangle">
       <Point>BURNO</Point>
       <Point>BAVAM</Point>
     </Symbol>
-    <Symbol Type="SolidStar">
+<Symbol Type="SolidStar">
       <Point>TANUD</Point>
     </Symbol>
-    <Symbol Type="HollowStar">
+<Symbol Type="HollowStar">
       <Point>MUNAR</Point>
       <Point>MIBEK</Point>
       <Point>CLIFT</Point>
@@ -54,8 +58,8 @@
       <Point>WELKE</Point>
     </Symbol>
   </Map>
-  <Map Type="System" Name="MK_RWY14D32A_NAMES" Priority="2" Center="-21.171389+149.179722">
-    <Label>
+  <Map Type="System" Name="MK_RWY14D32A_Names" Priority="2" Center="-21.171389+149.179722" CustomColourName="Names">
+<Label>
       <Point>MUNAR</Point>
       <Point>TANUD</Point>
       <Point>MIBEK</Point>

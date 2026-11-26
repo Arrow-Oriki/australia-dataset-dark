@@ -1,12 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Maps>
-  <Map Type="System" Name="SY_RWYCURFEW" Priority="1" Center="-33.946111+151.177222">
-    <!--YSSY-->
-    <Runway Name="16R/34L">
+
+  <Map Type="System" Name="SY_RWYCURFEW_Centreline" Priority="1" Center="-33.946111+151.177222" CustomColourName="Centreline">
+<Runway Name="16R/34L">
       <Threshold Name="16R" Position="-33.930097+151.171783" />
       <Threshold Name="34L" Position="-33.964264+151.180647" ExtendedCentrelineTrack="167.8" ExtendedCentrelineLength="20" ExtendedCentrelineTickInterval="2" />
     </Runway>
-    <!--SIDs-->
+  </Map>
+  <Map Type="System" Name="SY_RWYCURFEW_SIDs" Priority="1" Center="-33.946111+151.177222" CustomColourName="SIDs">
     <Line>
       <!--Rwy16R ANKUB1-->
       ANKUB/
@@ -57,7 +58,8 @@
       ISBEX/
       WOL NDB
     </Line>
-    <!--STARs-->
+  </Map>
+  <Map Type="System" Name="SY_RWYCURFEW_STARs" Priority="1" Center="-33.946111+151.177222" CustomColourName="STARs">
     <Line>
       <!--Rwy34L AKMIR1-->
       AKMIR/
@@ -110,16 +112,18 @@
       BOOGI/
       DUDOK
     </Line>
-    <Symbol Type="HollowTriangle">
+  </Map>
+  <Map Type="System" Name="SY_RWYCURFEW_Symbols" Priority="1" Center="-33.946111+151.177222" CustomColourName="Airways_Symbols">
+<Symbol Type="HollowTriangle">
       <Point>SOSIJ</Point>
     </Symbol>
-    <Symbol Type="SolidStar">
+<Symbol Type="SolidStar">
       <Point>NASHO</Point>
     </Symbol>
-    <Symbol Type="Circle">
+<Symbol Type="Circle">
       <Point>WOL NDB</Point>
     </Symbol>
-    <Symbol Type="HollowStar">
+<Symbol Type="HollowStar">
       <Point>ANKUB</Point>
       <Point>IKORO</Point>
       <Point>NB523</Point>
@@ -170,8 +174,8 @@
       <Point>BOOGI</Point>
     </Symbol>
   </Map>
-  <Map Type="System" Name="SY_RWYCURFEW_NAMES" Priority="2" Center="-33.946111+151.177222">
-    <Label>
+  <Map Type="System" Name="SY_RWYCURFEW_Names" Priority="2" Center="-33.946111+151.177222" CustomColourName="Names">
+<Label>
       <Point>ANKUB</Point>
       <Point>IKORO</Point>
       <Point>NB523</Point>

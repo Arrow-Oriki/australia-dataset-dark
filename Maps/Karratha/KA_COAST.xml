@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Maps>
-  <Map Type="System" Name="KA_COAST" Priority="3" Centre="-20.712222+116.773333">
+  <Map Type="System" Name="KA_COAST" Priority="3" Centre="-20.712222+116.773333" CustomColourName="Coast">
     <Line Name="Coastline">
       -21.560444+115.356667/
       -21.544639+115.375833/

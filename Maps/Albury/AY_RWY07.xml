@@ -1,12 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Maps>
-  <Map Type="System" Name="AY_RWY07" Priority="1" Center="-36.067778+146.958056">
-    <!--YMAY-->
-    <Runway Name="07/25">
+
+  <Map Type="System" Name="AY_RWY07_Centreline" Priority="1" Center="-36.067778+146.958056" CustomColourName="Centreline">
+<Runway Name="07/25">
       <Threshold Name="07" Position="-36.068075+146.948892" ExtendedCentrelineTrack="261.18" ExtendedCentrelineLength="10" ExtendedCentrelineTickInterval="1" />
       <Threshold Name="25" Position="-36.065450+146.969742" />
     </Runway>
-    <!--SIDs-->
+  </Map>
+  <Map Type="System" Name="AY_RWY07_SIDs" Priority="1" Center="-36.067778+146.958056" CustomColourName="SIDs">
     <Line>
       <!--Rwy07 DUGGI1-->
       -360355.620+1465811.070/
@@ -20,7 +21,8 @@
       OLTAN/
       UGVER
     </Line>
-    <!--STARs-->
+  </Map>
+  <Map Type="System" Name="AY_RWY07_STARs" Priority="1" Center="-36.067778+146.958056" CustomColourName="STARs">
     <Line>
       <!--Rwy07 ARRAN1-->
       ARRAN/
@@ -33,14 +35,16 @@
       VEGRU/
       UPDUR
     </Line>
-    <Symbol Type="HollowTriangle">
+  </Map>
+  <Map Type="System" Name="AY_RWY07_Symbols" Priority="1" Center="-36.067778+146.958056" CustomColourName="Airways_Symbols">
+<Symbol Type="HollowTriangle">
       <Point>RURLA</Point>
       <Point>UPDUR</Point>
     </Symbol>
-    <Symbol Type="SolidStar">
+<Symbol Type="SolidStar">
       <Point>ANUGO</Point>
     </Symbol>
-    <Symbol Type="HollowStar">
+<Symbol Type="HollowStar">
       <Point>RUMES</Point>
       <Point>DUGGI</Point>
       <Point>OLTAN</Point>
@@ -51,8 +55,8 @@
       <Point>VEGRU</Point>
     </Symbol>
   </Map>
-  <Map Type="System" Name="AY_RWY07_NAMES" Priority="2" Center="-36.067778+146.958056">
-    <Label>
+  <Map Type="System" Name="AY_RWY07_Names" Priority="2" Center="-36.067778+146.958056" CustomColourName="Names">
+<Label>
       <Point>ANUGO</Point>
       <Point>RUMES</Point>
       <Point>DUGGI</Point>

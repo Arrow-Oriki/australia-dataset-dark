@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Maps>
-  <Map Type="System" Name="WLM_COAST" Priority="3" Centre="-32.795+151.834444">
+  <Map Type="System" Name="WLM_COAST" Priority="3" Centre="-32.795+151.834444" CustomColourName="Coast">
     <Line Name="Coastline">
       -31.575833+152.846194/
       -31.590028+152.842028/
